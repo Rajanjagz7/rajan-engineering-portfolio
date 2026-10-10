@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajan | QA Automation Engineer</title>
+<meta name="description" content="Portfolio of QA automation frameworks, API and load tests, and self-built trading tools by Rajan.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="container">
+    <p class="eyebrow">QA Automation Engineer</p>
+    <h1>Test frameworks built like products.</h1>
+    <p class="lead">Layered, typed and CI-ready automation with Playwright, pytest and JMeter, plus trading tools I build for myself and deploy live.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#featured">See featured work</a>
+      <a class="btn" id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <ul class="stats" id="stats"></ul>
+  </div>
+</header>
+
+<main>
+  <section class="container" id="featured">
+    <h2>Featured</h2>
+    <div class="grid featured-grid" id="featuredGrid"></div>
+  </section>
+
+  <section class="container" id="all">
+    <h2>All projects</h2>
+    <div class="controls">
+      <input type="search" id="searchInput" placeholder="Search by name, tech or description" aria-label="Search projects">
+      <div class="chips" id="filterButtons" role="group" aria-label="Filter by category"></div>
+    </div>
+    <div class="grid" id="projectsGrid"></div>
+    <p class="empty" id="emptyState" hidden>No projects match your search.</p>
+  </section>
+
+  <section class="container approach">
+    <h2>How I approach testing</h2>
+    <ul>
+      <li><strong>Layered frameworks.</strong> Config, fixtures, page objects, API helpers and data are separate, so tests read like specs.</li>
+      <li><strong>Typed test cases.</strong> Positive, negative, boundary, edge and security cases are tagged so suites can be sliced by risk.</li>
+      <li><strong>Known bugs stay visible.</strong> Defects are kept as strict expected failures, so a fix flips the build.</li>
+      <li><strong>Traceability.</strong> Release notes and requirements map to tests through generated matrices.</li>
+      <li><strong>No secrets in code.</strong> Credentials come from environment variables, with a <code>.env.example</code> in every suite.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Client work is sanitised: names, hosts and findings are replaced with neutral placeholders.</p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

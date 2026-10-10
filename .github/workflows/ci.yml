@@ -1,0 +1,36 @@
+name: Portfolio CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project:
+          - path: projects/trading-finance/rajan
+            runner: python
+            command: pytest tests/ -v
+          - path: projects/web-apps/weight-plate-web
+            runner: node
+            command: npx playwright test
+          - path: projects/test-suites/e2e-playwright/saucedemo-advanced-e2e
+            runner: node
+            command: npm test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        if: matrix.project.runner == 'python'
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        if: matrix.project.runner == 'node'
+        with:
+          node-version: '20'
+      - run: cd ${{ matrix.project.path }} && ${{ matrix.project.command }}
+        env:
+          CI: true

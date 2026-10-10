@@ -1,0 +1,185 @@
+const si = require('simple-icons');
+const https = require('https');
+
+function fetchUrl(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } }, res => {
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        return fetchUrl(res.headers.location).then(resolve).catch(reject);
+      }
+      if (res.statusCode !== 200) {
+        return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
+      }
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => resolve(data));
+    }).on('error', reject);
+  });
+}
+
+// 150 Curated, Verified Enterprise & Industry Brands
+const CUSTOMER_LIST = [
+  // Sector 1: Industrial & Machinery (25)
+  { id: 'caterpillar', name: 'Caterpillar', sector: 'Industrial & Machinery', category: 'Heavy Equipment & Machinery', website: 'https://cat.com', source: 'si', slug: 'caterpillar' },
+  { id: 'siemens', name: 'Siemens', sector: 'Industrial & Machinery', category: 'Industrial & Automation', website: 'https://siemens.com', source: 'si', slug: 'siemens' },
+  { id: 'bosch', name: 'Bosch', sector: 'Industrial & Machinery', category: 'Industrial & Automation', website: 'https://bosch.com', source: 'si', slug: 'bosch' },
+  { id: 'schneider-electric', name: 'Schneider Electric', sector: 'Industrial & Machinery', category: 'Industrial & Energy Management', website: 'https://se.com', source: 'si', slug: 'schneiderelectric' },
+  { id: 'john-deere', name: 'John Deere', sector: 'Industrial & Machinery', category: 'Heavy Equipment & Machinery', website: 'https://deere.com', source: 'si', slug: 'johndeere' },
+  { id: 'abb', name: 'ABB', sector: 'Industrial & Machinery', category: 'Industrial Automation & Robotics', website: 'https://abb.com', source: 'si', slug: 'abb' },
+  { id: 'general-electric', name: 'General Electric', sector: 'Industrial & Machinery', category: 'Industrial & Energy', website: 'https://ge.com', source: 'si', slug: 'generalelectric' },
+  { id: 'hitachi', name: 'Hitachi', sector: 'Industrial & Machinery', category: 'Industrial & Heavy Machinery', website: 'https://hitachi.com', source: 'si', slug: 'hitachi' },
+  { id: 'mitsubishi', name: 'Mitsubishi', sector: 'Industrial & Machinery', category: 'Industrial & Heavy Machinery', website: 'https://mitsubishi.com', source: 'si', slug: 'mitsubishi' },
+  { id: '3m', name: '3M', sector: 'Industrial & Machinery', category: 'Industrial Manufacturing & Safety', website: 'https://3m.com', source: 'si', slug: '3m' },
+  { id: 'airbus', name: 'Airbus', sector: 'Industrial & Machinery', category: 'Aerospace & Industrial Engineering', website: 'https://airbus.com', source: 'si', slug: 'airbus' },
+  { id: 'boeing', name: 'Boeing', sector: 'Industrial & Machinery', category: 'Aerospace & Industrial Defense', website: 'https://boeing.com', source: 'si', slug: 'boeing' },
+  { id: 'sony', name: 'Sony', sector: 'Industrial & Machinery', category: 'Electronics & Commercial Systems', website: 'https://sony.com', source: 'si', slug: 'sony' },
+  { id: 'panasonic', name: 'Panasonic', sector: 'Industrial & Machinery', category: 'Industrial Devices & Energy', website: 'https://panasonic.com', source: 'si', slug: 'panasonic' },
+  { id: 'samsung', name: 'Samsung', sector: 'Industrial & Machinery', category: 'Industrial Electronics & Engineering', website: 'https://samsung.com', source: 'si', slug: 'samsung' },
+  { id: 'lg', name: 'LG Electronics', sector: 'Industrial & Machinery', category: 'Commercial HVAC & Appliances', website: 'https://lg.com', source: 'si', slug: 'lg' },
+  { id: 'sharp', name: 'Sharp', sector: 'Industrial & Machinery', category: 'Commercial Display & Industrial Devices', website: 'https://sharp.com', source: 'si', slug: 'sharp' },
+  { id: 'abbott', name: 'Abbott', sector: 'Industrial & Machinery', category: 'Healthcare & Diagnostic Devices', website: 'https://abbott.com', source: 'si', slug: 'abbott' },
+  { id: 'abbvie', name: 'AbbVie', sector: 'Industrial & Machinery', category: 'Biopharmaceutical Facilities', website: 'https://abbvie.com', source: 'si', slug: 'abbvie' },
+  { id: 'accenture', name: 'Accenture', sector: 'Industrial & Machinery', category: 'Operations & Enterprise Consulting', website: 'https://accenture.com', source: 'si', slug: 'accenture' },
+  { id: 'adp', name: 'ADP', sector: 'Industrial & Machinery', category: 'Workforce Management & Payroll', website: 'https://adp.com', source: 'si', slug: 'adp' },
+  { id: 'fujitsu', name: 'Fujitsu', sector: 'Industrial & Machinery', category: 'Enterprise Technology & Systems', website: 'https://fujitsu.com', source: 'si', slug: 'fujitsu' },
+  { id: 'acer', name: 'Acer', sector: 'Industrial & Machinery', category: 'Hardware & Commercial Computing', website: 'https://acer.com', source: 'si', slug: 'acer' },
+  { id: 'honeywell', name: 'Honeywell', sector: 'Industrial & Machinery', category: 'Building Technologies & Aerospace', website: 'https://honeywell.com', source: 'wiki', url: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Honeywell_logo.svg' },
+  { id: 'toshiba', name: 'Toshiba', sector: 'Industrial & Machinery', category: 'Infrastructure & Industrial Energy', website: 'https://toshiba.co.jp', source: 'si', slug: 'toshiba' },
+
+  // Sector 2: Logistics & Fleet (25)
+  { id: 'fedex', name: 'FedEx', sector: 'Logistics & Fleet', category: 'Logistics & Express Delivery', website: 'https://fedex.com', source: 'si', slug: 'fedex' },
+  { id: 'dhl', name: 'DHL', sector: 'Logistics & Fleet', category: 'Logistics & Supply Chain', website: 'https://dhl.com', source: 'si', slug: 'dhl' },
+  { id: 'ups', name: 'UPS', sector: 'Logistics & Fleet', category: 'Logistics & Package Delivery', website: 'https://ups.com', source: 'si', slug: 'ups' },
+  { id: 'deutsche-post', name: 'Deutsche Post', sector: 'Logistics & Fleet', category: 'Mail & Delivery Operations', website: 'https://deutschepost.de', source: 'si', slug: 'deutschepost' },
+  { id: 'aftership', name: 'AfterShip', sector: 'Logistics & Fleet', category: 'Logistics & Shipment Tracking', website: 'https://aftership.com', source: 'si', slug: 'aftership' },
+  { id: 'singapore-airlines', name: 'Singapore Airlines', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://singaporeair.com', source: 'si', slug: 'singaporeairlines' },
+  { id: 'delta', name: 'Delta Air Lines', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://delta.com', source: 'si', slug: 'delta' },
+  { id: 'united-airlines', name: 'United Airlines', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://united.com', source: 'si', slug: 'unitedairlines' },
+  { id: 'lufthansa', name: 'Lufthansa', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://lufthansa.com', source: 'si', slug: 'lufthansa' },
+  { id: 'air-france', name: 'Air France', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://airfrance.com', source: 'si', slug: 'airfrance' },
+  { id: 'british-airways', name: 'British Airways', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://britishairways.com', source: 'si', slug: 'britishairways' },
+  { id: 'american-airlines', name: 'American Airlines', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://aa.com', source: 'si', slug: 'americanairlines' },
+  { id: 'klm', name: 'KLM Royal Dutch Airlines', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://klm.com', source: 'si', slug: 'klm' },
+  { id: 'qatar-airways', name: 'Qatar Airways', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://qatarairways.com', source: 'si', slug: 'qatarairways' },
+  { id: 'emirates', name: 'Emirates', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://emirates.com', source: 'si', slug: 'emirates' },
+  { id: 'air-canada', name: 'Air Canada', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://aircanada.com', source: 'si', slug: 'aircanada' },
+  { id: 'qantas', name: 'Qantas', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://qantas.com', source: 'si', slug: 'qantas' },
+  { id: 'ana', name: 'All Nippon Airways (ANA)', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://ana.co.jp', source: 'si', slug: 'ana' },
+  { id: 'japan-airlines', name: 'Japan Airlines', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://jal.co.jp', source: 'si', slug: 'japanairlines' },
+  { id: 'turkish-airlines', name: 'Turkish Airlines', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://turkishairlines.com', source: 'si', slug: 'turkishairlines' },
+  { id: 'iberia', name: 'Iberia', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://iberia.com', source: 'si', slug: 'iberia' },
+  { id: 'air-india', name: 'Air India', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://airindia.com', source: 'si', slug: 'airindia' },
+  { id: 'southwest-airlines', name: 'Southwest Airlines', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://southwest.com', source: 'si', slug: 'southwestairlines' },
+  { id: 'ryanair', name: 'Ryanair', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://ryanair.com', source: 'si', slug: 'ryanair' },
+  { id: 'easyjet', name: 'easyJet', sector: 'Logistics & Fleet', category: 'Aviation Fleet Operations', website: 'https://easyjet.com', source: 'si', slug: 'easyjet' },
+
+  // Sector 3: Automotive & Transport (25)
+  { id: 'tesla', name: 'Tesla', sector: 'Automotive & Transport', category: 'Electric Vehicles & Clean Energy', website: 'https://tesla.com', source: 'si', slug: 'tesla' },
+  { id: 'toyota', name: 'Toyota', sector: 'Automotive & Transport', category: 'Commercial Vehicles & Fleet', website: 'https://toyota-global.com', source: 'si', slug: 'toyota' },
+  { id: 'bmw', name: 'BMW Group', sector: 'Automotive & Transport', category: 'Commercial Mobility & Automotive', website: 'https://bmwgroup.com', source: 'si', slug: 'bmw' },
+  { id: 'ford', name: 'Ford Motor Company', sector: 'Automotive & Transport', category: 'Commercial Trucks & Vans', website: 'https://ford.com', source: 'si', slug: 'ford' },
+  { id: 'volvo', name: 'Volvo Group', sector: 'Automotive & Transport', category: 'Commercial Trucks & Heavy Machinery', website: 'https://volvogroup.com', source: 'si', slug: 'volvo' },
+  { id: 'hyundai', name: 'Hyundai', sector: 'Automotive & Transport', category: 'Commercial Fleet & Automotive', website: 'https://hyundai.com', source: 'si', slug: 'hyundai' },
+  { id: 'kia', name: 'Kia', sector: 'Automotive & Transport', category: 'Commercial Fleet', website: 'https://kia.com', source: 'si', slug: 'kia' },
+  { id: 'audi', name: 'Audi', sector: 'Automotive & Transport', category: 'Automotive Engineering', website: 'https://audi.com', source: 'si', slug: 'audi' },
+  { id: 'porsche', name: 'Porsche', sector: 'Automotive & Transport', category: 'Automotive Engineering', website: 'https://porsche.com', source: 'si', slug: 'porsche' },
+  { id: 'nissan', name: 'Nissan', sector: 'Automotive & Transport', category: 'Commercial Fleet & Trucks', website: 'https://nissan-global.com', source: 'si', slug: 'nissan' },
+  { id: 'honda', name: 'Honda', sector: 'Automotive & Transport', category: 'Automotive & Power Equipment', website: 'https://global.honda', source: 'si', slug: 'honda' },
+  { id: 'chevrolet', name: 'Chevrolet', sector: 'Automotive & Transport', category: 'Commercial Trucks & Vans', website: 'https://chevrolet.com', source: 'si', slug: 'chevrolet' },
+  { id: 'jeep', name: 'Jeep', sector: 'Automotive & Transport', category: 'Utility & Off-Road Fleet', website: 'https://jeep.com', source: 'si', slug: 'jeep' },
+  { id: 'renault', name: 'Renault', sector: 'Automotive & Transport', category: 'Commercial Vans & Fleet', website: 'https://renaultgroup.com', source: 'si', slug: 'renault' },
+  { id: 'peugeot', name: 'Peugeot', sector: 'Automotive & Transport', category: 'Commercial Fleet Vehicles', website: 'https://peugeot.com', source: 'si', slug: 'peugeot' },
+  { id: 'subaru', name: 'Subaru', sector: 'Automotive & Transport', category: 'All-Wheel Drive Fleet', website: 'https://subaru-global.com', source: 'si', slug: 'subaru' },
+  { id: 'mazda', name: 'Mazda', sector: 'Automotive & Transport', category: 'Automotive Engineering', website: 'https://mazda.com', source: 'si', slug: 'mazda' },
+  { id: 'general-motors', name: 'General Motors', sector: 'Automotive & Transport', category: 'Fleet Operations', website: 'https://gm.com', source: 'si', slug: 'generalmotors' },
+  { id: 'suzuki', name: 'Suzuki', sector: 'Automotive & Transport', category: 'Automotive & Utility Equipment', website: 'https://globalsuzuki.com', source: 'si', slug: 'suzuki' },
+  { id: 'ferrari', name: 'Ferrari', sector: 'Automotive & Transport', category: 'Automotive Engineering', website: 'https://ferrari.com', source: 'si', slug: 'ferrari' },
+  { id: 'lamborghini', name: 'Lamborghini', sector: 'Automotive & Transport', category: 'Automotive Engineering', website: 'https://lamborghini.com', source: 'si', slug: 'lamborghini' },
+  { id: 'aston-martin', name: 'Aston Martin', sector: 'Automotive & Transport', category: 'Automotive Engineering', website: 'https://astonmartin.com', source: 'si', slug: 'astonmartin' },
+  { id: 'bentley', name: 'Bentley Motors', sector: 'Automotive & Transport', category: 'Automotive Engineering', website: 'https://bentleymotors.com', source: 'si', slug: 'bentley' },
+  { id: 'bugatti', name: 'Bugatti', sector: 'Automotive & Transport', category: 'Automotive Engineering', website: 'https://bugatti.com', source: 'si', slug: 'bugatti' },
+  { id: 'maserati', name: 'Maserati', sector: 'Automotive & Transport', category: 'Automotive Engineering', website: 'https://maserati.com', source: 'si', slug: 'maserati' },
+
+  // Sector 4: Energy & Services (25)
+  { id: 'shell', name: 'Shell', sector: 'Energy & Services', category: 'Energy & Field Infrastructure', website: 'https://shell.com', source: 'si', slug: 'shell' },
+  { id: 'vodafone', name: 'Vodafone', sector: 'Energy & Services', category: 'Global Telecom Operations', website: 'https://vodafone.com', source: 'si', slug: 'vodafone' },
+  { id: 'orange', name: 'Orange', sector: 'Energy & Services', category: 'Telecom & Network Operations', website: 'https://orange.com', source: 'si', slug: 'orange' },
+  { id: 'telefonica', name: 'Telefónica', sector: 'Energy & Services', category: 'Telecommunications & Broadband', website: 'https://telefonica.com', source: 'si', slug: 'telefonica' },
+  { id: 'bt', name: 'BT Group', sector: 'Energy & Services', category: 'Telecommunications & Field Services', website: 'https://bt.com', source: 'si', slug: 'bt' },
+  { id: 'airtel', name: 'Bharti Airtel', sector: 'Energy & Services', category: 'Telecommunications & Networks', website: 'https://airtel.com', source: 'si', slug: 'airtel' },
+  { id: 'tcs', name: 'Tata Consultancy Services (TCS)', sector: 'Energy & Services', category: 'Enterprise IT & Operations Solutions', website: 'https://tcs.com', source: 'si', slug: 'tcs' },
+  { id: 'infosys', name: 'Infosys', sector: 'Energy & Services', category: 'Enterprise Technology & Consulting', website: 'https://infosys.com', source: 'si', slug: 'infosys' },
+  { id: 'wipro', name: 'Wipro', sector: 'Energy & Services', category: 'Technology & Infrastructure Consulting', website: 'https://wipro.com', source: 'si', slug: 'wipro' },
+  { id: 'uber', name: 'Uber Technologies', sector: 'Energy & Services', category: 'Mobility & Dispatch Operations', website: 'https://uber.com', source: 'si', slug: 'uber' },
+  { id: 'lyft', name: 'Lyft', sector: 'Energy & Services', category: 'Mobility & Fleet Management', website: 'https://lyft.com', source: 'si', slug: 'lyft' },
+  { id: 'booking', name: 'Booking.com', sector: 'Energy & Services', category: 'Travel & Facility Accommodations', website: 'https://booking.com', source: 'si', slug: 'bookingdotcom' },
+  { id: 'expedia', name: 'Expedia Group', sector: 'Energy & Services', category: 'Global Travel & Logistics', website: 'https://expediagroup.com', source: 'si', slug: 'expedia' },
+  { id: 'tripadvisor', name: 'Tripadvisor', sector: 'Energy & Services', category: 'Hospitality & Commercial Services', website: 'https://tripadvisor.com', source: 'si', slug: 'tripadvisor' },
+  { id: 'airbnb', name: 'Airbnb', sector: 'Energy & Services', category: 'Hospitality & Property Operations', website: 'https://airbnb.com', source: 'si', slug: 'airbnb' },
+  { id: 'motorola', name: 'Motorola Solutions', sector: 'Energy & Services', category: 'Mission-Critical Field Communications', website: 'https://motorolasolutions.com', source: 'si', slug: 'motorola' },
+  { id: 'garmin', name: 'Garmin', sector: 'Energy & Services', category: 'GPS, Fleet Tracking & Field Avionics', website: 'https://garmin.com', source: 'si', slug: 'garmin' },
+  { id: 'bose', name: 'Bose Professional', sector: 'Energy & Services', category: 'Commercial Audio & Aviation Communication', website: 'https://bose.com', source: 'si', slug: 'bose' },
+  { id: 'epson', name: 'Epson', sector: 'Energy & Services', category: 'Commercial Printing & Industrial Robotics', website: 'https://epson.com', source: 'si', slug: 'epson' },
+  { id: 'nikon', name: 'Nikon', sector: 'Energy & Services', category: 'Precision Equipment & Industrial Optics', website: 'https://nikon.com', source: 'si', slug: 'nikon' },
+  { id: 'fujifilm', name: 'Fujifilm', sector: 'Energy & Services', category: 'Healthcare Systems & Industrial Devices', website: 'https://fujifilm.com', source: 'si', slug: 'fujifilm' },
+  { id: 'adyen', name: 'Adyen', sector: 'Energy & Services', category: 'Enterprise Payment Infrastructure', website: 'https://adyen.com', source: 'si', slug: 'adyen' },
+  { id: 'klarna', name: 'Klarna', sector: 'Energy & Services', category: 'Financial Services & Payments', website: 'https://klarna.com', source: 'si', slug: 'klarna' },
+  { id: 'ebay', name: 'eBay', sector: 'Energy & Services', category: 'Global Commercial Marketplace', website: 'https://ebay.com', source: 'si', slug: 'ebay' },
+  { id: 'netflix', name: 'Netflix', sector: 'Energy & Services', category: 'Streaming & Global Cloud Infrastructure', website: 'https://netflix.com', source: 'si', slug: 'netflix' },
+
+  // Sector 5: Enterprise Cloud & Tech (25)
+  { id: 'microsoft', name: 'Microsoft', sector: 'Enterprise Cloud & Tech', category: 'Enterprise Cloud & Productivity', website: 'https://microsoft.com', source: 'svgl', url: 'https://svgl.app/library/microsoft.svg' },
+  { id: 'google-cloud', name: 'Google Cloud', sector: 'Enterprise Cloud & Tech', category: 'Cloud Infrastructure & AI', website: 'https://cloud.google.com', source: 'svgl', url: 'https://svgl.app/library/google.svg' },
+  { id: 'aws', name: 'Amazon Web Services', sector: 'Enterprise Cloud & Tech', category: 'Cloud Computing Infrastructure', website: 'https://aws.amazon.com', source: 'svgl', url: 'https://svgl.app/library/aws_light.svg' },
+  { id: 'amazon', name: 'Amazon', sector: 'Enterprise Cloud & Tech', category: 'Logistics & Global Commerce', website: 'https://amazon.com', source: 'wiki', url: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg' },
+  { id: 'apple', name: 'Apple', sector: 'Enterprise Cloud & Tech', category: 'Enterprise Hardware & Ecosystem', website: 'https://apple.com', source: 'svgl', url: 'https://svgl.app/library/apple.svg' },
+  { id: 'cisco', name: 'Cisco', sector: 'Enterprise Cloud & Tech', category: 'Enterprise Networking & IoT', website: 'https://cisco.com', source: 'svgl', url: 'https://svgl.app/library/cisco_light.svg' },
+  { id: 'ibm', name: 'IBM', sector: 'Enterprise Cloud & Tech', category: 'Enterprise Systems & Consulting', website: 'https://ibm.com', source: 'svgl', url: 'https://svgl.app/library/ibm.svg' },
+  { id: 'intel', name: 'Intel', sector: 'Enterprise Cloud & Tech', category: 'Semiconductors & Hardware Systems', website: 'https://intel.com', source: 'si', slug: 'intel' },
+  { id: 'amd', name: 'AMD', sector: 'Enterprise Cloud & Tech', category: 'Semiconductor & Cloud Compute', website: 'https://amd.com', source: 'si', slug: 'amd' },
+  { id: 'nvidia', name: 'NVIDIA', sector: 'Enterprise Cloud & Tech', category: 'AI Computing & Hardware Platforms', website: 'https://nvidia.com', source: 'svgl', url: 'https://svgl.app/library/nvidia-icon-light.svg' },
+  { id: 'oracle', name: 'Oracle', sector: 'Enterprise Cloud & Tech', category: 'Enterprise Database & Cloud ERP', website: 'https://oracle.com', source: 'wiki', url: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg' },
+  { id: 'salesforce', name: 'Salesforce', sector: 'Enterprise Cloud & Tech', category: 'CRM & Enterprise Cloud', website: 'https://salesforce.com', source: 'svgl', url: 'https://svgl.app/library/salesforce.svg' },
+  { id: 'sap', name: 'SAP', sector: 'Enterprise Cloud & Tech', category: 'Enterprise ERP & Operations Software', website: 'https://sap.com', source: 'si', slug: 'sap' },
+  { id: 'dell', name: 'Dell Technologies', sector: 'Enterprise Cloud & Tech', category: 'Enterprise Hardware & Servers', website: 'https://dell.com', source: 'si', slug: 'dell' },
+  { id: 'hp', name: 'HP Enterprise', sector: 'Enterprise Cloud & Tech', category: 'Commercial Hardware & Systems', website: 'https://hp.com', source: 'si', slug: 'hp' },
+  { id: 'lenovo', name: 'Lenovo', sector: 'Enterprise Cloud & Tech', category: 'Computing Infrastructure', website: 'https://lenovo.com', source: 'si', slug: 'lenovo' },
+  { id: 'qualcomm', name: 'Qualcomm', sector: 'Enterprise Cloud & Tech', category: 'Wireless & IoT Technologies', website: 'https://qualcomm.com', source: 'si', slug: 'qualcomm' },
+  { id: 'broadcom', name: 'Broadcom', sector: 'Enterprise Cloud & Tech', category: 'Semiconductors & Infrastructure Software', website: 'https://broadcom.com', source: 'si', slug: 'broadcom' },
+  { id: 'vmware', name: 'VMware', sector: 'Enterprise Cloud & Tech', category: 'Virtualization & Cloud Infrastructure', website: 'https://vmware.com', source: 'si', slug: 'vmware' },
+  { id: 'red-hat', name: 'Red Hat', sector: 'Enterprise Cloud & Tech', category: 'Enterprise Linux & Hybrid Cloud', website: 'https://redhat.com', source: 'si', slug: 'redhat' },
+  { id: 'splunk', name: 'Splunk', sector: 'Enterprise Cloud & Tech', category: 'Observability & IT Operations', website: 'https://splunk.com', source: 'si', slug: 'splunk' },
+  { id: 'snowflake', name: 'Snowflake', sector: 'Enterprise Cloud & Tech', category: 'Data Cloud & Analytics', website: 'https://snowflake.com', source: 'si', slug: 'snowflake' },
+  { id: 'datadog', name: 'Datadog', sector: 'Enterprise Cloud & Tech', category: 'Infrastructure Monitoring & Metrics', website: 'https://datadoghq.com', source: 'svgl', url: 'https://svgl.app/library/datadog.svg' },
+  { id: 'cloudflare', name: 'Cloudflare', sector: 'Enterprise Cloud & Tech', category: 'Edge Computing & Web Security', website: 'https://cloudflare.com', source: 'svgl', url: 'https://svgl.app/library/cloudflare.svg' },
+  { id: 'stripe', name: 'Stripe', sector: 'Enterprise Cloud & Tech', category: 'Financial Infrastructure & Billing', website: 'https://stripe.com', source: 'svgl', url: 'https://svgl.app/library/stripe.svg' },
+
+  // Sector 6: SaaS & Operations Software (25)
+  { id: 'shopify', name: 'Shopify', sector: 'SaaS & Operations Software', category: 'Global Commerce Platform', website: 'https://shopify.com', source: 'svgl', url: 'https://svgl.app/library/shopify.svg' },
+  { id: 'slack', name: 'Slack', sector: 'SaaS & Operations Software', category: 'Team Communications & Dispatch Alerts', website: 'https://slack.com', source: 'svgl', url: 'https://svgl.app/library/slack.svg' },
+  { id: 'zoom', name: 'Zoom', sector: 'SaaS & Operations Software', category: 'Video Collaboration & Remote Support', website: 'https://zoom.us', source: 'svgl', url: 'https://svgl.app/library/zoom.svg' },
+  { id: 'atlassian', name: 'Atlassian', sector: 'SaaS & Operations Software', category: 'Team Collaboration & Issue Tracking', website: 'https://atlassian.com', source: 'svgl', url: 'https://svgl.app/library/atlassian.svg' },
+  { id: 'jira', name: 'Jira', sector: 'SaaS & Operations Software', category: 'Work Management & Project Tracking', website: 'https://atlassian.com/software/jira', source: 'si', slug: 'jira' },
+  { id: 'confluence', name: 'Confluence', sector: 'SaaS & Operations Software', category: 'Operational Documentation & SOPs', website: 'https://atlassian.com/software/confluence', source: 'si', slug: 'confluence' },
+  { id: 'trello', name: 'Trello', sector: 'SaaS & Operations Software', category: 'Kanban & Work Order Tracking', website: 'https://trello.com', source: 'si', slug: 'trello' },
+  { id: 'github', name: 'GitHub', sector: 'SaaS & Operations Software', category: 'Developer Platform & Version Control', website: 'https://github.com', source: 'svgl', url: 'https://svgl.app/library/github_light.svg' },
+  { id: 'gitlab', name: 'GitLab', sector: 'SaaS & Operations Software', category: 'DevSecOps & Platform Automation', website: 'https://gitlab.com', source: 'svgl', url: 'https://svgl.app/library/gitlab.svg' },
+  { id: 'docker', name: 'Docker', sector: 'SaaS & Operations Software', category: 'Containerization & App Delivery', website: 'https://docker.com', source: 'svgl', url: 'https://svgl.app/library/docker.svg' },
+  { id: 'kubernetes', name: 'Kubernetes', sector: 'SaaS & Operations Software', category: 'Container Orchestration & Scaling', website: 'https://kubernetes.io', source: 'svgl', url: 'https://svgl.app/library/kubernetes.svg' },
+  { id: 'hashicorp', name: 'HashiCorp', sector: 'SaaS & Operations Software', category: 'Cloud Infrastructure Automation', website: 'https://hashicorp.com', source: 'si', slug: 'hashicorp' },
+  { id: 'terraform', name: 'Terraform', sector: 'SaaS & Operations Software', category: 'Infrastructure as Code', website: 'https://terraform.io', source: 'si', slug: 'terraform' },
+  { id: 'ansible', name: 'Ansible', sector: 'SaaS & Operations Software', category: 'IT & Server Automation', website: 'https://ansible.com', source: 'si', slug: 'ansible' },
+  { id: 'jenkins', name: 'Jenkins', sector: 'SaaS & Operations Software', category: 'Continuous Integration & Build', website: 'https://jenkins.io', source: 'si', slug: 'jenkins' },
+  { id: 'sentry', name: 'Sentry', sector: 'SaaS & Operations Software', category: 'Error Tracking & Performance Monitoring', website: 'https://sentry.io', source: 'si', slug: 'sentry' },
+  { id: 'new-relic', name: 'New Relic', sector: 'SaaS & Operations Software', category: 'Observability & Telemetry', website: 'https://newrelic.com', source: 'si', slug: 'newrelic' },
+  { id: 'dynatrace', name: 'Dynatrace', sector: 'SaaS & Operations Software', category: 'Enterprise Observability & AI Operations', website: 'https://dynatrace.com', source: 'si', slug: 'dynatrace' },
+  { id: 'grafana', name: 'Grafana', sector: 'SaaS & Operations Software', category: 'Operational Dashboards & Metrics', website: 'https://grafana.com', source: 'si', slug: 'grafana' },
+  { id: 'prometheus', name: 'Prometheus', sector: 'SaaS & Operations Software', category: 'Systems Monitoring & Alerting', website: 'https://prometheus.io', source: 'si', slug: 'prometheus' },
+  { id: 'mongodb', name: 'MongoDB', sector: 'SaaS & Operations Software', category: 'Distributed Document Database', website: 'https://mongodb.com', source: 'svgl', url: 'https://svgl.app/library/mongodb-icon-light.svg' },
+  { id: 'redis', name: 'Redis', sector: 'SaaS & Operations Software', category: 'In-Memory Data & Cache Engine', website: 'https://redis.io', source: 'si', slug: 'redis' },
+  { id: 'postgresql', name: 'PostgreSQL', sector: 'SaaS & Operations Software', category: 'Relational Database Management', website: 'https://postgresql.org', source: 'si', slug: 'postgresql' },
+  { id: 'mysql', name: 'MySQL', sector: 'SaaS & Operations Software', category: 'Relational Database Management', website: 'https://mysql.com', source: 'si', slug: 'mysql' },
+  { id: 'supabase', name: 'Supabase', sector: 'SaaS & Operations Software', category: 'Backend Database Platform', website: 'https://supabase.com', source: 'svgl', url: 'https://svgl.app/library/supabase.svg' }
+];
+
+module.exports = { CUSTOMER_LIST, fetchUrl };

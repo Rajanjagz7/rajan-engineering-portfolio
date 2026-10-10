@@ -1,0 +1,24 @@
+{
+  "name": "fieldops",
+  "version": "1.0.0",
+  "description": "FieldOps - Next-Gen Field Operations & Job Dispatch Management Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "test": "echo \"Ready for testing\" && exit 0"
+  },
+  "keywords": [
+    "field-service",
+    "job-dispatch",
+    "workforce-management",
+    "fieldops",
+    "kanban",
+    "operations"
+  ],
+  "author": "Rajanjagz7 <rajanjagz7@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "simple-icons": "^16.32.0"
+  }
+}

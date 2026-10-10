@@ -1,0 +1,9 @@
+{
+  "name": "nsw-jobs-pure-puppeteer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RebatePortal NSW job creation using raw Puppeteer (no test runner).",
+  "scripts": {
+    "test": "node run.js"
+  }
+}

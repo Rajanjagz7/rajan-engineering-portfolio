@@ -1,0 +1,379 @@
+import os
+import concurrent.futures
+from contextlib import asynccontextmanager
+import uvicorn
+from fastapi import FastAPI, HTTPException, UploadFile, File, Form
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse, JSONResponse
+from pydantic import BaseModel
+from typing import Optional, List
+from datetime import datetime
+
+def _load_env_file():
+    candidates = [
+        os.path.join(os.path.dirname(__file__), "..", ".env"),
+        os.path.join(os.path.dirname(__file__), "..", ".env.local"),
+        os.path.join(os.getcwd(), ".env"),
+        os.path.join(os.getcwd(), ".env.local"),
+        ".env",
+        ".env.local"
+    ]
+    for p in candidates:
+        if os.path.exists(p):
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if line and not line.startswith("#") and "=" in line:
+                            k, v = line.split("=", 1)
+                            k = k.strip()
+                            v = v.strip().strip("'").strip('"')
+                            if k not in os.environ:
+                                os.environ[k] = v
+            except Exception:
+                pass
+
+_load_env_file()
+
+from .nse_service import nse_service, now_ist_iso, get_stock_picks as _get_stock_picks, TOP_FO_STOCKS_FALLBACK
+from .upstox_service import upstox_service
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    try:
+        nse_service.init_nse_session()
+    except Exception:
+        pass
+    yield
+
+app = FastAPI(title="NSE Bhavcopy & Live Option Scanner API", version="2.0.0", lifespan=lifespan)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+class ScanRequest(BaseModel):
+    symSelect: Optional[str] = "__ALL__"
+    instIdx: Optional[bool] = True
+    instStk: Optional[bool] = True
+    optType: Optional[str] = "BOTH"
+    expSelect: Optional[str] = "nearest"
+    lowOn: Optional[bool] = True
+    lowFrom: Optional[float] = 5.80
+    lowTo: Optional[float] = 8.45
+    prevOn: Optional[bool] = True
+    prevFrom: Optional[float] = 38.0
+    prevTo: Optional[float] = 48.0
+    tol: Optional[float] = 0.0
+    minOi: Optional[float] = 0.0
+    includeUntraded: Optional[bool] = False
+    showMode: Optional[str] = "matches"
+    indicator: Optional[str] = None
+
+@app.get("/api/status")
+def get_status():
+    status = nse_service.get_market_status()
+    if isinstance(status, dict):
+        status["version"] = "2.2.0"
+        status["buildTime"] = "2026-09-27T07:30:00Z"
+    return status
+
+@app.get("/api/upstox/status")
+def get_upstox_status():
+    """Authenticated Upstox REST integration status."""
+    return upstox_service.health()
+
+@app.get("/api/market/global")
+def get_market_global():
+    try:
+        data = nse_service.get_global_markets()
+        return data
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Global market error: {str(e)}")
+
+@app.get("/api/indices/pulse")
+def get_indices_pulse():
+    try:
+        return nse_service.get_indices_pulse()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/quotes/fast")
+def get_quotes_fast():
+    try:
+        status = nse_service.get_market_status()
+        indices = status.get("indices", {})
+        quotes = {
+            sym: {"last": v["last"], "change": v["change"], "pct": v["pct"]}
+            for sym, v in indices.items()
+            if isinstance(v, dict) and "last" in v
+        }
+        return {"configured": bool(quotes), "quotes": quotes}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/fetch-latest")
+def fetch_latest_get(force: bool = False):
+    return fetch_latest_post(force)
+
+@app.post("/api/fetch-latest")
+def fetch_latest_post(force: bool = False):
+    # Bhavcopy no longer used — warms NSE cookies for faster subsequent live scans.
+    try:
+        nse_service.init_nse_session()
+    except Exception:
+        pass
+    return {"success": True, "totalContracts": 0, "todayDate": ""}
+
+@app.get("/api/symbols")
+def get_symbols():
+    detailed = nse_service.get_symbols_detailed()
+    existing = {s["symbol"] for s in detailed}
+    # Always include the top F&O stocks even if bhavcopy only loaded index chains
+    for stock in TOP_FO_STOCKS_FALLBACK:
+        if stock not in existing:
+            detailed.append({"symbol": stock, "instr": "Stock"})
+    detailed = sorted(detailed, key=lambda x: x["symbol"])
+    symbols = sorted({s["symbol"] for s in detailed})
+    return {"symbols": symbols, "detailed": detailed}
+
+@app.get("/api/chain")
+def get_chain(symbol: str = "NIFTY", expiry: Optional[str] = None, indicator: Optional[str] = None):
+    try:
+        res = nse_service.get_option_chain_for_symbol(symbol=symbol, expiry=expiry, indicator=indicator)
+        return res
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/chain/summary")
+def get_chain_summary(symbols: str = "NIFTY,BANKNIFTY,FINNIFTY,MIDCPNIFTY,SENSEX", indicator: Optional[str] = None):
+    try:
+        sym_list = [s.strip().upper() for s in symbols.split(",") if s.strip()]
+        res = nse_service.get_option_chain_summary(symbols=sym_list, indicator=indicator)
+        return res
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/stock-picks")
+def get_stock_picks_route(force_refresh: bool = False):
+    try:
+        res = _get_stock_picks(force_refresh=force_refresh)
+        return res
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/scan")
+def scan_bhavcopy(req: ScanRequest):
+    """Live market scan — fetches NSE option chains in parallel for all requested symbols."""
+    filters = req.model_dump()
+    sym = filters.get("symSelect", "__ALL__") or "__ALL__"
+    inst_stk = filters.get("instStk", True)
+    inst_idx = filters.get("instIdx", True)
+
+    # Single-symbol scan: fetch one live chain (tries Upstox, falls back to NSE direct)
+    if sym != "__ALL__":
+        try:
+            live = nse_service.fetch_live_option_chain(sym)
+            if live and live.get("rows"):
+                result = nse_service.scan(live["rows"], filters)
+                result["todayDate"] = datetime.now().strftime("%d-%m-%Y")
+                result["liveTimestamp"] = live.get("timestamp", datetime.now().strftime("%H:%M:%S"))
+                result["source"] = "live"
+                return result
+        except Exception as e:
+            return JSONResponse(content={
+                "results": [], "totalContracts": 0, "resultCount": 0,
+                "statMatch": 0, "statOL": 0, "statOH": 0,
+                "error": f"Could not fetch live chain for {sym}: {e}",
+            })
+
+    # Multi-symbol scan: fetch indices + top stocks in parallel
+    # Keep batches small (max 4 workers, 10 stocks) to avoid Upstox rate limits.
+    symbols_to_fetch = []
+    if inst_idx:
+        symbols_to_fetch.extend(["NIFTY", "BANKNIFTY", "FINNIFTY", "MIDCPNIFTY"])
+    if inst_stk:
+        symbols_to_fetch.extend(TOP_FO_STOCKS_FALLBACK[:10])
+
+    errors_list = []
+
+    def _fetch_chain(s):
+        try:
+            chain = nse_service.fetch_live_option_chain(s)
+            return chain.get("rows", []) if chain else []
+        except Exception as e:
+            errors_list.append(f"{s}: {e}")
+            return []
+
+    all_rows = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+        for rows in ex.map(_fetch_chain, symbols_to_fetch):
+            all_rows.extend(rows)
+
+    if not all_rows:
+        return JSONResponse(content={
+            "results": [], "totalContracts": 0, "resultCount": 0,
+            "statMatch": 0, "statOL": 0, "statOH": 0,
+            "error": "Live data unavailable from NSE. Try again shortly.",
+            "partialErrors": errors_list[:3],
+        })
+
+    result = nse_service.scan(all_rows, filters)
+    result["todayDate"] = datetime.now().strftime("%d-%m-%Y")
+    result["liveTimestamp"] = datetime.now().strftime("%H:%M:%S")
+    result["source"] = "live_nse"
+    return result
+
+@app.get("/api/live/scan")
+def live_scan(
+    symbol: str = "NIFTY",
+    expiry: Optional[str] = None,
+    optType: str = "BOTH",
+    lowOn: bool = True,
+    lowFrom: float = 5.80,
+    lowTo: float = 8.45,
+    prevOn: bool = True,
+    prevFrom: float = 38.0,
+    prevTo: float = 48.0,
+    tol: float = 0.0,
+    minOi: float = 0.0,
+    includeUntraded: bool = False,
+    showMode: str = "matches",
+    indicator: Optional[str] = None
+):
+    try:
+        live_res = nse_service.fetch_live_option_chain(symbol=symbol, expiry=expiry)
+        filters = {
+            "symSelect": symbol.upper(),
+            "instIdx": True,
+            "instStk": True,
+            "optType": optType,
+            "expSelect": "all",
+            "lowOn": lowOn,
+            "lowFrom": lowFrom,
+            "lowTo": lowTo,
+            "prevOn": prevOn,
+            "prevFrom": prevFrom,
+            "prevTo": prevTo,
+            "tol": tol,
+            "minOi": minOi,
+            "includeUntraded": includeUntraded,
+            "showMode": showMode,
+            "indicator": indicator
+        }
+        scan_output = nse_service.scan(live_res["rows"], filters)
+        scan_output["symbol"] = live_res["symbol"]
+        scan_output["targetExpiry"] = live_res["targetExpiry"]
+        scan_output["expiryDates"] = live_res["expiryDates"]
+        scan_output["liveTimestamp"] = live_res["timestamp"]
+        scan_output["provider"] = live_res.get("provider", "NSE")
+        scan_output["dataMode"] = live_res.get("mode", "NSE")
+        return scan_output
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Live scan error: {str(e)}")
+
+@app.get("/api/live/chain")
+def get_live_chain(symbol: str = "NIFTY", expiry: Optional[str] = None):
+    try:
+        live_res = nse_service.fetch_live_option_chain(symbol=symbol, expiry=expiry)
+        raw_rows = live_res.get("rows", [])
+        if not raw_rows:
+            return live_res
+
+        strikes_map = {}
+        spot = 0.0
+        for r in raw_rows:
+            if r.get("spot"):
+                spot = float(r["spot"])
+            k = float(r["strike"])
+            if k not in strikes_map:
+                strikes_map[k] = {"strike": k, "ce": None, "pe": None}
+            opt_type = r["type"].upper()
+            if opt_type == "CE":
+                strikes_map[k]["ce"] = r
+            elif opt_type == "PE":
+                strikes_map[k]["pe"] = r
+
+        sorted_strikes = sorted(strikes_map.keys())
+        if spot <= 0 and sorted_strikes:
+            spot = sorted_strikes[len(sorted_strikes) // 2]
+
+        atm_strike = min(sorted_strikes, key=lambda x: abs(x - spot)) if sorted_strikes else 0
+        atm_idx = sorted_strikes.index(atm_strike) if atm_strike in sorted_strikes else 0
+        min_i = max(0, atm_idx - 18)
+        max_i = min(len(sorted_strikes), atm_idx + 19)
+        window_strikes = sorted_strikes[min_i:max_i]
+
+        chain_table = [strikes_map[k] for k in window_strikes]
+
+        total_ce_vol = sum((r["ce"]["vol"] if r["ce"] else 0) for r in chain_table)
+        total_pe_vol = sum((r["pe"]["vol"] if r["pe"] else 0) for r in chain_table)
+        tot_vol = total_ce_vol + total_pe_vol
+        call_pct = round((total_ce_vol / tot_vol * 100), 1) if tot_vol > 0 else 50.0
+        put_pct = round(100.0 - call_pct, 1)
+
+        return {
+            "symbol": live_res.get("symbol", symbol.upper()),
+            "spot": spot,
+            "atmStrike": atm_strike,
+            "expiry": live_res.get("targetExpiry"),
+            "allExpiries": live_res.get("expiryDates", []),
+            "rows": chain_table,
+            "totalContracts": len(raw_rows),
+            "provider": live_res.get("provider", "Upstox"),
+            "mode": live_res.get("mode", "REST"),
+            "timestamp": live_res.get("timestamp"),
+            "volumeShare": {
+                "callVol": total_ce_vol,
+                "putVol": total_pe_vol,
+                "callPct": call_pct,
+                "putPct": put_pct,
+                "sentiment": "BULLISH" if call_pct >= 60 else ("BEARISH" if call_pct <= 40 else "NEUTRAL")
+            }
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Live chain error: {str(e)}")
+
+@app.post("/api/upload")
+async def upload_csv(file: UploadFile = File(...), isToday: bool = Form(True)):
+    try:
+        content = (await file.read()).decode("utf-8", errors="ignore")
+        count = nse_service.load_user_csv(content, is_today=isToday)
+        return {
+            "success": True,
+            "filename": file.filename,
+            "isToday": isToday,
+            "contractsLoaded": count
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.get("/api/tv/status")
+@app.get("/api/tv")
+def tv_status(action: str = "status", symbol: str = "NSE:NIFTY"):
+    return {
+        "status": "online",
+        "provider": "TradingView-API (@mathieuc/tradingview)",
+        "gateway": "Node.js + Python Fallback",
+        "symbol": symbol,
+        "action": action,
+        "chartUrl": f"https://in.tradingview.com/chart/?symbol={symbol}",
+        "supportedActions": ["quote", "ta", "search", "status"],
+        "version": "1.0.0"
+    }
+
+PUBLIC_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "public")
+@app.api_route("/", methods=["GET", "HEAD"])
+def serve_index():
+    index_file = os.path.join(PUBLIC_DIR, "index.html")
+    if os.path.exists(index_file):
+        return FileResponse(index_file, media_type="text/html")
+    return {"message": "Bhavcopy Option Scanner API running."}
+
+if __name__ == "__main__":
+    uvicorn.run("api.index:app", host="0.0.0.0", port=8000, reload=False)

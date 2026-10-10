@@ -1,0 +1,133 @@
+{
+  "pagesSummary": [
+    {
+      "href": "/dashboard",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Dashboard",
+      "screenshot": "page-_dashboard.png"
+    },
+    {
+      "href": "/projects",
+      "title": "RebatePortal NSW",
+      "pageHeading": "All Projects",
+      "screenshot": "page-_projects.png"
+    },
+    {
+      "href": "/jobs",
+      "title": "RebatePortal NSW",
+      "pageHeading": "All Jobs",
+      "screenshot": "page-_jobs.png"
+    },
+    {
+      "href": "/in-progress-jobs",
+      "title": "RebatePortal NSW",
+      "pageHeading": "In Progress Jobs",
+      "screenshot": "page-_in_progress_jobs.png"
+    },
+    {
+      "href": "/action-Required-jobs",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Action Required Jobs",
+      "screenshot": "page-_action_Required_jobs.png"
+    },
+    {
+      "href": "/being-assessed-jobs",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Being Assessed Jobs",
+      "screenshot": "page-_being_assessed_jobs.png"
+    },
+    {
+      "href": "/completed-jobs",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Completed Jobs",
+      "screenshot": "page-_completed_jobs.png"
+    },
+    {
+      "href": "/archived-jobs",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Archived Jobs",
+      "screenshot": "page-_archived_jobs.png"
+    },
+    {
+      "href": "/logs",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Access Denied!",
+      "screenshot": "page-_logs.png"
+    },
+    {
+      "href": "/installer",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Installers",
+      "screenshot": "page-_installer.png"
+    },
+    {
+      "href": "/installeruser",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Installer Users",
+      "screenshot": "page-_installeruser.png"
+    },
+    {
+      "href": "/matrix",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Matrix",
+      "screenshot": "page-_matrix.png"
+    },
+    {
+      "href": "/admin-users",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Users",
+      "screenshot": "page-_admin_users.png"
+    },
+    {
+      "href": "/privacypolicy",
+      "title": "RebatePortal NSW",
+      "pageHeading": "CMS",
+      "screenshot": "page-_privacypolicy.png"
+    },
+    {
+      "href": "/activity",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Activity Log",
+      "screenshot": "page-_activity.png"
+    },
+    {
+      "href": "/products",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Products",
+      "screenshot": "page-_products.png"
+    },
+    {
+      "href": "/rebates",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Rebates",
+      "screenshot": "page-_rebates.png"
+    },
+    {
+      "href": "/rebates/calculator",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Calculator",
+      "screenshot": "page-_rebates_calculator.png"
+    },
+    {
+      "href": "/rebates/statistics",
+      "title": "RebatePortal NSW",
+      "pageHeading": "Statistics",
+      "screenshot": "page-_rebates_statistics.png"
+    },
+    {
+      "href": "/invoices",
+      "title": "RebatePortal NSW",
+      "pageHeading": "No invoices found",
+      "screenshot": "page-_invoices.png"
+    }
+  ],
+  "addJobModal": {
+    "activityTypes": [
+      "Heating & Cooling",
+      "Hot Water Heat Pump"
+    ],
+    "leadMethods": [],
+    "buildingTypes": [],
+    "companies": []
+  }
+}
