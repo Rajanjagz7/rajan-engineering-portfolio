@@ -179,13 +179,13 @@ def test_bad_ids_no_500_no_stack(admin, path):
   },
   {
     id: "storefront-ecommerce",
-    title: "NewSunrise E-Commerce",
+    title: "Storefront E-Commerce",
     subtitle: "QA Lead for catalog, cart, checkout and payment workflow testing across browsers",
     category: "ecommerce",
     featured: false,
     badge: "E-Commerce QA",
     period: "Career Highlight",
-    summary: "Led functional and regression testing of the NewSunrise e-commerce platform's core purchase journey — catalog browsing, cart, checkout and payment workflows — across browsers.",
+    summary: "Led functional and regression testing of the Storefront e-commerce platform's core purchase journey — catalog browsing, cart, checkout and payment workflows — across browsers.",
     scopeOfWork: [
       "Functional and regression testing of the product catalog, search and filtering.",
       "Cart and checkout flow validation, including edge cases around pricing, discounts and stock state.",

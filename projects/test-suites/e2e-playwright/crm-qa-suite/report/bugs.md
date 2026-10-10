@@ -33,9 +33,9 @@ Method: Manual exploration plus over 200 automated checks (pytest for the API, P
 
 ### BUG-04 [Low] Company phone and domain are not validated or normalised
 - **Layer:** Backend  |  **Area:** Companies
-- **Steps / request:** POST /companies {"name":"x","phone":"xyz","domain":"not a domain"}   also domain "https://example.com/path" and "EXAMPLE.com"
+- **Steps / request:** POST /companies {"name":"x","phone":"xyz","domain":"not a domain"}   also domain "https://acme.com.au/path" and "ACME.com.au"
 - **Expected:** 400 for invalid values; domain stored as a lower-case hostname.
-- **Actual:** 201. 'not a domain' and a full URL are stored verbatim; 'EXAMPLE.com' keeps its case (contact emails are lower-cased).
+- **Actual:** 201. 'not a domain' and a full URL are stored verbatim; 'ACME.com.au' keeps its case (contact emails are lower-cased).
 - **Suggested fix:** Validate hostname, strip scheme and path, lower-case; validate phone as above.
 
 ### BUG-05 [Low] Whitespace-only first name is accepted

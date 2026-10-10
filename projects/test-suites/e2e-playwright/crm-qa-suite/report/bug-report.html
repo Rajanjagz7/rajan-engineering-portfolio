@@ -108,9 +108,9 @@ footer{color:var(--muted);font-size:13px;margin-top:36px}
 
 ### BUG-04 [Low] Company phone and domain are not validated or normalised
 - **Layer:** Backend  |  **Area:** Companies
-- **Steps / request:** POST /companies {&quot;name&quot;:&quot;x&quot;,&quot;phone&quot;:&quot;xyz&quot;,&quot;domain&quot;:&quot;not a domain&quot;}   also domain &quot;https://example.com/path&quot; and &quot;EXAMPLE.com&quot;
+- **Steps / request:** POST /companies {&quot;name&quot;:&quot;x&quot;,&quot;phone&quot;:&quot;xyz&quot;,&quot;domain&quot;:&quot;not a domain&quot;}   also domain &quot;https://acme.com.au/path&quot; and &quot;ACME.com.au&quot;
 - **Expected:** 400 for invalid values; domain stored as a lower-case hostname.
-- **Actual:** 201. &#x27;not a domain&#x27; and a full URL are stored verbatim; &#x27;EXAMPLE.com&#x27; keeps its case (contact emails are lower-cased).
+- **Actual:** 201. &#x27;not a domain&#x27; and a full URL are stored verbatim; &#x27;ACME.com.au&#x27; keeps its case (contact emails are lower-cased).
 - **Suggested fix:** Validate hostname, strip scheme and path, lower-case; validate phone as above.
 
 ### BUG-05 [Low] Whitespace-only first name is accepted
@@ -293,16 +293,16 @@ footer{color:var(--muted);font-size:13px;margin-top:36px}
   <h3>Company phone and domain are not validated or normalised</h3>
   <div class="area">Companies</div>
   <dl class="kv">
-    <dt>Steps</dt><dd><span class="repro">POST /companies {&quot;name&quot;:&quot;x&quot;,&quot;phone&quot;:&quot;xyz&quot;,&quot;domain&quot;:&quot;not a domain&quot;}   also domain &quot;https://example.com/path&quot; and &quot;EXAMPLE.com&quot;</span></dd>
+    <dt>Steps</dt><dd><span class="repro">POST /companies {&quot;name&quot;:&quot;x&quot;,&quot;phone&quot;:&quot;xyz&quot;,&quot;domain&quot;:&quot;not a domain&quot;}   also domain &quot;https://acme.com.au/path&quot; and &quot;ACME.com.au&quot;</span></dd>
     <dt>Expected</dt><dd>400 for invalid values; domain stored as a lower-case hostname.</dd>
-    <dt>Actual</dt><dd>201. &#x27;not a domain&#x27; and a full URL are stored verbatim; &#x27;EXAMPLE.com&#x27; keeps its case (contact emails are lower-cased).</dd>
+    <dt>Actual</dt><dd>201. &#x27;not a domain&#x27; and a full URL are stored verbatim; &#x27;ACME.com.au&#x27; keeps its case (contact emails are lower-cased).</dd>
     <dt>Suggested fix</dt><dd>Validate hostname, strip scheme and path, lower-case; validate phone as above.</dd>
   </dl>
   <script type="text/plain" id="md-BUG-04">### BUG-04 [Low] Company phone and domain are not validated or normalised
 - **Layer:** Backend  |  **Area:** Companies
-- **Steps / request:** POST /companies {&quot;name&quot;:&quot;x&quot;,&quot;phone&quot;:&quot;xyz&quot;,&quot;domain&quot;:&quot;not a domain&quot;}   also domain &quot;https://example.com/path&quot; and &quot;EXAMPLE.com&quot;
+- **Steps / request:** POST /companies {&quot;name&quot;:&quot;x&quot;,&quot;phone&quot;:&quot;xyz&quot;,&quot;domain&quot;:&quot;not a domain&quot;}   also domain &quot;https://acme.com.au/path&quot; and &quot;ACME.com.au&quot;
 - **Expected:** 400 for invalid values; domain stored as a lower-case hostname.
-- **Actual:** 201. &#x27;not a domain&#x27; and a full URL are stored verbatim; &#x27;EXAMPLE.com&#x27; keeps its case (contact emails are lower-cased).
+- **Actual:** 201. &#x27;not a domain&#x27; and a full URL are stored verbatim; &#x27;ACME.com.au&#x27; keeps its case (contact emails are lower-cased).
 - **Suggested fix:** Validate hostname, strip scheme and path, lower-case; validate phone as above.
 </script>
 </article>

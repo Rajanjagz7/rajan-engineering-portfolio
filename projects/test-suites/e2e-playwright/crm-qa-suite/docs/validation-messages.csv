@@ -1,0 +1,1064 @@
+﻿method,endpoint,field,message,status,code,seen,example_rid
+POST,/pipelines,/name,Too small: expected string to have >=1 characters,400,validation_error,23,REQ-00003
+POST,/pipelines,/name,Too big: expected string to have <=120 characters,400,validation_error,16,REQ-00022
+POST,/pipelines,/name,"Invalid input: expected string, received null",400,validation_error,1,REQ-00039
+POST,/pipelines,/name,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-00040
+POST,/pipelines,/name,"Invalid input: expected string, received number",400,validation_error,4,REQ-00041
+POST,/pipelines,/name,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-00045
+POST,/pipelines,/name,"Invalid input: expected string, received array",400,validation_error,3,REQ-00055
+POST,/pipelines,/name,Too small: expected array to have >=1 items,400,validation_error,1,REQ-00055
+POST,/pipelines,/name,"Invalid input: expected string, received object",400,validation_error,2,REQ-00058
+POST,/pipelines,/stages,A pipeline needs at least one stage,400,validation_error,1,REQ-00102
+POST,/pipelines,/stages,A pipeline holds at most 50 stages,400,validation_error,5,REQ-00108
+POST,/pipelines,/stages/0,"Invalid input: expected object, received null",400,validation_error,1,REQ-00114
+POST,/pipelines,/stages/0,"Invalid input: expected object, received number",400,validation_error,1,REQ-00115
+POST,/pipelines,/stages/1,"Invalid input: expected object, received string",400,validation_error,1,REQ-00115
+POST,/pipelines,/stages/2,"Invalid input: expected object, received null",400,validation_error,1,REQ-00115
+POST,/pipelines,/stages/3/name,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-00115
+POST,/pipelines,/stages/4,"Invalid input: expected object, received array",400,validation_error,1,REQ-00115
+POST,/pipelines,/stages,"Invalid input: expected array, received string",400,validation_error,1,REQ-00116
+POST,/pipelines,/stages,"Invalid input: expected array, received object",400,validation_error,1,REQ-00117
+POST,/pipelines,/stages,"Invalid input: expected array, received null",400,validation_error,1,REQ-00118
+POST,/pipelines,/stages,"Invalid input: expected array, received undefined",400,validation_error,2,REQ-00119
+POST,/pipelines,(request),"A stage named ""S0"" already exists in this pipeline",400,validation_error,1,REQ-00120
+POST,/pipelines,/stages/0/name,Too small: expected string to have >=1 characters,400,validation_error,3,REQ-00121
+POST,/pipelines,/stages/0/name,Too big: expected string to have <=120 characters,400,validation_error,15,REQ-00140
+POST,/pipelines,/stages/0/name,"Invalid input: expected string, received null",400,validation_error,1,REQ-00157
+POST,/pipelines,/stages/0/name,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-00158
+POST,/pipelines,/stages/0/name,"Invalid input: expected string, received number",400,validation_error,4,REQ-00159
+POST,/pipelines,/stages/0/name,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-00163
+POST,/pipelines,/stages/0/name,"Invalid input: expected string, received array",400,validation_error,3,REQ-00173
+POST,/pipelines,/stages/0/name,Too small: expected array to have >=1 items,400,validation_error,1,REQ-00173
+POST,/pipelines,/stages/0/name,"Invalid input: expected string, received object",400,validation_error,2,REQ-00176
+PATCH,/pipelines/{id},/name,Too small: expected string to have >=1 characters,400,validation_error,3,REQ-A00002
+PATCH,/pipelines/{id},/name,Too big: expected string to have <=120 characters,400,validation_error,15,REQ-A00021
+PATCH,/pipelines/{id},/name,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00038
+PATCH,/pipelines/{id},/name,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00039
+PATCH,/pipelines/{id},/name,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00043
+PATCH,/pipelines/{id},/name,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00053
+PATCH,/pipelines/{id},/name,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00053
+PATCH,/pipelines/{id},/name,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00056
+POST,/pipelines/{id}/stages,/name,Too small: expected string to have >=1 characters,400,validation_error,3,REQ-A00103
+POST,/pipelines/{id}/stages,/name,Too big: expected string to have <=120 characters,400,validation_error,15,REQ-A00113
+POST,/pipelines/{id}/stages,/name,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00130
+POST,/pipelines/{id}/stages,/name,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-A00131
+POST,/pipelines/{id}/stages,/name,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00132
+POST,/pipelines/{id}/stages,/name,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00136
+POST,/pipelines/{id}/stages,/name,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00142
+POST,/pipelines/{id}/stages,/name,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00142
+POST,/pipelines/{id}/stages,/name,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00145
+POST,/pipelines/{id}/stages,(request),"A stage named ""aa"" already exists in this pipeline",400,validation_error,1,REQ-A00154
+DELETE,/None/{id},(request),No route for DELETE /v1/None/<id>,404,not_found,35,REQ-A00169
+POST,/deals,/title,Too small: expected string to have >=1 characters,400,validation_error,3,REQ-A00208
+POST,/deals,/title,Too big: expected string to have <=200 characters,400,validation_error,12,REQ-A00233
+POST,/deals,/title,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00247
+POST,/deals,/title,"Invalid input: expected string, received undefined",400,validation_error,3,REQ-A00248
+POST,/deals,/title,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00249
+POST,/deals,/title,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00253
+POST,/deals,/title,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00263
+POST,/deals,/title,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00263
+POST,/deals,/title,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00266
+POST,/deals,/pipelineId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A00310
+POST,/deals,(request),Invalid pipeline id,400,validation_error,12,REQ-A00311
+POST,/deals,/pipelineId,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00312
+POST,/deals,/pipelineId,"Invalid input: expected string, received undefined",400,validation_error,23,REQ-A00313
+POST,/deals,/pipelineId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00314
+POST,/deals,/pipelineId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00318
+POST,/deals,/pipelineId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00324
+POST,/deals,/pipelineId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00324
+POST,/deals,/pipelineId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00327
+POST,/deals,(request),Pipeline not found,400,validation_error,2,REQ-A00329
+POST,/deals,/stageId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A00338
+POST,/deals,(request),Stage does not belong to the pipeline,400,validation_error,14,REQ-A00339
+POST,/deals,/stageId,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00340
+POST,/deals,/stageId,"Invalid input: expected string, received undefined",400,validation_error,23,REQ-A00341
+POST,/deals,/stageId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00342
+POST,/deals,/stageId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00346
+POST,/deals,/stageId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00352
+POST,/deals,/stageId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00352
+POST,/deals,/stageId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00355
+POST,/deals,/contactId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A00366
+POST,/deals,(request),Contact not found,404,not_found,14,REQ-A00367
+POST,/deals,/contactId,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00368
+POST,/deals,/contactId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00370
+POST,/deals,/contactId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00374
+POST,/deals,/contactId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00380
+POST,/deals,/contactId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00380
+POST,/deals,/contactId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00383
+POST,/deals,/companyId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A00394
+POST,/deals,(request),Company not found,404,not_found,14,REQ-A00395
+POST,/deals,/companyId,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00396
+POST,/deals,/companyId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00398
+POST,/deals,/companyId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00402
+POST,/deals,/companyId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00408
+POST,/deals,/companyId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00408
+POST,/deals,/companyId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00411
+POST,/deals,/ownerActorId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A00422
+POST,/deals,/ownerActorId,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00425
+POST,/deals,/ownerActorId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00427
+POST,/deals,/ownerActorId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00431
+POST,/deals,/ownerActorId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00441
+POST,/deals,/ownerActorId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00441
+POST,/deals,/ownerActorId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00444
+POST,/deals,/amount/amount,"Invalid input: expected number, received string",400,validation_error,14,REQ-A00464
+POST,/deals,/amount/amount,"Invalid input: expected number, received null",400,validation_error,1,REQ-A00466
+POST,/deals,/amount/amount,"Invalid input: expected number, received undefined",400,validation_error,1,REQ-A00467
+POST,/deals,/amount/amount,Too small: expected number to be >=0,400,validation_error,4,REQ-A00474
+POST,/deals,/amount/amount,"Invalid input: expected number, received boolean",400,validation_error,2,REQ-A00475
+POST,/deals,/amount/amount,"Invalid input: expected number, received array",400,validation_error,3,REQ-A00481
+POST,/deals,/amount/amount,"Invalid input: expected number, received object",400,validation_error,2,REQ-A00484
+POST,/deals,/amount/amount,"Invalid input: expected int, received number",400,validation_error,4,REQ-A00494
+POST,/deals,/amount/amount,Too small: expected int to be >=-<n>,400,validation_error,2,REQ-A00496
+POST,/deals,/amount/amount,Too big: expected int to be <=<n>,400,validation_error,3,REQ-A00500
+POST,/deals,/amount/currency,Invalid string: must match pattern /^[A-Z]{3}$/,400,validation_error,10,REQ-A00512
+POST,/deals,/amount/currency,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00514
+POST,/deals,/amount/currency,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-A00515
+POST,/deals,/amount/currency,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00516
+POST,/deals,/amount/currency,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00520
+POST,/deals,/amount/currency,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00526
+POST,/deals,/amount/currency,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00529
+POST,/deals,/amount/currency,"XYZ is not a currency code. Use one such as USD, EUR or JPY",400,validation_error,1,REQ-A00534
+POST,/deals,/lineItems,Too big: expected array to have <=100 items,400,validation_error,3,REQ-A00628
+POST,/deals,/lineItems/0,"Invalid input: expected object, received null",400,validation_error,1,REQ-A00632
+POST,/deals,/lineItems/0,"Invalid input: expected object, received number",400,validation_error,1,REQ-A00633
+POST,/deals,/lineItems/1,"Invalid input: expected object, received string",400,validation_error,1,REQ-A00633
+POST,/deals,/lineItems/2,"Invalid input: expected object, received null",400,validation_error,1,REQ-A00633
+POST,/deals,/lineItems/3/catalogProductId,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-A00633
+POST,/deals,/lineItems/3/quantity,"Invalid input: expected number, received undefined",400,validation_error,1,REQ-A00633
+POST,/deals,/lineItems/3/unitAmount,"Invalid input: expected number, received undefined",400,validation_error,1,REQ-A00633
+POST,/deals,/lineItems/3/currency,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-A00633
+POST,/deals,/lineItems/4,"Invalid input: expected object, received array",400,validation_error,1,REQ-A00633
+POST,/deals,/lineItems,"Invalid input: expected array, received string",400,validation_error,1,REQ-A00634
+POST,/deals,/lineItems,"Invalid input: expected array, received object",400,validation_error,1,REQ-A00635
+POST,/deals,/lineItems,"Invalid input: expected array, received null",400,validation_error,1,REQ-A00636
+POST,/deals,/lineItems/0/catalogProductId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A00640
+POST,/deals,(request),Catalog product(s)     not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00641
+POST,/deals,/lineItems/0/catalogProductId,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00642
+POST,/deals,/lineItems/0/catalogProductId,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-A00643
+POST,/deals,/lineItems/0/catalogProductId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00644
+POST,/deals,/lineItems/0/catalogProductId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00648
+POST,/deals,(request),Catalog product(s) true not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00650
+POST,/deals,(request),Catalog product(s) false not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00651
+POST,/deals,(request),Catalog product(s) yes not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00652
+POST,/deals,(request),Catalog product(s) no not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00653
+POST,/deals,/lineItems/0/catalogProductId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00654
+POST,/deals,/lineItems/0/catalogProductId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00654
+POST,/deals,/lineItems/0/catalogProductId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00657
+POST,/deals,(request),Catalog product(s) <id> not found; a deal can only sell a catalog product that exists,404,not_found,3,REQ-A00659
+POST,/deals,(request),Catalog product(s) aaaaaaaaaaaaaaaaaaaaaaa not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00661
+POST,/deals,(request),Catalog product(s) <id>a not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00662
+POST,/deals,(request),Catalog product(s) gggggggggggggggggggggggg not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00663
+POST,/deals,(request),Catalog product(s) 123e<n>-e89b-12d3-a456-<n> not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00664
+POST,/deals,(request),Catalog product(s)   not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00665
+POST,/deals,(request),Catalog product(s) -1 not found; a deal can only sell a catalog product that exists,404,not_found,1,REQ-A00666
+POST,/deals,/lineItems/0/quantity,"Invalid input: expected number, received string",400,validation_error,14,REQ-A00668
+POST,/deals,/lineItems/0/quantity,"Invalid input: expected number, received null",400,validation_error,1,REQ-A00670
+POST,/deals,/lineItems/0/quantity,"Invalid input: expected number, received undefined",400,validation_error,1,REQ-A00671
+POST,/deals,/lineItems/0/quantity,Too small: expected number to be >=1,400,validation_error,5,REQ-A00672
+POST,/deals,/lineItems/0/quantity,"Invalid input: expected number, received boolean",400,validation_error,2,REQ-A00678
+POST,/deals,/lineItems/0/quantity,"Invalid input: expected number, received array",400,validation_error,3,REQ-A00684
+POST,/deals,/lineItems/0/quantity,"Invalid input: expected number, received object",400,validation_error,2,REQ-A00687
+POST,/deals,/lineItems/0/quantity,"Invalid input: expected int, received number",400,validation_error,4,REQ-A00697
+POST,/deals,/lineItems/0/quantity,Too small: expected int to be >=-<n>,400,validation_error,2,REQ-A00699
+POST,/deals,/lineItems/0/quantity,Too big: expected int to be <=<n>,400,validation_error,3,REQ-A00703
+POST,/deals,(request),"The line subtotal (quantity × unitAmount) exceeds <n>, the most minor units a deal can hold",400,validation_error,2,REQ-A00709
+POST,/deals,/lineItems/0/unitAmount,"Invalid input: expected number, received string",400,validation_error,14,REQ-A00714
+POST,/deals,/lineItems/0/unitAmount,"Invalid input: expected number, received null",400,validation_error,1,REQ-A00716
+POST,/deals,/lineItems/0/unitAmount,"Invalid input: expected number, received undefined",400,validation_error,1,REQ-A00717
+POST,/deals,/lineItems/0/unitAmount,Too small: expected number to be >=0,400,validation_error,4,REQ-A00724
+POST,/deals,/lineItems/0/unitAmount,"Invalid input: expected number, received boolean",400,validation_error,2,REQ-A00725
+POST,/deals,/lineItems/0/unitAmount,"Invalid input: expected number, received array",400,validation_error,3,REQ-A00731
+POST,/deals,/lineItems/0/unitAmount,"Invalid input: expected number, received object",400,validation_error,2,REQ-A00734
+POST,/deals,/lineItems/0/unitAmount,"Invalid input: expected int, received number",400,validation_error,4,REQ-A00744
+POST,/deals,/lineItems/0/unitAmount,Too small: expected int to be >=-<n>,400,validation_error,2,REQ-A00746
+POST,/deals,/lineItems/0/unitAmount,Too big: expected int to be <=<n>,400,validation_error,3,REQ-A00750
+POST,/deals,/lineItems/0/currency,Invalid string: must match pattern /^[A-Z]{3}$/,400,validation_error,10,REQ-A00761
+POST,/deals,/lineItems/0/currency,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00763
+POST,/deals,/lineItems/0/currency,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-A00764
+POST,/deals,/lineItems/0/currency,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00765
+POST,/deals,/lineItems/0/currency,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00769
+POST,/deals,/lineItems/0/currency,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00775
+POST,/deals,/lineItems/0/currency,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00778
+POST,/deals,/lineItems/0/currency,"XYZ is not a currency code. Use one such as USD, EUR or JPY",400,validation_error,1,REQ-A00783
+PATCH,/deals/{id},/title,Too small: expected string to have >=1 characters,400,validation_error,3,REQ-A00828
+PATCH,/deals/{id},/title,Too big: expected string to have <=200 characters,400,validation_error,12,REQ-A00853
+PATCH,/deals/{id},/title,"Invalid input: expected string, received null",400,validation_error,1,REQ-A00867
+PATCH,/deals/{id},/title,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00868
+PATCH,/deals/{id},/title,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00872
+PATCH,/deals/{id},/title,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00882
+PATCH,/deals/{id},/title,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00882
+PATCH,/deals/{id},/title,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00885
+PATCH,/deals/{id},/contactId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A00929
+PATCH,/deals/{id},(request),Contact not found,404,not_found,14,REQ-A00930
+PATCH,/deals/{id},/contactId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00933
+PATCH,/deals/{id},/contactId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00937
+PATCH,/deals/{id},/contactId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00943
+PATCH,/deals/{id},/contactId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00943
+PATCH,/deals/{id},/contactId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00946
+PATCH,/deals/{id},/companyId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A00957
+PATCH,/deals/{id},(request),Company not found,404,not_found,14,REQ-A00958
+PATCH,/deals/{id},/companyId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00961
+PATCH,/deals/{id},/companyId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00965
+PATCH,/deals/{id},/companyId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A00971
+PATCH,/deals/{id},/companyId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A00971
+PATCH,/deals/{id},/companyId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A00974
+PATCH,/deals/{id},/ownerActorId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A00985
+PATCH,/deals/{id},/ownerActorId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A00990
+PATCH,/deals/{id},/ownerActorId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A00994
+PATCH,/deals/{id},/ownerActorId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A01004
+PATCH,/deals/{id},/ownerActorId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A01004
+PATCH,/deals/{id},/ownerActorId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A01007
+POST,/contacts,/firstName,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A01033
+POST,/contacts,/firstName,Too big: expected string to have <=200 characters,400,validation_error,12,REQ-A01058
+POST,/contacts,/firstName,"Invalid input: expected string, received null",400,validation_error,1,REQ-A01073
+POST,/contacts,/firstName,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-A01074
+POST,/contacts,/firstName,"Invalid input: expected string, received number",400,validation_error,4,REQ-A01075
+POST,/contacts,/firstName,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A01079
+POST,/contacts,/firstName,"Invalid input: expected string, received array",400,validation_error,3,REQ-A01089
+POST,/contacts,/firstName,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A01089
+POST,/contacts,/firstName,"Invalid input: expected string, received object",400,validation_error,2,REQ-A01092
+POST,/contacts,/lastName,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A01136
+POST,/contacts,/lastName,Too big: expected string to have <=200 characters,400,validation_error,12,REQ-A01161
+POST,/contacts,/lastName,"Invalid input: expected string, received null",400,validation_error,1,REQ-A01176
+POST,/contacts,/lastName,"Invalid input: expected string, received number",400,validation_error,4,REQ-A01178
+POST,/contacts,/lastName,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A01182
+POST,/contacts,/lastName,"Invalid input: expected string, received array",400,validation_error,3,REQ-A01192
+POST,/contacts,/lastName,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A01192
+POST,/contacts,/lastName,"Invalid input: expected string, received object",400,validation_error,2,REQ-A01195
+POST,/contacts,/email,Invalid email address,400,validation_error,42,REQ-A01239
+POST,/contacts,/email,Too big: expected string to have <=320 characters,400,validation_error,14,REQ-A01268
+POST,/contacts,/email,"Invalid input: expected string, received null",400,validation_error,1,REQ-A01298
+POST,/contacts,/email,"Invalid input: expected string, received number",400,validation_error,4,REQ-A01300
+POST,/contacts,/email,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A01304
+POST,/contacts,/email,"Invalid input: expected string, received array",400,validation_error,3,REQ-A01310
+POST,/contacts,/email,"Invalid input: expected string, received object",400,validation_error,2,REQ-A01313
+POST,/contacts,/phone,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A01334
+POST,/contacts,/phone,Too big: expected string to have <=50 characters,400,validation_error,23,REQ-A01343
+POST,/contacts,/phone,"Invalid input: expected string, received null",400,validation_error,1,REQ-A01375
+POST,/contacts,/phone,"Invalid input: expected string, received number",400,validation_error,4,REQ-A01377
+POST,/contacts,/phone,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A01381
+POST,/contacts,/phone,"Invalid input: expected string, received array",400,validation_error,3,REQ-A01391
+POST,/contacts,/phone,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A01391
+POST,/contacts,/phone,"Invalid input: expected string, received object",400,validation_error,2,REQ-A01394
+POST,/contacts,/companyId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A01424
+POST,/contacts,(request),Company not found,404,not_found,14,REQ-A01425
+POST,/contacts,/companyId,"Invalid input: expected string, received null",400,validation_error,1,REQ-A01426
+POST,/contacts,/companyId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A01428
+POST,/contacts,/companyId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A01432
+POST,/contacts,/companyId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A01438
+POST,/contacts,/companyId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A01438
+POST,/contacts,/companyId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A01441
+POST,/contacts,/status,"Invalid option: expected one of ""lead""|""qualified""|""customer""|""archived""",400,validation_error,24,REQ-A01452
+POST,/contacts,/ownerActorId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A01484
+POST,/contacts,/ownerActorId,"Invalid input: expected string, received null",400,validation_error,1,REQ-A01487
+POST,/contacts,/ownerActorId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A01489
+POST,/contacts,/ownerActorId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A01493
+POST,/contacts,/ownerActorId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A01503
+POST,/contacts,/ownerActorId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A01503
+POST,/contacts,/ownerActorId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A01506
+POST,/contacts,/customProperties,"Invalid input: expected record, received string",400,validation_error,6,REQ-A01526
+POST,/contacts,/customProperties,"Invalid input: expected record, received null",400,validation_error,1,REQ-A01528
+POST,/contacts,/customProperties,"Invalid input: expected record, received number",400,validation_error,4,REQ-A01530
+POST,/contacts,/customProperties,"Invalid input: expected record, received boolean",400,validation_error,2,REQ-A01534
+POST,/contacts,/customProperties,"Invalid input: expected record, received array",400,validation_error,3,REQ-A01540
+POST,/contacts,(request),"Custom property ""a"" is not defined",400,validation_error,1,REQ-A01544
+POST,/contacts,(request),"Custom property ""lead_source"" must be at most 500 characters",400,validation_error,15,REQ-A01581
+POST,/contacts,(request),"Custom property ""lead_source"" must be a string",400,validation_error,6,REQ-A01603
+POST,/contacts,/customProperties/lead_source,Invalid input,400,validation_error,5,REQ-A01617
+POST,/contacts,(request),"Custom property ""employee_count"" must be a finite number",400,validation_error,16,REQ-A01664
+POST,/contacts,/customProperties/employee_count,Invalid input,400,validation_error,5,REQ-A01683
+POST,/contacts,(request),"Custom property ""vip"" must be a boolean",400,validation_error,14,REQ-A01724
+POST,/contacts,/customProperties/vip,Invalid input,400,validation_error,5,REQ-A01741
+POST,/contacts,(request),"Custom property ""renewal_date"" must be an ISO-<n> date",400,validation_error,20,REQ-A01750
+POST,/contacts,/customProperties/renewal_date,Invalid input,400,validation_error,5,REQ-A01765
+PATCH,/contacts/{id},/lastName,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A02022
+PATCH,/contacts/{id},/lastName,Too big: expected string to have <=200 characters,400,validation_error,12,REQ-A02047
+PATCH,/contacts/{id},/lastName,"Invalid input: expected string, received number",400,validation_error,4,REQ-A02064
+PATCH,/contacts/{id},/lastName,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A02068
+PATCH,/contacts/{id},/lastName,"Invalid input: expected string, received array",400,validation_error,3,REQ-A02078
+PATCH,/contacts/{id},/lastName,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A02078
+PATCH,/contacts/{id},/lastName,"Invalid input: expected string, received object",400,validation_error,2,REQ-A02081
+PATCH,/contacts/{id},/email,Invalid email address,400,validation_error,22,REQ-A02125
+PATCH,/contacts/{id},/email,Too big: expected string to have <=320 characters,400,validation_error,14,REQ-A02154
+PATCH,/contacts/{id},/email,"Invalid input: expected string, received number",400,validation_error,4,REQ-A02186
+PATCH,/contacts/{id},/email,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A02190
+PATCH,/contacts/{id},/email,"Invalid input: expected string, received array",400,validation_error,3,REQ-A02196
+PATCH,/contacts/{id},/email,"Invalid input: expected string, received object",400,validation_error,2,REQ-A02199
+PATCH,/contacts/{id},/phone,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A02220
+PATCH,/contacts/{id},/phone,Too big: expected string to have <=50 characters,400,validation_error,23,REQ-A02229
+PATCH,/contacts/{id},/phone,"Invalid input: expected string, received number",400,validation_error,4,REQ-A02263
+PATCH,/contacts/{id},/phone,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A02267
+PATCH,/contacts/{id},/phone,"Invalid input: expected string, received array",400,validation_error,3,REQ-A02277
+PATCH,/contacts/{id},/phone,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A02277
+PATCH,/contacts/{id},/phone,"Invalid input: expected string, received object",400,validation_error,2,REQ-A02280
+PATCH,/contacts/{id},/companyId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A02310
+PATCH,/contacts/{id},(request),Company not found,404,not_found,14,REQ-A02311
+PATCH,/contacts/{id},/companyId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A02314
+PATCH,/contacts/{id},/companyId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A02318
+PATCH,/contacts/{id},/companyId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A02324
+PATCH,/contacts/{id},/companyId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A02324
+PATCH,/contacts/{id},/companyId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A02327
+PATCH,/contacts/{id},/status,"Invalid option: expected one of ""lead""|""qualified""|""customer""|""archived""",400,validation_error,23,REQ-A02338
+PATCH,/contacts/{id},/ownerActorId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A02369
+PATCH,/contacts/{id},/ownerActorId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A02374
+PATCH,/contacts/{id},/ownerActorId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A02378
+PATCH,/contacts/{id},/ownerActorId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A02388
+PATCH,/contacts/{id},/ownerActorId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A02388
+PATCH,/contacts/{id},/ownerActorId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A02391
+PATCH,/contacts/{id},/customProperties,"Invalid input: expected record, received string",400,validation_error,6,REQ-A02411
+PATCH,/contacts/{id},/customProperties,"Invalid input: expected record, received null",400,validation_error,1,REQ-A02413
+PATCH,/contacts/{id},/customProperties,"Invalid input: expected record, received number",400,validation_error,4,REQ-A02414
+PATCH,/contacts/{id},/customProperties,"Invalid input: expected record, received boolean",400,validation_error,2,REQ-A02418
+PATCH,/contacts/{id},/customProperties,"Invalid input: expected record, received array",400,validation_error,3,REQ-A02424
+PATCH,/contacts/{id},(request),"Custom property ""a"" is not defined",400,validation_error,1,REQ-A02428
+PATCH,/contacts/{id},(request),"Custom property ""lead_source"" must be at most 500 characters",400,validation_error,15,REQ-A02465
+PATCH,/contacts/{id},(request),"Custom property ""lead_source"" must be a string",400,validation_error,6,REQ-A02487
+PATCH,/contacts/{id},/customProperties/lead_source,Invalid input,400,validation_error,5,REQ-A02501
+PATCH,/contacts/{id},(request),"Custom property ""employee_count"" must be a finite number",400,validation_error,16,REQ-A02548
+PATCH,/contacts/{id},/customProperties/employee_count,Invalid input,400,validation_error,5,REQ-A02567
+PATCH,/contacts/{id},(request),"Custom property ""vip"" must be a boolean",400,validation_error,14,REQ-A02608
+PATCH,/contacts/{id},/customProperties/vip,Invalid input,400,validation_error,5,REQ-A02625
+PATCH,/contacts/{id},(request),"Custom property ""renewal_date"" must be an ISO-<n> date",400,validation_error,20,REQ-A02634
+PATCH,/contacts/{id},/customProperties/renewal_date,Invalid input,400,validation_error,5,REQ-A02649
+PATCH,/contacts/{id},/firstName,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A02672
+PATCH,/contacts/{id},/firstName,Too big: expected string to have <=200 characters,400,validation_error,12,REQ-A02697
+PATCH,/contacts/{id},/firstName,"Invalid input: expected string, received null",400,validation_error,1,REQ-A02712
+PATCH,/contacts/{id},/firstName,"Invalid input: expected string, received number",400,validation_error,4,REQ-A02713
+PATCH,/contacts/{id},/firstName,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A02717
+PATCH,/contacts/{id},/firstName,"Invalid input: expected string, received array",400,validation_error,3,REQ-A02727
+PATCH,/contacts/{id},/firstName,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A02727
+PATCH,/contacts/{id},/firstName,"Invalid input: expected string, received object",400,validation_error,2,REQ-A02730
+POST,/companies,/name,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A02777
+POST,/companies,/name,Too big: expected string to have <=300 characters,400,validation_error,12,REQ-A02810
+POST,/companies,/name,"Invalid input: expected string, received null",400,validation_error,1,REQ-A02833
+POST,/companies,/name,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-A02834
+POST,/companies,/name,"Invalid input: expected string, received number",400,validation_error,4,REQ-A02835
+POST,/companies,/name,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A02839
+POST,/companies,/name,"Invalid input: expected string, received array",400,validation_error,3,REQ-A02849
+POST,/companies,/name,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A02849
+POST,/companies,/name,"Invalid input: expected string, received object",400,validation_error,2,REQ-A02852
+POST,/companies,/domain,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A02896
+POST,/companies,/domain,Too big: expected string to have <=300 characters,400,validation_error,12,REQ-A02929
+POST,/companies,/domain,"Invalid input: expected string, received null",400,validation_error,1,REQ-A02952
+POST,/companies,/domain,"Invalid input: expected string, received number",400,validation_error,4,REQ-A02954
+POST,/companies,/domain,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A02958
+POST,/companies,/domain,"Invalid input: expected string, received array",400,validation_error,3,REQ-A02968
+POST,/companies,/domain,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A02968
+POST,/companies,/domain,"Invalid input: expected string, received object",400,validation_error,2,REQ-A02971
+POST,/companies,/phone,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A02991
+POST,/companies,/phone,Too big: expected string to have <=50 characters,400,validation_error,23,REQ-A03000
+POST,/companies,/phone,"Invalid input: expected string, received null",400,validation_error,1,REQ-A03032
+POST,/companies,/phone,"Invalid input: expected string, received number",400,validation_error,4,REQ-A03034
+POST,/companies,/phone,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A03038
+POST,/companies,/phone,"Invalid input: expected string, received array",400,validation_error,3,REQ-A03048
+POST,/companies,/phone,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A03048
+POST,/companies,/phone,"Invalid input: expected string, received object",400,validation_error,2,REQ-A03051
+POST,/companies,/status,"Invalid option: expected one of ""active""|""archived""",400,validation_error,24,REQ-A03081
+POST,/companies,/ownerActorId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A03109
+POST,/companies,/ownerActorId,"Invalid input: expected string, received null",400,validation_error,1,REQ-A03112
+POST,/companies,/ownerActorId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A03114
+POST,/companies,/ownerActorId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A03118
+POST,/companies,/ownerActorId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A03128
+POST,/companies,/ownerActorId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A03128
+POST,/companies,/ownerActorId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A03131
+PATCH,/companies/{id},/name,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A03281
+PATCH,/companies/{id},/name,Too big: expected string to have <=300 characters,400,validation_error,12,REQ-A03314
+PATCH,/companies/{id},/name,"Invalid input: expected string, received null",400,validation_error,1,REQ-A03337
+PATCH,/companies/{id},/name,"Invalid input: expected string, received number",400,validation_error,4,REQ-A03338
+PATCH,/companies/{id},/name,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A03342
+PATCH,/companies/{id},/name,"Invalid input: expected string, received array",400,validation_error,3,REQ-A03352
+PATCH,/companies/{id},/name,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A03352
+PATCH,/companies/{id},/name,"Invalid input: expected string, received object",400,validation_error,2,REQ-A03355
+PATCH,/companies/{id},/domain,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A03399
+PATCH,/companies/{id},/domain,Too big: expected string to have <=300 characters,400,validation_error,12,REQ-A03432
+PATCH,/companies/{id},/domain,"Invalid input: expected string, received number",400,validation_error,4,REQ-A03457
+PATCH,/companies/{id},/domain,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A03461
+PATCH,/companies/{id},/domain,"Invalid input: expected string, received array",400,validation_error,3,REQ-A03471
+PATCH,/companies/{id},/domain,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A03471
+PATCH,/companies/{id},/domain,"Invalid input: expected string, received object",400,validation_error,2,REQ-A03474
+PATCH,/companies/{id},/phone,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-A03494
+PATCH,/companies/{id},/phone,Too big: expected string to have <=50 characters,400,validation_error,23,REQ-A03503
+PATCH,/companies/{id},/phone,"Invalid input: expected string, received number",400,validation_error,4,REQ-A03537
+PATCH,/companies/{id},/phone,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A03541
+PATCH,/companies/{id},/phone,"Invalid input: expected string, received array",400,validation_error,3,REQ-A03551
+PATCH,/companies/{id},/phone,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A03551
+PATCH,/companies/{id},/phone,"Invalid input: expected string, received object",400,validation_error,2,REQ-A03554
+PATCH,/companies/{id},/status,"Invalid option: expected one of ""active""|""archived""",400,validation_error,23,REQ-A03584
+PATCH,/companies/{id},/ownerActorId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-A03611
+PATCH,/companies/{id},/ownerActorId,"Invalid input: expected string, received number",400,validation_error,4,REQ-A03616
+PATCH,/companies/{id},/ownerActorId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A03620
+PATCH,/companies/{id},/ownerActorId,"Invalid input: expected string, received array",400,validation_error,3,REQ-A03630
+PATCH,/companies/{id},/ownerActorId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A03630
+PATCH,/companies/{id},/ownerActorId,"Invalid input: expected string, received object",400,validation_error,2,REQ-A03633
+POST,/catalog-products,/name,Too small: expected string to have >=1 characters,400,validation_error,3,REQ-A03656
+POST,/catalog-products,/name,Too big: expected string to have <=200 characters,400,validation_error,12,REQ-A03681
+POST,/catalog-products,/name,"Invalid input: expected string, received null",400,validation_error,1,REQ-A03695
+POST,/catalog-products,/name,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-A03696
+POST,/catalog-products,/name,"Invalid input: expected string, received number",400,validation_error,4,REQ-A03697
+POST,/catalog-products,/name,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A03701
+POST,/catalog-products,/name,"Invalid input: expected string, received array",400,validation_error,3,REQ-A03711
+POST,/catalog-products,/name,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A03711
+POST,/catalog-products,/name,"Invalid input: expected string, received object",400,validation_error,2,REQ-A03714
+POST,/catalog-products,/description,Too big: expected string to have <=<n> characters,400,validation_error,15,REQ-A03800
+POST,/catalog-products,/description,"Invalid input: expected string, received null",400,validation_error,1,REQ-A03819
+POST,/catalog-products,/description,"Invalid input: expected string, received number",400,validation_error,4,REQ-A03821
+POST,/catalog-products,/description,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A03825
+POST,/catalog-products,/description,"Invalid input: expected string, received array",400,validation_error,3,REQ-A03835
+POST,/catalog-products,/description,"Invalid input: expected string, received object",400,validation_error,2,REQ-A03838
+POST,/catalog-products,(request),Request body is too large,413,payload_too_large,1,REQ-A03893
+POST,/catalog-products,/priceEntries/0,"Invalid input: expected object, received null",400,validation_error,1,REQ-A03894
+POST,/catalog-products,/priceEntries/0,"Invalid input: expected object, received number",400,validation_error,1,REQ-A03895
+POST,/catalog-products,/priceEntries/1,"Invalid input: expected object, received string",400,validation_error,1,REQ-A03895
+POST,/catalog-products,/priceEntries/2,"Invalid input: expected object, received null",400,validation_error,1,REQ-A03895
+POST,/catalog-products,/priceEntries/3/amount,"Invalid input: expected number, received undefined",400,validation_error,1,REQ-A03895
+POST,/catalog-products,/priceEntries/3/currency,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-A03895
+POST,/catalog-products,/priceEntries/3/label,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-A03895
+POST,/catalog-products,/priceEntries/4,"Invalid input: expected object, received array",400,validation_error,1,REQ-A03895
+POST,/catalog-products,/priceEntries,"Invalid input: expected array, received string",400,validation_error,1,REQ-A03896
+POST,/catalog-products,/priceEntries,"Invalid input: expected array, received object",400,validation_error,1,REQ-A03897
+POST,/catalog-products,/priceEntries,"Invalid input: expected array, received null",400,validation_error,1,REQ-A03898
+POST,/catalog-products,/priceEntries/1,"AUD with the label ""P0"" is listed twice. Each currency and label pair can appear only once",400,validation_error,1,REQ-A03900
+POST,/catalog-products,/priceEntries/0/label,Too small: expected string to have >=1 characters,400,validation_error,3,REQ-A03901
+POST,/catalog-products,/priceEntries/0/label,Too big: expected string to have <=120 characters,400,validation_error,15,REQ-A03920
+POST,/catalog-products,/priceEntries/0/label,"Invalid input: expected string, received null",400,validation_error,1,REQ-A03937
+POST,/catalog-products,/priceEntries/0/label,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-A03938
+POST,/catalog-products,/priceEntries/0/label,"Invalid input: expected string, received number",400,validation_error,4,REQ-A03939
+POST,/catalog-products,/priceEntries/0/label,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A03943
+POST,/catalog-products,/priceEntries/0/label,"Invalid input: expected string, received array",400,validation_error,3,REQ-A03953
+POST,/catalog-products,/priceEntries/0/label,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A03953
+POST,/catalog-products,/priceEntries/0/label,"Invalid input: expected string, received object",400,validation_error,2,REQ-A03956
+POST,/catalog-products,/priceEntries/0/amount,"Invalid input: expected number, received string",400,validation_error,14,REQ-A04000
+POST,/catalog-products,/priceEntries/0/amount,"Invalid input: expected number, received null",400,validation_error,1,REQ-A04002
+POST,/catalog-products,/priceEntries/0/amount,"Invalid input: expected number, received undefined",400,validation_error,1,REQ-A04003
+POST,/catalog-products,/priceEntries/0/amount,Too small: expected number to be >=0,400,validation_error,4,REQ-A04010
+POST,/catalog-products,/priceEntries/0/amount,"Invalid input: expected number, received boolean",400,validation_error,2,REQ-A04011
+POST,/catalog-products,/priceEntries/0/amount,"Invalid input: expected number, received array",400,validation_error,3,REQ-A04017
+POST,/catalog-products,/priceEntries/0/amount,"Invalid input: expected number, received object",400,validation_error,2,REQ-A04020
+POST,/catalog-products,/priceEntries/0/amount,"Invalid input: expected int, received number",400,validation_error,4,REQ-A04030
+POST,/catalog-products,/priceEntries/0/amount,Too small: expected int to be >=-<n>,400,validation_error,2,REQ-A04032
+POST,/catalog-products,/priceEntries/0/amount,Too big: expected int to be <=<n>,400,validation_error,3,REQ-A04036
+POST,/catalog-products,/priceEntries/0/currency,Invalid string: must match pattern /^[A-Z]{3}$/,400,validation_error,10,REQ-A04048
+POST,/catalog-products,/priceEntries/0/currency,"Invalid input: expected string, received null",400,validation_error,1,REQ-A04050
+POST,/catalog-products,/priceEntries/0/currency,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-A04051
+POST,/catalog-products,/priceEntries/0/currency,"Invalid input: expected string, received number",400,validation_error,4,REQ-A04052
+POST,/catalog-products,/priceEntries/0/currency,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A04056
+POST,/catalog-products,/priceEntries/0/currency,"Invalid input: expected string, received array",400,validation_error,3,REQ-A04062
+POST,/catalog-products,/priceEntries/0/currency,"Invalid input: expected string, received object",400,validation_error,2,REQ-A04065
+POST,/catalog-products,/priceEntries/0/currency,"XYZ is not a currency code. Use one such as USD, EUR or JPY",400,validation_error,1,REQ-A04070
+PATCH,/catalog-products/{id},/name,Too small: expected string to have >=1 characters,400,validation_error,3,REQ-A04227
+PATCH,/catalog-products/{id},/name,Too big: expected string to have <=200 characters,400,validation_error,12,REQ-A04252
+PATCH,/catalog-products/{id},/name,"Invalid input: expected string, received null",400,validation_error,1,REQ-A04266
+PATCH,/catalog-products/{id},/name,"Invalid input: expected string, received number",400,validation_error,4,REQ-A04267
+PATCH,/catalog-products/{id},/name,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A04271
+PATCH,/catalog-products/{id},/name,"Invalid input: expected string, received array",400,validation_error,3,REQ-A04281
+PATCH,/catalog-products/{id},/name,Too small: expected array to have >=1 items,400,validation_error,1,REQ-A04281
+PATCH,/catalog-products/{id},/name,"Invalid input: expected string, received object",400,validation_error,2,REQ-A04284
+PATCH,/catalog-products/{id},/description,Too big: expected string to have <=<n> characters,400,validation_error,15,REQ-A04370
+PATCH,/catalog-products/{id},/description,"Invalid input: expected string, received number",400,validation_error,4,REQ-A04391
+PATCH,/catalog-products/{id},/description,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-A04395
+PATCH,/catalog-products/{id},/description,"Invalid input: expected string, received array",400,validation_error,3,REQ-A04405
+PATCH,/catalog-products/{id},/description,"Invalid input: expected string, received object",400,validation_error,2,REQ-A04408
+POST,/contacts/custom-properties,/key,"Invalid string: must match pattern /^(?!constructor$)[a-z][a-z0-9_]{0,39}$/",400,validation_error,87,REQ-B00003
+GET,/contacts/custom-properties/{id},(request),No route for GET /v1/contacts/custom-properties/<id>,404,not_found,75,REQ-B00005
+POST,/contacts/custom-properties,/key,"Invalid input: expected string, received null",400,validation_error,3,REQ-B00040
+POST,/contacts/custom-properties,/key,"Invalid input: expected string, received undefined",400,validation_error,4,REQ-B00041
+POST,/contacts/custom-properties,/key,"Invalid input: expected string, received number",400,validation_error,12,REQ-B00042
+POST,/contacts/custom-properties,/key,"Invalid input: expected string, received boolean",400,validation_error,6,REQ-B00046
+POST,/contacts/custom-properties,/key,"Invalid input: expected string, received array",400,validation_error,9,REQ-B00056
+POST,/contacts/custom-properties,/key,"Invalid input: expected string, received object",400,validation_error,6,REQ-B00059
+POST,/contacts/custom-properties,/label,Too small: expected string to have >=1 characters,400,validation_error,6,REQ-B00069
+POST,/contacts/custom-properties,(request),"Custom property ""audit_prop"" already exists in this Organization",409,conflict,39,REQ-B00070
+POST,/contacts/custom-properties,/label,Too big: expected string to have <=120 characters,400,validation_error,45,REQ-B00079
+POST,/contacts/custom-properties,/label,"Invalid input: expected string, received null",400,validation_error,3,REQ-B00096
+POST,/contacts/custom-properties,/label,"Invalid input: expected string, received undefined",400,validation_error,4,REQ-B00097
+POST,/contacts/custom-properties,/label,"Invalid input: expected string, received number",400,validation_error,12,REQ-B00098
+POST,/contacts/custom-properties,/label,"Invalid input: expected string, received boolean",400,validation_error,6,REQ-B00102
+POST,/contacts/custom-properties,/label,"Invalid input: expected string, received array",400,validation_error,9,REQ-B00108
+POST,/contacts/custom-properties,/label,Too small: expected array to have >=1 items,400,validation_error,3,REQ-B00108
+POST,/contacts/custom-properties,/label,"Invalid input: expected string, received object",400,validation_error,6,REQ-B00111
+POST,/contacts/custom-properties,/type,"Invalid option: expected one of ""text""|""number""|""boolean""|""date""",400,validation_error,73,REQ-B00134
+POST,/automation-rules,/name,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-B00178
+POST,/automation-rules,/name,Too big: expected string to have <=200 characters,400,validation_error,12,REQ-B00203
+POST,/automation-rules,/name,"Invalid input: expected string, received null",400,validation_error,1,REQ-B00218
+POST,/automation-rules,/name,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-B00219
+POST,/automation-rules,/name,"Invalid input: expected string, received number",400,validation_error,4,REQ-B00220
+POST,/automation-rules,/name,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B00224
+POST,/automation-rules,/name,"Invalid input: expected string, received array",400,validation_error,3,REQ-B00234
+POST,/automation-rules,/name,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B00234
+POST,/automation-rules,/name,"Invalid input: expected string, received object",400,validation_error,2,REQ-B00237
+POST,/automation-rules,/trigger/eventType,"Event type """" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, company.",400,validation_error,1,REQ-B00281
+POST,/automation-rules,/trigger/eventType,"Event type ""   "" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, compa",400,validation_error,1,REQ-B00282
+POST,/automation-rules,/trigger/eventType,"Event type null cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, compan",400,validation_error,1,REQ-B00283
+POST,/automation-rules,/trigger/eventType,"Event type undefined cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, c",400,validation_error,1,REQ-B00284
+POST,/automation-rules,/trigger/eventType,"Event type 0 cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, company.m",400,validation_error,1,REQ-B00285
+POST,/automation-rules,/trigger/eventType,"Event type 1 cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, company.m",400,validation_error,2,REQ-B00286
+POST,/automation-rules,/trigger/eventType,"Event type -1 cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, company.",400,validation_error,1,REQ-B00288
+POST,/automation-rules,/trigger/eventType,"Event type true cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, compan",400,validation_error,1,REQ-B00289
+POST,/automation-rules,/trigger/eventType,"Event type false cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, compa",400,validation_error,1,REQ-B00290
+POST,/automation-rules,/trigger/eventType,"Event type ""true"" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, comp",400,validation_error,1,REQ-B00291
+POST,/automation-rules,/trigger/eventType,"Event type ""false"" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, com",400,validation_error,1,REQ-B00292
+POST,/automation-rules,/trigger/eventType,"Event type ""yes"" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, compa",400,validation_error,1,REQ-B00293
+POST,/automation-rules,/trigger/eventType,"Event type ""no"" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, compan",400,validation_error,1,REQ-B00294
+POST,/automation-rules,/trigger/eventType,"Event type [] cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, company.",400,validation_error,1,REQ-B00295
+POST,/automation-rules,/trigger/eventType,"Event type [""a""] cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, compa",400,validation_error,1,REQ-B00296
+POST,/automation-rules,/trigger/eventType,"Event type [null] cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, comp",400,validation_error,1,REQ-B00297
+POST,/automation-rules,/trigger/eventType,"Event type {} cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, company.",400,validation_error,1,REQ-B00298
+POST,/automation-rules,/trigger/eventType,"Event type {""a"":1} cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, com",400,validation_error,1,REQ-B00299
+POST,/automation-rules,/trigger/eventType,"Event type ""DEAL.WON"" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, ",400,validation_error,1,REQ-B00310
+POST,/automation-rules,/trigger/eventType,"Event type ""DEAL.LOST"" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted,",400,validation_error,1,REQ-B00311
+POST,/automation-rules,/trigger/eventType,"Event type ""Deal.Won"" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted, ",400,validation_error,1,REQ-B00312
+POST,/automation-rules,/trigger/eventType,"Event type ""approved-but-not-really"" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, co",400,validation_error,1,REQ-B00313
+POST,/automation-rules,/trigger/eventType,"Event type "" deal.won "" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.deleted",400,validation_error,1,REQ-B00314
+POST,/automation-rules,/action/type,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-B00315
+POST,/automation-rules,(request),"Unknown automation action type ""   "". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00316
+POST,/automation-rules,/action/type,"Invalid input: expected string, received null",400,validation_error,1,REQ-B00317
+POST,/automation-rules,/action/type,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B00318
+POST,/automation-rules,/action/type,"Invalid input: expected string, received number",400,validation_error,4,REQ-B00319
+POST,/automation-rules,/action/type,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B00323
+POST,/automation-rules,(request),"Unknown automation action type ""true"". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00325
+POST,/automation-rules,(request),"Unknown automation action type ""false"". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00326
+POST,/automation-rules,(request),"Unknown automation action type ""yes"". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00327
+POST,/automation-rules,(request),"Unknown automation action type ""no"". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00328
+POST,/automation-rules,/action/type,"Invalid input: expected string, received array",400,validation_error,3,REQ-B00329
+POST,/automation-rules,/action/type,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B00329
+POST,/automation-rules,/action/type,"Invalid input: expected string, received object",400,validation_error,2,REQ-B00332
+POST,/automation-rules,(request),"Automation action ""contact.update"" has invalid fields — contactId: Invalid input: expected string, received undefined; (root): Unrecognized keys: ""type"", ""title""",400,validation_error,1,REQ-B00336
+POST,/automation-rules,(request),"Automation action ""deal.move"" has invalid fields — dealId: Invalid input: expected string, received undefined; stageId: Invalid input: expected string, received undefined; (root): Unrecognized keys: """,400,validation_error,1,REQ-B00337
+POST,/automation-rules,(request),"Automation action ""message.queue"" has invalid fields — contactId: Invalid input: expected string, received undefined; channel: Invalid input: expected string, received undefined; (root): Unrecognized ",400,validation_error,1,REQ-B00338
+POST,/automation-rules,(request),"Unknown automation action type ""ACTIVITY.CREATE"". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00339
+POST,/automation-rules,(request),"Unknown automation action type ""CONTACT.UPDATE"". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00340
+POST,/automation-rules,(request),"Unknown automation action type ""Activity.Create"". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00341
+POST,/automation-rules,(request),"Unknown automation action type ""approved-but-not-really"". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00342
+POST,/automation-rules,(request),"Unknown automation action type "" activity.create "". Registered action types: activity.create, contact.update, deal.move, message.queue",400,validation_error,1,REQ-B00343
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — type: Invalid discriminator value. Expected 'task' | 'note' | 'appointment' | 'document'",400,validation_error,22,REQ-B00344
+POST,/automation-rules,/action/fields/type,Invalid input,400,validation_error,2,REQ-B00361
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — body: Invalid input: expected string, received undefined",400,validation_error,1,REQ-B00365
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — startsAt: Invalid input: expected string, received undefined; endsAt: Invalid input: expected string, received undefined; timeZone: Invalid inp",400,validation_error,1,REQ-B00366
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — url: Invalid input: expected string, received undefined; fileName: Invalid input: expected string, received undefined",400,validation_error,1,REQ-B00367
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — title: Too small: expected string to have >=1 characters",400,validation_error,2,REQ-B00373
+POST,/automation-rules,/action/fields/title,Too big: expected string to have <=<n> characters,400,validation_error,15,REQ-B00414
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — title: Invalid input: expected string, received null",400,validation_error,1,REQ-B00432
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — title: Invalid input: expected string, received undefined",400,validation_error,1,REQ-B00433
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — title: Invalid input: expected string, received number",400,validation_error,4,REQ-B00434
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — title: Invalid input: expected string, received boolean",400,validation_error,2,REQ-B00438
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — title: Invalid input: expected string, received array; title: Too small: expected array to have >=1 items",400,validation_error,1,REQ-B00448
+POST,/automation-rules,(request),"Automation action ""activity.create"" has invalid fields — title: Invalid input: expected string, received array",400,validation_error,2,REQ-B00449
+POST,/automation-rules,/action/fields/title,Invalid input,400,validation_error,2,REQ-B00451
+POST,/automation-rules,/conditions/0/path,"Invalid input: expected string, received undefined",400,validation_error,3,REQ-B00496
+POST,/automation-rules,/conditions/0/op,"Invalid option: expected one of ""eq""|""neq""|""in""|""exists""|""gt""|""lt""",400,validation_error,3,REQ-B00496
+POST,/automation-rules,/conditions/0,"Unrecognized keys: ""field"", ""operator""",400,validation_error,3,REQ-B00496
+POST,/automation-rules,/conditions/1/path,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-B00497
+POST,/automation-rules,/conditions/1/op,"Invalid option: expected one of ""eq""|""neq""|""in""|""exists""|""gt""|""lt""",400,validation_error,2,REQ-B00497
+POST,/automation-rules,/conditions/1,"Unrecognized keys: ""field"", ""operator""",400,validation_error,2,REQ-B00497
+POST,/automation-rules,/conditions/0,"Invalid input: expected object, received null",400,validation_error,1,REQ-B00507
+POST,/automation-rules,/conditions/0,"Invalid input: expected object, received number",400,validation_error,1,REQ-B00508
+POST,/automation-rules,/conditions/1,"Invalid input: expected object, received string",400,validation_error,1,REQ-B00508
+POST,/automation-rules,/conditions/2,"Invalid input: expected object, received null",400,validation_error,1,REQ-B00508
+POST,/automation-rules,/conditions/3/path,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B00508
+POST,/automation-rules,/conditions/3/op,"Invalid option: expected one of ""eq""|""neq""|""in""|""exists""|""gt""|""lt""",400,validation_error,1,REQ-B00508
+POST,/automation-rules,/conditions/4,"Invalid input: expected object, received array",400,validation_error,1,REQ-B00508
+POST,/automation-rules,/conditions,"Invalid input: expected array, received string",400,validation_error,1,REQ-B00509
+POST,/automation-rules,/conditions,"Invalid input: expected array, received object",400,validation_error,1,REQ-B00510
+POST,/automation-rules,/conditions,"Invalid input: expected array, received null",400,validation_error,1,REQ-B00511
+POST,/activities,/title,Too small: expected string to have >=1 characters,400,validation_error,18,REQ-B00611
+POST,/activities,/title,Too big: expected string to have <=200 characters,400,validation_error,72,REQ-B00636
+POST,/activities,/title,"Invalid input: expected string, received null",400,validation_error,6,REQ-B00650
+POST,/activities,/title,"Invalid input: expected string, received undefined",400,validation_error,6,REQ-B00651
+POST,/activities,/title,"Invalid input: expected string, received number",400,validation_error,24,REQ-B00652
+POST,/activities,/title,"Invalid input: expected string, received boolean",400,validation_error,12,REQ-B00656
+POST,/activities,/title,"Invalid input: expected string, received array",400,validation_error,18,REQ-B00666
+POST,/activities,/title,Too small: expected array to have >=1 items,400,validation_error,6,REQ-B00666
+POST,/activities,/title,"Invalid input: expected string, received object",400,validation_error,12,REQ-B00669
+POST,/activities,/description,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-B00713
+POST,/activities,/description,Too big: expected string to have <=<n> characters,400,validation_error,9,REQ-B00760
+POST,/activities,/description,"Invalid input: expected string, received number",400,validation_error,4,REQ-B00787
+POST,/activities,/description,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B00791
+POST,/activities,/description,"Invalid input: expected string, received array",400,validation_error,3,REQ-B00801
+POST,/activities,/description,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B00801
+POST,/activities,/description,"Invalid input: expected string, received object",400,validation_error,2,REQ-B00804
+POST,/activities,/dueAt,Invalid ISO datetime,400,validation_error,15,REQ-B00848
+POST,/activities,/dueAt,"Invalid input: expected string, received number",400,validation_error,4,REQ-B00853
+POST,/activities,/dueAt,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B00857
+POST,/activities,/dueAt,"Invalid input: expected string, received array",400,validation_error,3,REQ-B00863
+POST,/activities,/dueAt,"Invalid input: expected string, received object",400,validation_error,2,REQ-B00866
+POST,/activities,/priority,"Invalid option: expected one of ""low""|""normal""|""high""",400,validation_error,23,REQ-B00889
+POST,/activities,/body,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-B01132
+POST,/activities,/body,Too big: expected string to have <=<n> characters,400,validation_error,9,REQ-B01179
+POST,/activities,/body,"Invalid input: expected string, received null",400,validation_error,1,REQ-B01203
+POST,/activities,/body,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B01204
+POST,/activities,/body,"Invalid input: expected string, received number",400,validation_error,4,REQ-B01205
+POST,/activities,/body,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B01209
+POST,/activities,/body,"Invalid input: expected string, received array",400,validation_error,3,REQ-B01219
+POST,/activities,/body,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B01219
+POST,/activities,/body,"Invalid input: expected string, received object",400,validation_error,2,REQ-B01222
+POST,/activities,/direction,"Invalid option: expected one of ""inbound""|""outbound""",400,validation_error,24,REQ-B01465
+POST,/activities,/outcome,"Invalid option: expected one of ""connected""|""no_answer""|""voicemail""|""busy""",400,validation_error,24,REQ-B01493
+POST,/activities,/startsAt,Invalid ISO datetime,400,validation_error,30,REQ-B01674
+POST,/activities,/endsAt,endsAt must be greater than or equal to startsAt,400,validation_error,58,REQ-B01674
+POST,/activities,/startsAt,"Invalid input: expected string, received null",400,validation_error,2,REQ-B01676
+POST,/activities,/startsAt,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-B01677
+POST,/activities,/startsAt,"Invalid input: expected string, received number",400,validation_error,8,REQ-B01678
+POST,/activities,/startsAt,"Invalid input: expected string, received boolean",400,validation_error,4,REQ-B01682
+POST,/activities,/startsAt,"Invalid input: expected string, received array",400,validation_error,6,REQ-B01688
+POST,/activities,/startsAt,"Invalid input: expected string, received object",400,validation_error,4,REQ-B01691
+POST,/activities,/endsAt,Invalid ISO datetime,400,validation_error,30,REQ-B01713
+POST,/activities,/endsAt,"Invalid input: expected string, received null",400,validation_error,2,REQ-B01715
+POST,/activities,/endsAt,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-B01716
+POST,/activities,/endsAt,"Invalid input: expected string, received number",400,validation_error,8,REQ-B01717
+POST,/activities,/endsAt,"Invalid input: expected string, received boolean",400,validation_error,4,REQ-B01721
+POST,/activities,/endsAt,"Invalid input: expected string, received array",400,validation_error,6,REQ-B01727
+POST,/activities,/endsAt,"Invalid input: expected string, received object",400,validation_error,4,REQ-B01730
+POST,/activities,/timeZone,Unknown IANA time zone identifier,400,validation_error,9,REQ-B01971
+POST,/activities,/timeZone,"Invalid input: expected string, received null",400,validation_error,1,REQ-B01973
+POST,/activities,/timeZone,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B01974
+POST,/activities,/timeZone,"Invalid input: expected string, received number",400,validation_error,4,REQ-B01975
+POST,/activities,/timeZone,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B01979
+POST,/activities,/timeZone,"Invalid input: expected string, received array",400,validation_error,3,REQ-B01985
+POST,/activities,/timeZone,"Invalid input: expected string, received object",400,validation_error,2,REQ-B01988
+POST,/activities,/url,Invalid URL,400,validation_error,20,REQ-B02154
+POST,/activities,/url,Too big: expected string to have <=<n> characters,400,validation_error,15,REQ-B02191
+POST,/activities,/url,"Invalid input: expected string, received null",400,validation_error,1,REQ-B02216
+POST,/activities,/url,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B02217
+POST,/activities,/url,"Invalid input: expected string, received number",400,validation_error,4,REQ-B02218
+POST,/activities,/url,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B02222
+POST,/activities,/url,"Invalid input: expected string, received array",400,validation_error,3,REQ-B02228
+POST,/activities,/url,"Invalid input: expected string, received object",400,validation_error,2,REQ-B02231
+POST,/activities,/fileName,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-B02242
+POST,/activities,/fileName,Too big: expected string to have <=255 characters,400,validation_error,10,REQ-B02271
+POST,/activities,/fileName,"Invalid input: expected string, received null",400,validation_error,1,REQ-B02284
+POST,/activities,/fileName,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B02285
+POST,/activities,/fileName,"Invalid input: expected string, received number",400,validation_error,4,REQ-B02286
+POST,/activities,/fileName,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B02290
+POST,/activities,/fileName,"Invalid input: expected string, received array",400,validation_error,3,REQ-B02300
+POST,/activities,/fileName,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B02300
+POST,/activities,/fileName,"Invalid input: expected string, received object",400,validation_error,2,REQ-B02303
+POST,/messages,/contactId,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-B02450
+POST,/messages,(request),Contact not found,404,not_found,14,REQ-B02451
+POST,/messages,/contactId,"Invalid input: expected string, received null",400,validation_error,1,REQ-B02452
+POST,/messages,/contactId,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-B02453
+POST,/messages,/contactId,"Invalid input: expected string, received number",400,validation_error,4,REQ-B02454
+POST,/messages,/contactId,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B02458
+POST,/messages,/contactId,"Invalid input: expected string, received array",400,validation_error,3,REQ-B02464
+POST,/messages,/contactId,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B02464
+POST,/messages,/contactId,"Invalid input: expected string, received object",400,validation_error,2,REQ-B02467
+POST,/messages,/channel,"Invalid option: expected one of ""email""|""sms""",400,validation_error,25,REQ-B02478
+POST,/messages,(request),"Contact <id> carries no usable sms number: an international number in E.164 form, as in +<n>, is required",422,contact_address_missing,2,REQ-B02499
+POST,/messages,/subject,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-B02505
+POST,/messages,/subject,Too big: expected string to have <=998 characters,400,validation_error,8,REQ-B02540
+POST,/messages,/subject,"Invalid input: expected string, received null",400,validation_error,1,REQ-B02567
+POST,/messages,/subject,"Invalid input: expected string, received number",400,validation_error,4,REQ-B02569
+POST,/messages,/subject,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B02573
+POST,/messages,/subject,"Invalid input: expected string, received array",400,validation_error,3,REQ-B02583
+POST,/messages,/subject,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B02583
+POST,/messages,/subject,"Invalid input: expected string, received object",400,validation_error,2,REQ-B02586
+POST,/messages,/subject,"Header fields cannot contain CR, LF, or NUL",400,validation_error,5,REQ-B02596
+POST,/messages,/body,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-B02626
+POST,/messages,/body,"Invalid input: expected string, received null",400,validation_error,1,REQ-B02678
+POST,/messages,/,Provide exactly one of templateId or body,400,validation_error,2,REQ-B02679
+POST,/messages,/subject,subject is only accepted with body; a template supplies its own subject,400,validation_error,1,REQ-B02679
+POST,/messages,/body,"Invalid input: expected string, received number",400,validation_error,4,REQ-B02680
+POST,/messages,/body,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B02684
+POST,/messages,/body,"Invalid input: expected string, received array",400,validation_error,3,REQ-B02694
+POST,/messages,/body,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B02694
+POST,/messages,/body,"Invalid input: expected string, received object",400,validation_error,2,REQ-B02697
+DELETE,/contacts/{id},(request),Contact not found,404,not_found,14,REQ-B02742
+DELETE,/messages/{id},(request),No route for DELETE /v1/messages/<id>,404,not_found,115,REQ-B02743
+PUT,/close-reasons,/reasons,A reason list holds at most 50 reasons,400,validation_error,5,REQ-B02851
+PUT,/close-reasons,(request),Request body is too large,413,payload_too_large,1,REQ-B02856
+PUT,/close-reasons,/reasons/0,"Invalid input: expected object, received null",400,validation_error,1,REQ-B02857
+PUT,/close-reasons,/reasons/0,"Invalid input: expected object, received number",400,validation_error,1,REQ-B02858
+PUT,/close-reasons,/reasons/1,"Invalid input: expected object, received string",400,validation_error,1,REQ-B02858
+PUT,/close-reasons,/reasons/2,"Invalid input: expected object, received null",400,validation_error,1,REQ-B02858
+PUT,/close-reasons,/reasons/3/code,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B02858
+PUT,/close-reasons,/reasons/3/label,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B02858
+PUT,/close-reasons,/reasons/3/outcome,"Invalid option: expected one of ""won""|""lost""",400,validation_error,1,REQ-B02858
+PUT,/close-reasons,/reasons/4,"Invalid input: expected object, received array",400,validation_error,1,REQ-B02858
+PUT,/close-reasons,/reasons,"Invalid input: expected array, received string",400,validation_error,1,REQ-B02859
+PUT,/close-reasons,/reasons,"Invalid input: expected array, received object",400,validation_error,1,REQ-B02860
+PUT,/close-reasons,/reasons,"Invalid input: expected array, received null",400,validation_error,1,REQ-B02861
+PUT,/close-reasons,/reasons,"Invalid input: expected array, received undefined",400,validation_error,2,REQ-B02862
+PUT,/close-reasons,/reasons/1/code,"The reason code ""c0"" is listed twice",400,validation_error,1,REQ-B02863
+PUT,/close-reasons,/reasons/0/code,"A reason code is 1 to 64 lower-case letters, digits, hyphens or underscores",400,validation_error,22,REQ-B02864
+PUT,/close-reasons,/reasons/0/code,"Invalid input: expected string, received null",400,validation_error,1,REQ-B02888
+PUT,/close-reasons,/reasons/0/code,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B02889
+PUT,/close-reasons,/reasons/0/code,"Invalid input: expected string, received number",400,validation_error,4,REQ-B02890
+PUT,/close-reasons,/reasons/0/code,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B02894
+PUT,/close-reasons,/reasons/0/code,"Invalid input: expected string, received array",400,validation_error,3,REQ-B02900
+PUT,/close-reasons,/reasons/0/code,"Invalid input: expected string, received object",400,validation_error,2,REQ-B02903
+PUT,/close-reasons,/reasons/0/label,Too small: expected string to have >=1 characters,400,validation_error,3,REQ-B02912
+PUT,/close-reasons,/reasons/0/label,Too big: expected string to have <=120 characters,400,validation_error,15,REQ-B02922
+PUT,/close-reasons,/reasons/0/label,"Invalid input: expected string, received null",400,validation_error,1,REQ-B02939
+PUT,/close-reasons,/reasons/0/label,"Invalid input: expected string, received undefined",400,validation_error,1,REQ-B02940
+PUT,/close-reasons,/reasons/0/label,"Invalid input: expected string, received number",400,validation_error,4,REQ-B02941
+PUT,/close-reasons,/reasons/0/label,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B02945
+PUT,/close-reasons,/reasons/0/label,"Invalid input: expected string, received array",400,validation_error,3,REQ-B02951
+PUT,/close-reasons,/reasons/0/label,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B02951
+PUT,/close-reasons,/reasons/0/label,"Invalid input: expected string, received object",400,validation_error,2,REQ-B02954
+PUT,/close-reasons,/reasons/0/outcome,"Invalid option: expected one of ""won""|""lost""",400,validation_error,24,REQ-B02977
+POST,/files,/fileName,Too small: expected string to have >=1 characters,400,validation_error,2,REQ-B03006
+POST,/files,/fileName,Too big: expected string to have <=255 characters,400,validation_error,10,REQ-B03035
+POST,/files,/fileName,"Invalid input: expected string, received null",400,validation_error,1,REQ-B03048
+POST,/files,/fileName,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-B03049
+POST,/files,/fileName,"Invalid input: expected string, received number",400,validation_error,4,REQ-B03050
+POST,/files,/fileName,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B03054
+POST,/files,/fileName,"Invalid input: expected string, received array",400,validation_error,3,REQ-B03064
+POST,/files,/fileName,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B03064
+POST,/files,/fileName,"Invalid input: expected string, received object",400,validation_error,2,REQ-B03067
+POST,/files,/fileName,"A file name cannot contain control characters, line breaks or text-direction overrides",400,validation_error,6,REQ-B03077
+POST,/files,/contentType,Too small: expected string to have >=1 characters,400,validation_error,1,REQ-B03105
+POST,/files,(request),Content type '   ' is not a media type; declare one such as text/plain,400,validation_error,1,REQ-B03106
+POST,/files,/contentType,"Invalid input: expected string, received null",400,validation_error,1,REQ-B03107
+POST,/files,/contentType,"Invalid input: expected string, received undefined",400,validation_error,2,REQ-B03108
+POST,/files,/contentType,"Invalid input: expected string, received number",400,validation_error,4,REQ-B03109
+POST,/files,/contentType,"Invalid input: expected string, received boolean",400,validation_error,2,REQ-B03113
+POST,/files,(request),Content type 'true' is not a media type; declare one such as text/plain,400,validation_error,1,REQ-B03115
+POST,/files,(request),Content type 'false' is not a media type; declare one such as text/plain,400,validation_error,1,REQ-B03116
+POST,/files,(request),Content type 'yes' is not a media type; declare one such as text/plain,400,validation_error,1,REQ-B03117
+POST,/files,(request),Content type 'no' is not a media type; declare one such as text/plain,400,validation_error,1,REQ-B03118
+POST,/files,/contentType,"Invalid input: expected string, received array",400,validation_error,3,REQ-B03119
+POST,/files,/contentType,Too small: expected array to have >=1 items,400,validation_error,1,REQ-B03119
+POST,/files,/contentType,"Invalid input: expected string, received object",400,validation_error,2,REQ-B03122
+POST,/files,(request),Content type 'approved-but-not-really' is not a media type; declare one such as text/plain,400,validation_error,1,REQ-B03144
+POST,/files,/byteSize,"Invalid input: expected number, received string",400,validation_error,14,REQ-B03147
+POST,/files,/byteSize,"Invalid input: expected number, received null",400,validation_error,1,REQ-B03149
+POST,/files,/byteSize,"Invalid input: expected number, received undefined",400,validation_error,2,REQ-B03150
+POST,/files,/byteSize,Too small: expected number to be >0,400,validation_error,5,REQ-B03151
+POST,/files,/byteSize,"Invalid input: expected number, received boolean",400,validation_error,2,REQ-B03157
+POST,/files,/byteSize,"Invalid input: expected number, received array",400,validation_error,3,REQ-B03163
+POST,/files,/byteSize,"Invalid input: expected number, received object",400,validation_error,2,REQ-B03166
+POST,/files,/byteSize,"Invalid input: expected int, received number",400,validation_error,4,REQ-B03176
+POST,/files,/byteSize,Too small: expected int to be >=-<n>,400,validation_error,2,REQ-B03178
+POST,/files,(request),"File is <n> bytes, above the <n> byte limit",400,validation_error,4,REQ-B03179
+POST,/files,/byteSize,Too big: expected int to be <=<n>,400,validation_error,3,REQ-B03181
+POST,/contacts/custom-properties,(request),"Custom property ""audit_u"" already exists in this Organization",409,conflict,43,REQ-C00082
+POST,/pipelines/{id}/stages,(request),"Stage ""fixed-stage-id-1"" already exists",400,validation_error,2,REQ-E00004
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,3,REQ-E00006
+PATCH,/contacts/custom-properties/{id},(request),"Custom property ""e_type_swap"" cannot change type from ""text"" to ""number"": stored values are never migrated, so delete this definition and create it again with the type you want",400,validation_error,1,REQ-E00011
+PATCH,/contacts/{id},(request),"The record has changed since that ETag was read; it is now ""2""",412,precondition_failed,4,REQ-E00020
+POST,/pipelines,(request),This Idempotency-Key is in flight or was used with different parameters,409,conflict,3,REQ-E00036
+GET,/companies/{id},(request),Company not found,404,not_found,4,REQ-E00040
+DELETE,/pipelines/{id},(request),Pipeline not found,404,not_found,3,REQ-E00047
+GET,/contacts,(request),"querystring: Unrecognized key: ""status""",400,validation_error,2,REQ-F00002
+GET,/contacts,(request),"querystring: Unrecognized key: ""status[eq]""",400,validation_error,1,REQ-F00005
+GET,/contacts,/status[in],Invalid input,400,validation_error,2,REQ-F00006
+GET,/contacts,(request),"querystring: Unrecognized key: ""status[ne]""",400,validation_error,1,REQ-F00007
+DELETE,/contacts/{id},(request),Cannot delete this contact: 1 deal still references it.,409,conflict,1,REQ-I00008
+DELETE,/companies/{id},(request),Cannot delete this company: 2 records still reference it.,409,conflict,1,REQ-I00009
+DELETE,/catalog-products/{id},(request),Cannot delete a catalog product sold by 1 open deal. Close or re-price it first.,409,conflict,1,REQ-I00010
+POST,/deals,(request),Line items must all use the same currency; a deal has a single amount,400,validation_error,1,REQ-I00014
+POST,/deals,(request),A deal with line items derives its amount from them; remove `amount` or clear `lineItems`,400,validation_error,1,REQ-I00016
+DELETE,/pipelines/{id}/stages/{id},(request),Cannot delete a stage that still holds 1 open deal. Move it to another stage first.,409,conflict,1,REQ-I00017
+POST,/automation-rules,/trigger/eventType,"Event type ""deal.exploded"" cannot trigger a rule. Triggers: activity.completed, activity.created, activity.deleted, activity.reopened, activity.updated, company.archived, company.created, company.dele",400,validation_error,1,REQ-I00038
+POST,/messages,(request),Contact <id> carries no usable email address,422,contact_address_missing,1,REQ-I00051
+POST,/messages,(request),Template not found,404,not_found,1,REQ-I00053
+POST,/messages,/body,Too big: expected string to have <=<n> characters,400,validation_error,1,REQ-I00056
+POST,/contacts/{id}/merge,(request),Cannot merge a contact into itself,409,conflict,1,REQ-I00068
+POST,/contacts/{id}/merge,(request),Source contact not found,409,conflict,1,REQ-I00069
+POST,/contacts/{id}/merge,(request),"Both contacts have a different email, and a contact keeps only one of each. Email: this contact has merge.target@example.com, Merge Conflict has merge.conflict@example.com. Choose which to keep; the o",409,conflict,1,REQ-I00070
+GET,/contacts/{id},(request),Contact not found,404,not_found,5,REQ-I00072
+GET,/automation-runs,(request),No route for GET /v1/automation-runs,404,not_found,1,REQ-J00018
+GET,/automation-rules/{id}/executions,(request),No route for GET /v1/automation-rules/<id>/executions,404,not_found,1,REQ-J00019
+POST,/contacts/{id}/merge,(request),"Both contacts have a different email, and a contact keeps only one of each. Email: this contact has mrg.a@example.com, MergeB has mrg.b@example.com. Choose which to keep; the other is deleted with Mer",409,conflict,1,REQ-J00027
+POST,/contacts/{id}/merge,/,"Unrecognized key: ""email""",400,validation_error,1,REQ-J00028
+POST,/contacts/{id}/merge,/,"Unrecognized key: ""resolution""",400,validation_error,1,REQ-J00029
+POST,/contacts/{id}/merge,/,"Unrecognized key: ""preferred""",400,validation_error,1,REQ-J00030
+POST,/contacts/{id}/merge,/,"Unrecognized key: ""keep""",400,validation_error,1,REQ-J00031
+POST,/contacts/{id}/merge,(request),"Both contacts have a different phone, and a contact keeps only one of each. Phone: this contact has +<n>, MergeD Source has +<n>. Choose which to keep; the other is deleted with MergeD Source.",409,conflict,1,REQ-J00034
+POST,/pipelines,(request),Request body is too large,413,payload_too_large,3,REQ-K00011
+POST,/activities,/,"Unrecognized key: ""contactId""",400,validation_error,1,REQ-K00029
+POST,/imports,/fileId,Must be an id as the API writes it: 24 lowercase hex characters,400,validation_error,1,REQ-K00030
+POST,/imports,/onDuplicate,"Invalid option: expected one of ""create""|""reject""",400,validation_error,1,REQ-K00030
+PUT,/pipelines,(request),No route for PUT /v1/pipelines,404,not_found,2,REQ-K00034
+DELETE,/pipelines,(request),No route for DELETE /v1/pipelines,404,not_found,2,REQ-K00035
+PATCH,/pipelines,(request),No route for PATCH /v1/pipelines,404,not_found,2,REQ-K00036
+POST,/contacts/custom-properties,(request),"Custom property ""race_key_fresh_1"" already exists in this Organization",409,conflict,9,REQ-L00012
+POST,/pipelines/{id}/stages,/id,"A stage id is 1 to 64 letters, digits, hyphens or underscores",400,validation_error,2,REQ-L200022
+GET,/pipelines,(request),A secret API key or Dashboard session is required,401,unauthorized,10,REQ-R00001
+GET,/deals,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00011
+GET,/contacts,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00021
+GET,/companies,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00031
+GET,/catalog-products,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00041
+GET,/automation-rules,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00051
+GET,/activities,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00061
+GET,/messages,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00071
+GET,/files,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00081
+GET,/imports,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00091
+GET,/exports,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00101
+GET,/reports,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00111
+GET,/reports/contacts.by_status,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00121
+GET,/close-reasons,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00131
+GET,/contacts/custom-properties,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00141
+GET,/events,(request),A secret API key or Dashboard session is required,401,unauthorized,9,REQ-R00151
+GET,/workspaces,(request),A Dashboard session is required for this endpoint,401,unauthorized,9,REQ-R00161
+GET,/auth/me,(request),A Dashboard session is required for this endpoint,401,unauthorized,9,REQ-R00171
+POST,/pipelines,(request),A secret API key or Dashboard session is required,401,unauthorized,3,REQ-R00181
+POST,/contacts,(request),A secret API key or Dashboard session is required,401,unauthorized,3,REQ-R00184
+POST,/companies,(request),A secret API key or Dashboard session is required,401,unauthorized,3,REQ-R00187
+PUT,/close-reasons,(request),A secret API key or Dashboard session is required,401,unauthorized,3,REQ-R00190
+POST,/messages,(request),A secret API key or Dashboard session is required,401,unauthorized,3,REQ-R00193
+GET,/pipelines/{id},(request),Pipeline not found,404,not_found,23,REQ-R00198
+GET,/deals/{id},(request),Deal not found,404,not_found,3,REQ-R00202
+GET,/catalog-products/{id},(request),Catalog product not found,404,not_found,3,REQ-R00214
+GET,/activities/{id},(request),Activity not found,404,not_found,3,REQ-R00218
+GET,/contacts,/limit,Too big: expected number to be <=100,400,validation_error,1,REQ-R00229
+GET,/contacts,(request),"querystring: Unrecognized key: ""offset""",400,validation_error,2,REQ-R00230
+GET,/contacts,(request),"querystring: Unrecognized key: ""page""",400,validation_error,1,REQ-R00231
+GET,/contacts,(request),"querystring: Unrecognized key: ""tenant""",400,validation_error,1,REQ-R00233
+GET,/contacts,(request),"querystring: Unrecognized key: ""role""",400,validation_error,1,REQ-R00234
+GET,/pipelines/zzz,(request),Invalid pipeline id,400,validation_error,20,REQ-R00257
+POST,/pipelines/{id},(request),No route for POST /v1/pipelines/<id>,404,not_found,1,REQ-R00344
+GET,/definitely-not-a-route,(request),No route for GET /v1/definitely-not-a-route,404,not_found,1,REQ-R00345
+GET,/pipelines,/limit,"Invalid input: expected number, received NaN",400,validation_error,1,REQ-R00347
+POST,/pipelines,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00004
+POST,/pipelines,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00005
+POST,/pipelines,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00008
+POST,/pipelines,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00013
+PATCH,/pipelines/{id},/,At least one field must be provided,400,validation_error,1,REQ-W00022
+PATCH,/pipelines/{id},/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00023
+PATCH,/pipelines/{id},(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00024
+PATCH,/pipelines/{id},/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00027
+PATCH,/pipelines/{id},/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00032
+POST,/pipelines/{id}/stages,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00037
+POST,/pipelines/{id}/stages,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00038
+POST,/pipelines/{id}/stages,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00041
+POST,/pipelines/{id}/stages,(request),"A stage named ""Extra stage"" already exists in this pipeline",400,validation_error,4,REQ-W00043
+POST,/deals,/,"Invalid input: expected object, received array",400,validation_error,2,REQ-W00055
+POST,/deals,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,6,REQ-W00056
+POST,/deals,/,"Invalid input: expected object, received null",400,validation_error,2,REQ-W00059
+POST,/deals,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,2,REQ-W00064
+PATCH,/deals/{id},/,At least one field must be provided,400,validation_error,1,REQ-W00106
+PATCH,/deals/{id},/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00107
+PATCH,/deals/{id},(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00108
+PATCH,/deals/{id},/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00111
+PATCH,/deals/{id},/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00116
+POST,/contacts,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00124
+POST,/contacts,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00125
+POST,/contacts,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00128
+POST,/contacts,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00133
+PATCH,/contacts/{id},/,At least one field must be provided,400,validation_error,1,REQ-W00142
+PATCH,/contacts/{id},/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00143
+PATCH,/contacts/{id},(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00144
+PATCH,/contacts/{id},/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00147
+PATCH,/contacts/{id},/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00152
+POST,/companies,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00157
+POST,/companies,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00158
+POST,/companies,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00161
+POST,/companies,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00166
+PATCH,/companies/{id},/,At least one field must be provided,400,validation_error,1,REQ-W00175
+PATCH,/companies/{id},/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00176
+PATCH,/companies/{id},(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00177
+PATCH,/companies/{id},/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00180
+PATCH,/companies/{id},/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00185
+POST,/contacts/custom-properties,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00190
+POST,/contacts/custom-properties,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00191
+POST,/contacts/custom-properties,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00194
+POST,/contacts/custom-properties,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00199
+POST,/catalog-products,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00205
+POST,/catalog-products,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00206
+POST,/catalog-products,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00209
+POST,/catalog-products,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00214
+PATCH,/catalog-products/{id},/,At least one field must be provided,400,validation_error,1,REQ-W00223
+PATCH,/catalog-products/{id},/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00224
+PATCH,/catalog-products/{id},(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00225
+PATCH,/catalog-products/{id},/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00228
+PATCH,/catalog-products/{id},/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00233
+POST,/automation-rules,/trigger,"Invalid input: expected object, received undefined",400,validation_error,1,REQ-W00237
+POST,/automation-rules,/action,"Invalid input: expected object, received undefined",400,validation_error,1,REQ-W00237
+POST,/automation-rules,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00238
+POST,/automation-rules,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00239
+POST,/automation-rules,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00242
+POST,/automation-rules,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00247
+POST,/activities,/type,Invalid discriminator value. Expected 'task' | 'note' | 'appointment' | 'document' | 'call' | 'meeting',400,validation_error,6,REQ-W00256
+POST,/activities,/,"Invalid input: expected object, received array",400,validation_error,6,REQ-W00257
+POST,/activities,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,18,REQ-W00258
+POST,/activities,/,"Invalid input: expected object, received null",400,validation_error,6,REQ-W00261
+POST,/activities,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,6,REQ-W00266
+POST,/messages,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00372
+POST,/messages,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00373
+POST,/messages,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00376
+POST,/messages,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00381
+PUT,/close-reasons,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00393
+PUT,/close-reasons,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00394
+PUT,/close-reasons,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00397
+PUT,/close-reasons,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00402
+POST,/files,/,"Invalid input: expected object, received array",400,validation_error,1,REQ-W00407
+POST,/files,(request),Body is not valid JSON but content-type is set to 'application/json',400,bad_request,3,REQ-W00408
+POST,/files,/,"Invalid input: expected object, received null",400,validation_error,1,REQ-W00411
+POST,/files,/,"Unrecognized key: ""totallyMadeUp""",400,validation_error,1,REQ-W00416
+POST,/pipelines,/,"Unrecognized key: ""isAdmin""",400,validation_error,1,REQ-W00424
+POST,/pipelines,/,"Unrecognized key: ""role""",400,validation_error,1,REQ-W00425
+POST,/pipelines,/,"Unrecognized key: ""tenantId""",400,validation_error,1,REQ-W00426
+POST,/pipelines,/,"Unrecognized key: ""ownerId""",400,validation_error,1,REQ-W00427
+POST,/pipelines,/,"Unrecognized key: ""status""",400,validation_error,1,REQ-W00428
+POST,/pipelines,/,"Unrecognized key: ""price""",400,validation_error,1,REQ-W00429
+POST,/pipelines,/,"Unrecognized key: ""balance""",400,validation_error,1,REQ-W00430
+POST,/pipelines,/,"Unrecognized key: ""internalScore""",400,validation_error,1,REQ-W00431
+POST,/pipelines,/,"Unrecognized key: ""id""",400,validation_error,1,REQ-W00432
+POST,/pipelines,/,"Unrecognized key: ""_id""",400,validation_error,1,REQ-W00433
+POST,/pipelines,/,"Unrecognized key: ""createdByActorId""",400,validation_error,1,REQ-W00434
+POST,/pipelines,/,"Unrecognized key: ""archivedAt""",400,validation_error,1,REQ-W00435
+POST,/pipelines,/,"Unrecognized key: ""createdAt""",400,validation_error,1,REQ-W00436
+POST,/pipelines,/,"Unrecognized key: ""projectId""",400,validation_error,1,REQ-W00437
+POST,/pipelines,/,"Unrecognized key: ""environment""",400,validation_error,1,REQ-W00438
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""isAdmin""",400,validation_error,1,REQ-W00440
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""role""",400,validation_error,1,REQ-W00441
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""tenantId""",400,validation_error,1,REQ-W00442
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""ownerId""",400,validation_error,1,REQ-W00443
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""status""",400,validation_error,1,REQ-W00444
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""price""",400,validation_error,1,REQ-W00445
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""balance""",400,validation_error,1,REQ-W00446
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""internalScore""",400,validation_error,1,REQ-W00447
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""_id""",400,validation_error,1,REQ-W00449
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""createdByActorId""",400,validation_error,1,REQ-W00450
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""archivedAt""",400,validation_error,1,REQ-W00451
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""createdAt""",400,validation_error,1,REQ-W00452
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""projectId""",400,validation_error,1,REQ-W00453
+POST,/pipelines/{id}/stages,/,"Unrecognized key: ""environment""",400,validation_error,1,REQ-W00454
+POST,/deals,/,"Unrecognized key: ""isAdmin""",400,validation_error,2,REQ-W00459
+POST,/deals,/,"Unrecognized key: ""role""",400,validation_error,2,REQ-W00460
+POST,/deals,/,"Unrecognized key: ""tenantId""",400,validation_error,2,REQ-W00461
+POST,/deals,/,"Unrecognized key: ""ownerId""",400,validation_error,2,REQ-W00462
+POST,/deals,/,"Unrecognized key: ""status""",400,validation_error,3,REQ-W00463
+POST,/deals,/,"Unrecognized key: ""price""",400,validation_error,2,REQ-W00464
+POST,/deals,/,"Unrecognized key: ""balance""",400,validation_error,2,REQ-W00465
+POST,/deals,/,"Unrecognized key: ""internalScore""",400,validation_error,2,REQ-W00466
+POST,/deals,/,"Unrecognized key: ""id""",400,validation_error,2,REQ-W00467
+POST,/deals,/,"Unrecognized key: ""_id""",400,validation_error,2,REQ-W00468
+POST,/deals,/,"Unrecognized key: ""createdByActorId""",400,validation_error,2,REQ-W00469
+POST,/deals,/,"Unrecognized key: ""archivedAt""",400,validation_error,2,REQ-W00470
+POST,/deals,/,"Unrecognized key: ""createdAt""",400,validation_error,2,REQ-W00471
+POST,/deals,/,"Unrecognized key: ""projectId""",400,validation_error,2,REQ-W00472
+POST,/deals,/,"Unrecognized key: ""environment""",400,validation_error,2,REQ-W00473
+POST,/contacts,/,"Unrecognized key: ""isAdmin""",400,validation_error,1,REQ-W00500
+POST,/contacts,/,"Unrecognized key: ""role""",400,validation_error,1,REQ-W00501
+POST,/contacts,/,"Unrecognized key: ""tenantId""",400,validation_error,1,REQ-W00502
+POST,/contacts,/,"Unrecognized key: ""ownerId""",400,validation_error,1,REQ-W00503
+POST,/contacts,/,"Unrecognized key: ""price""",400,validation_error,1,REQ-W00505
+POST,/contacts,/,"Unrecognized key: ""balance""",400,validation_error,1,REQ-W00506
+POST,/contacts,/,"Unrecognized key: ""internalScore""",400,validation_error,1,REQ-W00507
+POST,/contacts,/,"Unrecognized key: ""id""",400,validation_error,1,REQ-W00508
+POST,/contacts,/,"Unrecognized key: ""_id""",400,validation_error,1,REQ-W00509
+POST,/contacts,/,"Unrecognized key: ""createdByActorId""",400,validation_error,1,REQ-W00510
+POST,/contacts,/,"Unrecognized key: ""archivedAt""",400,validation_error,1,REQ-W00511
+POST,/contacts,/,"Unrecognized key: ""createdAt""",400,validation_error,1,REQ-W00512
+POST,/contacts,/,"Unrecognized key: ""projectId""",400,validation_error,1,REQ-W00513
+POST,/contacts,/,"Unrecognized key: ""environment""",400,validation_error,1,REQ-W00514
+POST,/companies,/,"Unrecognized key: ""isAdmin""",400,validation_error,1,REQ-W00515
+POST,/companies,/,"Unrecognized key: ""role""",400,validation_error,1,REQ-W00516
+POST,/companies,/,"Unrecognized key: ""tenantId""",400,validation_error,1,REQ-W00517
+POST,/companies,/,"Unrecognized key: ""ownerId""",400,validation_error,1,REQ-W00518
+POST,/companies,/,"Unrecognized key: ""price""",400,validation_error,1,REQ-W00520
+POST,/companies,/,"Unrecognized key: ""balance""",400,validation_error,1,REQ-W00521
+POST,/companies,/,"Unrecognized key: ""internalScore""",400,validation_error,1,REQ-W00522
+POST,/companies,/,"Unrecognized key: ""id""",400,validation_error,1,REQ-W00523
+POST,/companies,/,"Unrecognized key: ""_id""",400,validation_error,1,REQ-W00524
+POST,/companies,/,"Unrecognized key: ""createdByActorId""",400,validation_error,1,REQ-W00525
+POST,/companies,/,"Unrecognized key: ""archivedAt""",400,validation_error,1,REQ-W00526
+POST,/companies,/,"Unrecognized key: ""createdAt""",400,validation_error,1,REQ-W00527
+POST,/companies,/,"Unrecognized key: ""projectId""",400,validation_error,1,REQ-W00528
+POST,/companies,/,"Unrecognized key: ""environment""",400,validation_error,1,REQ-W00529
+POST,/contacts/custom-properties,/,"Unrecognized key: ""isAdmin""",400,validation_error,1,REQ-W00530
+POST,/contacts/custom-properties,/,"Unrecognized key: ""role""",400,validation_error,1,REQ-W00531
+POST,/contacts/custom-properties,/,"Unrecognized key: ""tenantId""",400,validation_error,1,REQ-W00532
+POST,/contacts/custom-properties,/,"Unrecognized key: ""ownerId""",400,validation_error,1,REQ-W00533
+POST,/contacts/custom-properties,/,"Unrecognized key: ""status""",400,validation_error,1,REQ-W00534
+POST,/contacts/custom-properties,/,"Unrecognized key: ""price""",400,validation_error,1,REQ-W00535
+POST,/contacts/custom-properties,/,"Unrecognized key: ""balance""",400,validation_error,1,REQ-W00536
+POST,/contacts/custom-properties,/,"Unrecognized key: ""internalScore""",400,validation_error,1,REQ-W00537
+POST,/contacts/custom-properties,/,"Unrecognized key: ""id""",400,validation_error,1,REQ-W00538
+POST,/contacts/custom-properties,/,"Unrecognized key: ""_id""",400,validation_error,1,REQ-W00539
+POST,/contacts/custom-properties,/,"Unrecognized key: ""createdByActorId""",400,validation_error,1,REQ-W00540
+POST,/contacts/custom-properties,/,"Unrecognized key: ""archivedAt""",400,validation_error,1,REQ-W00541
+POST,/contacts/custom-properties,/,"Unrecognized key: ""createdAt""",400,validation_error,1,REQ-W00542
+POST,/contacts/custom-properties,/,"Unrecognized key: ""projectId""",400,validation_error,1,REQ-W00543
+POST,/contacts/custom-properties,/,"Unrecognized key: ""environment""",400,validation_error,1,REQ-W00544
+POST,/catalog-products,/,"Unrecognized key: ""isAdmin""",400,validation_error,1,REQ-W00545
+POST,/catalog-products,/,"Unrecognized key: ""role""",400,validation_error,1,REQ-W00546
+POST,/catalog-products,/,"Unrecognized key: ""tenantId""",400,validation_error,1,REQ-W00547
+POST,/catalog-products,/,"Unrecognized key: ""ownerId""",400,validation_error,1,REQ-W00548
+POST,/catalog-products,/,"Unrecognized key: ""status""",400,validation_error,1,REQ-W00549
+POST,/catalog-products,/,"Unrecognized key: ""price""",400,validation_error,1,REQ-W00550
+POST,/catalog-products,/,"Unrecognized key: ""balance""",400,validation_error,1,REQ-W00551
+POST,/catalog-products,/,"Unrecognized key: ""internalScore""",400,validation_error,1,REQ-W00552
+POST,/catalog-products,/,"Unrecognized key: ""id""",400,validation_error,1,REQ-W00553
+POST,/catalog-products,/,"Unrecognized key: ""_id""",400,validation_error,1,REQ-W00554
+POST,/catalog-products,/,"Unrecognized key: ""createdByActorId""",400,validation_error,1,REQ-W00555
+POST,/catalog-products,/,"Unrecognized key: ""archivedAt""",400,validation_error,1,REQ-W00556
+POST,/catalog-products,/,"Unrecognized key: ""createdAt""",400,validation_error,1,REQ-W00557
+POST,/catalog-products,/,"Unrecognized key: ""projectId""",400,validation_error,1,REQ-W00558
+POST,/catalog-products,/,"Unrecognized key: ""environment""",400,validation_error,1,REQ-W00559
+POST,/automation-rules,/,"Unrecognized key: ""isAdmin""",400,validation_error,1,REQ-W00560
+POST,/automation-rules,/,"Unrecognized key: ""role""",400,validation_error,1,REQ-W00561
+POST,/automation-rules,/,"Unrecognized key: ""tenantId""",400,validation_error,1,REQ-W00562
+POST,/automation-rules,/,"Unrecognized key: ""ownerId""",400,validation_error,1,REQ-W00563
+POST,/automation-rules,/,"Unrecognized key: ""status""",400,validation_error,1,REQ-W00564
+POST,/automation-rules,/,"Unrecognized key: ""price""",400,validation_error,1,REQ-W00565
+POST,/automation-rules,/,"Unrecognized key: ""balance""",400,validation_error,1,REQ-W00566
+POST,/automation-rules,/,"Unrecognized key: ""internalScore""",400,validation_error,1,REQ-W00567
+POST,/automation-rules,/,"Unrecognized key: ""id""",400,validation_error,1,REQ-W00568
+POST,/automation-rules,/,"Unrecognized key: ""_id""",400,validation_error,1,REQ-W00569
+POST,/automation-rules,/,"Unrecognized key: ""createdByActorId""",400,validation_error,1,REQ-W00570
+POST,/automation-rules,/,"Unrecognized key: ""archivedAt""",400,validation_error,1,REQ-W00571
+POST,/automation-rules,/,"Unrecognized key: ""createdAt""",400,validation_error,1,REQ-W00572
+POST,/automation-rules,/,"Unrecognized key: ""projectId""",400,validation_error,1,REQ-W00573
+POST,/automation-rules,/,"Unrecognized key: ""environment""",400,validation_error,1,REQ-W00574
+POST,/activities,/,"Unrecognized key: ""isAdmin""",400,validation_error,6,REQ-W00575
+POST,/activities,/,"Unrecognized key: ""role""",400,validation_error,6,REQ-W00576
+POST,/activities,/,"Unrecognized key: ""tenantId""",400,validation_error,6,REQ-W00577
+POST,/activities,/,"Unrecognized key: ""ownerId""",400,validation_error,6,REQ-W00578
+POST,/activities,/,"Unrecognized key: ""status""",400,validation_error,6,REQ-W00579
+POST,/activities,/,"Unrecognized key: ""price""",400,validation_error,6,REQ-W00580
+POST,/activities,/,"Unrecognized key: ""balance""",400,validation_error,6,REQ-W00581
+POST,/activities,/,"Unrecognized key: ""internalScore""",400,validation_error,6,REQ-W00582
+POST,/activities,/,"Unrecognized key: ""id""",400,validation_error,6,REQ-W00583
+POST,/activities,/,"Unrecognized key: ""_id""",400,validation_error,6,REQ-W00584
+POST,/activities,/,"Unrecognized key: ""createdByActorId""",400,validation_error,6,REQ-W00585
+POST,/activities,/,"Unrecognized key: ""archivedAt""",400,validation_error,6,REQ-W00586
+POST,/activities,/,"Unrecognized key: ""createdAt""",400,validation_error,6,REQ-W00587
+POST,/activities,/,"Unrecognized key: ""projectId""",400,validation_error,6,REQ-W00588
+POST,/activities,/,"Unrecognized key: ""environment""",400,validation_error,6,REQ-W00589
+POST,/files,/,"Unrecognized key: ""isAdmin""",400,validation_error,1,REQ-W00665
+POST,/files,/,"Unrecognized key: ""role""",400,validation_error,1,REQ-W00666
+POST,/files,/,"Unrecognized key: ""tenantId""",400,validation_error,1,REQ-W00667
+POST,/files,/,"Unrecognized key: ""ownerId""",400,validation_error,1,REQ-W00668
+POST,/files,/,"Unrecognized key: ""status""",400,validation_error,1,REQ-W00669
+POST,/files,/,"Unrecognized key: ""price""",400,validation_error,1,REQ-W00670
+POST,/files,/,"Unrecognized key: ""balance""",400,validation_error,1,REQ-W00671
+POST,/files,/,"Unrecognized key: ""internalScore""",400,validation_error,1,REQ-W00672
+POST,/files,/,"Unrecognized key: ""id""",400,validation_error,1,REQ-W00673
+POST,/files,/,"Unrecognized key: ""_id""",400,validation_error,1,REQ-W00674
+POST,/files,/,"Unrecognized key: ""createdByActorId""",400,validation_error,1,REQ-W00675
+POST,/files,/,"Unrecognized key: ""archivedAt""",400,validation_error,1,REQ-W00676
+POST,/files,/,"Unrecognized key: ""createdAt""",400,validation_error,1,REQ-W00677
+POST,/files,/,"Unrecognized key: ""projectId""",400,validation_error,1,REQ-W00678
+POST,/files,/,"Unrecognized key: ""environment""",400,validation_error,1,REQ-W00679
+POST,/deals/{id}/won,(request),Deal is already closed,409,conflict,38,REQ-W00686
+POST,/deals/{id}/lost,(request),Deal is already closed,409,conflict,1,REQ-W00707
+POST,/deals/{id}/move,(request),A closed deal cannot change stage; reopen it first,409,conflict,1,REQ-W00708
+POST,/deals/{id}/reopen,(request),Deal is not closed,409,conflict,1,REQ-W00710
+PATCH,/deals/{id},/,"Unrecognized key: ""status""",400,validation_error,2,REQ-W00712
+POST,/deals,/,"Unrecognized key: ""closeReason""",400,validation_error,1,REQ-W00715
+POST,/deals/{id}/lost,(request),"The reason must be one of this Organization's lost reasons: price, competitor, no_budget, no_response",400,validation_error,1,REQ-W00716
+POST,/pipelines/{id}/archive,(request),Pipeline is already archived,409,conflict,37,REQ-W00720
+POST,/pipelines/{id}/unarchive,(request),Pipeline is not archived,409,conflict,1,REQ-W00740
+POST,/deals,(request),Pipeline is archived; unarchive it before creating deals in it,409,conflict,2,REQ-W00742
+POST,/contacts/{id}/restore,(request),No route for POST /v1/contacts/<id>/restore,404,not_found,1,REQ-W00752
+POST,/contacts/{id}/qualify,(request),No route for POST /v1/contacts/<id>/qualify,404,not_found,1,REQ-W00753
+POST,/contacts/{id}/disqualify,(request),No route for POST /v1/contacts/<id>/disqualify,404,not_found,1,REQ-W00754
+POST,/contacts/{id}/convert,(request),No route for POST /v1/contacts/<id>/convert,404,not_found,1,REQ-W00755
+DELETE,/companies/{id},(request),Company not found,404,not_found,20,REQ-W00803
+DELETE,/catalog-products/{id},(request),Catalog product not found,404,not_found,2,REQ-W00816
+DELETE,/activities/{id},(request),Activity not found,404,not_found,2,REQ-W00829
+POST,/contacts/custom-properties,(request),"Custom property ""race_unique_key"" already exists in this Organization",409,conflict,18,REQ-W00918
+PATCH,/contacts/custom-properties/{id},(request),"Custom property ""exp_data_loss"" cannot change type from ""text"" to ""number"": stored values are never migrated, so delete this definition and create it again with the type you want",400,validation_error,1,REQ-Y00004
+GET,/contacts,(request),"querystring: Unrecognized key: ""include_archived""",400,validation_error,1,REQ-Z00005
+GET,/contacts,(request),"querystring: Unrecognized key: ""archived""",400,validation_error,1,REQ-Z00006
+GET,/contacts,(request),"querystring: Unrecognized key: ""state""",400,validation_error,1,REQ-Z00007
+GET,/contacts,(request),"querystring: Unrecognized key: ""filter[status]""",400,validation_error,1,REQ-Z00008
+GET,/contacts,(request),"querystring: Unrecognized key: ""include""",400,validation_error,1,REQ-Z00009
+GET,/companies,(request),"querystring: Unrecognized key: ""status""",400,validation_error,1,REQ-Z00013
+GET,/companies,(request),"querystring: Unrecognized key: ""include_archived""",400,validation_error,1,REQ-Z00014
+GET,/companies,(request),"querystring: Unrecognized key: ""archived""",400,validation_error,1,REQ-Z00015
+GET,/companies,(request),"querystring: Unrecognized key: ""state""",400,validation_error,1,REQ-Z00016
+GET,/companies,(request),"querystring: Unrecognized key: ""filter[status]""",400,validation_error,1,REQ-Z00017
+GET,/companies,(request),"querystring: Unrecognized key: ""include""",400,validation_error,1,REQ-Z00018

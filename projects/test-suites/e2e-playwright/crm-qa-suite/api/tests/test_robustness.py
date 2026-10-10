@@ -73,12 +73,17 @@ def test_malformed_bodies_get_400(client, body):
 
 
 @pytest.mark.boundary
+def test_body_just_over_the_limit_is_413(client):
+    # The limit is 1 MiB: 1 MB is parsed (then rejected as an unknown key), 2 MB is a clean 413 with the envelope.
+    r = client.request("POST", "/pipelines", data='{"pad":"' + "A" * 2_000_000 + '"}', headers={"content-type": "application/json"})
+    assert r.status_code == 413
+
+
+@pytest.mark.boundary
 @pytest.mark.known_bug
-@pytest.mark.xfail(strict=False, reason="BUG (intermittent, ~1 in 5): an oversized body sometimes gets an empty 502 from the proxy instead of 413")
-def test_oversized_body_is_413(client):
-    # The body limit sits between 1 MB (parsed, then rejected as an unknown key) and 2 MB (413).
-    r = client.request("POST", "/pipelines", data='{"pad":"' + "A" * 10_000_000 + '"}',
-                       headers={"content-type": "application/json"})
+@pytest.mark.xfail(strict=False, reason="BUG: bodies of about 3 MB or more get the connection reset instead of a 413")
+def test_large_body_is_413_not_a_reset(client):
+    r = client.request("POST", "/pipelines", data='{"pad":"' + "A" * 5_000_000 + '"}', headers={"content-type": "application/json"})
     assert r.status_code == 413
 
 
@@ -89,21 +94,15 @@ def test_hostile_ids_never_500(client, ident):
 
 
 # ---------- known bugs found in the break-it session (strict xfail) ------------------------------------
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="BUG: a null byte in the search query returns HTTP 500")
 @pytest.mark.parametrize("resource", ["contacts", "companies", "deals", "files"])
 def test_null_byte_in_search_is_a_400_not_500(client, resource):
     assert client.get(f"/{resource}?q=a%00b").status_code < 500
 
 
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="BUG: HTTP TRACE returns an unstructured 500")
 def test_trace_method_is_not_a_500(client):
     assert client.request("TRACE", "/pipelines").status_code < 500
 
 
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="HARDENING: text/plain bodies are parsed as JSON (CORS 'simple request' content type)")
 def test_non_json_content_type_is_rejected(client, cleanup):
     r = client.request("POST", "/pipelines", data='{"name":"ct","stages":[{"name":"a"}]}',
                        headers={"content-type": "text/plain"})
@@ -112,8 +111,6 @@ def test_non_json_content_type_is_rejected(client, cleanup):
     assert r.status_code in (400, 415)
 
 
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="DESIGN: control characters / null bytes / newlines are accepted in names")
 @pytest.mark.parametrize("name", ["a\x00b", "a\nb", "\x01\x02", "a\r\nX-Evil: 1"])
 def test_control_characters_rejected_in_names(client, cleanup, name):
     r = client.post("/pipelines", json={"name": name, "stages": [{"name": "s"}]})
@@ -122,8 +119,6 @@ def test_control_characters_rejected_in_names(client, cleanup, name):
     assert r.status_code == 400
 
 
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="BUG: invalid UTF-8 bytes are accepted and silently replaced with U+FFFD")
 def test_invalid_utf8_is_rejected(client, cleanup):
     r = client.request("POST", "/pipelines", data=b'{"name":"\xff\xfe","stages":[{"name":"a"}]}',
                        headers={"content-type": "application/json"})
@@ -132,8 +127,6 @@ def test_invalid_utf8_is_rejected(client, cleanup):
     assert r.status_code == 400
 
 
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="DESIGN: name limit counts UTF-16 units, so 100 emoji (200 units) are refused as '>120 characters'")
 def test_length_limit_counts_characters_not_utf16_units(client, cleanup):
     r = client.post("/pipelines", json={"name": "😀" * 100, "stages": [{"name": "s"}]})
     if r.status_code == 201:

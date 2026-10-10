@@ -1,5 +1,4 @@
-# Move this folder's .github/workflows/qa.yml to the repository root .github/workflows/ if the suite
-# lives in a subdirectory (adjust `working-directory` / paths accordingly: here SUITE_DIR).
+# The suite lives at the repository root (SUITE_DIR=.). If you move it into a subfolder, change SUITE_DIR.
 name: CRM QA
 
 on:
@@ -9,7 +8,7 @@ on:
     - cron: "0 20 * * *"   # nightly
 
 env:
-  SUITE_DIR: crm-qa-suite
+  SUITE_DIR: "."
   CRM_BASE_URL: ${{ vars.CRM_BASE_URL }}
   CRM_PROJECT_ID: ${{ vars.CRM_PROJECT_ID }}
   CRM_EMAIL: ${{ secrets.CRM_EMAIL }}         # secrets only; never echo them

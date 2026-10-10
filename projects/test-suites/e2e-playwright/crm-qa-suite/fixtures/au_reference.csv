@@ -1,0 +1,14 @@
+field,raw_input_as_user_typed,utf8_hex,normalised_form,expected_validator_result,category,reason,source
+au_reference,33 102 417 032,33 33 20 31 30 32 20 34 31 37 20 30 33 32,33 102 417 032,accept,ABN valid,ABN passes the ATO mod-89 check,ATO ABN check-digit algorithm (abr.business.gov.au)
+au_reference,12 345 678 901,31 32 20 33 34 35 20 36 37 38 20 39 30 31,12 345 678 901,reject,ABN invalid,fails mod-89,ATO ABN check-digit algorithm
+au_reference,123 456 782,31 32 33 20 34 35 36 20 37 38 32,123 456 782,accept,TFN valid,passes the mod-11 weights check,ATO TFN algorithm
+au_reference,123 456 789,31 32 33 20 34 35 36 20 37 38 39,123 456 789,reject,TFN invalid,fails the mod-11 check,ATO TFN algorithm
+au_reference,062-000,30 36 32 2d 30 30 30,062-000,accept,BSB valid,Commonwealth Bank BSB,AusPayNet BSB database
+au_reference,2000,32 30 30 30,2000,accept,postcode NSW,Sydney,Australia Post postcode file
+au_reference,0200,30 32 30 30,0200,accept,postcode ACT,NT/ACT range starts 0200,Australia Post postcode file
+au_reference,0800,30 38 30 30,0800,accept,postcode NT,Darwin,Australia Post postcode file
+au_reference,7999,37 39 39 39,7999,reject,postcode invalid,above TAS range,Australia Post postcode file
+au_reference,9999,39 39 39 39,9999,reject,postcode invalid,not assigned,Australia Post postcode file
+au_reference,A1B2C3,41 31 42 32 43 33,A1B2C3,reject,postcode invalid,letters,Australia Post postcode file
+au_reference,200,32 30 30,200,reject,postcode invalid,3 digits,Australia Post postcode file
+au_reference,$110.00,24 31 31 30 2e 30 30,$110.00,accept,GST total,subtotal $100.00 + GST 10% = $110.00,A New Tax System (Goods and Services Tax) Act 1999 (Cth) s 9-70

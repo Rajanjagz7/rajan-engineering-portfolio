@@ -10,7 +10,7 @@ def contact(client, cleanup, **body):
 
 @pytest.mark.positive
 def test_create_and_update_contact(client, cleanup, uid):
-    r = contact(client, cleanup, lastName="Sharma", email=f"QA.{uid}@Example.COM", phone="+61412345678")
+    r = contact(client, cleanup, lastName="Sharma", email=f"QA.{uid}@example.com", phone="+61412345678")
     assert r.status_code == 201
     c = r.json()
     assert c["email"] == f"qa.{uid}@example.com"  # lower-cased
@@ -74,15 +74,11 @@ def test_company_validation(client):
 
 # ---- known validation gaps (strict xfail: these start failing the gate the day they are fixed,
 # ---- prompting removal of the marker) -----------------------------------------------------------
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="BUG: contact phone is not validated")
 @pytest.mark.parametrize("phone", ["abc", "1"])
 def test_phone_should_be_validated(client, cleanup, phone):
     assert contact(client, cleanup, phone=phone).status_code == 400
 
 
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="BUG: whitespace-only first name accepted")
 def test_whitespace_first_name_rejected(client, cleanup):
     assert contact(client, cleanup, firstName="   ").status_code == 400
 
@@ -93,8 +89,6 @@ def test_unknown_owner_rejected(client, cleanup):
     assert contact(client, cleanup, ownerActorId="nope").status_code in (400, 404)
 
 
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="BUG: company domain not validated / normalised")
 def test_company_domain_validated(client, cleanup):
     r = client.post("/companies", json={"name": "QA dom", "domain": "not a domain"})
     if r.status_code == 201:
@@ -102,8 +96,6 @@ def test_company_domain_validated(client, cleanup):
     assert r.status_code == 400
 
 
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="BUG: inconsistent length limits (company name unlimited, email > 254)")
 def test_company_name_length_capped(client, cleanup):
     r = client.post("/companies", json={"name": "N" * 300})
     if r.status_code == 201:

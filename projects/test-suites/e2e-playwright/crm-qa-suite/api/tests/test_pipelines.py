@@ -152,8 +152,6 @@ def test_xss_name_is_stored_verbatim_not_executed(client, cleanup):
 
 
 # ---------- known bugs / open design questions (strict xfail: flips red when fixed) ----
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="DESIGN: duplicate pipeline names are allowed")
 def test_duplicate_pipeline_names_rejected(client, cleanup, uid):
     a = client.make_pipeline(f"QA dup {uid}")
     cleanup.append(("pipelines", a["id"]))
@@ -163,8 +161,6 @@ def test_duplicate_pipeline_names_rejected(client, cleanup, uid):
     assert r.status_code in (400, 409)
 
 
-@pytest.mark.known_bug
-@pytest.mark.xfail(reason="DESIGN: stages can be added to an archived pipeline")
 def test_cannot_add_stage_to_archived_pipeline(client, pipeline):
     client.post(f"/pipelines/{pipeline['id']}/archive")
     assert client.post(f"/pipelines/{pipeline['id']}/stages", json={"name": "Late"}).status_code in (400, 409)

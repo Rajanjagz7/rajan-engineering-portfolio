@@ -32,6 +32,7 @@ QA automation engineer who writes test frameworks the way developers write produ
 | Fintech admin | [`gus-money`](projects/test-suites/e2e-playwright/gus-money) | Playwright TypeScript + pytest API tests, POMs, QA plan, CI workflow. |
 | Security-minded API tests | [`stc-security-tests`](projects/test-suites/e2e-playwright/stc-security-tests), [`rebateportal-playwright-qa`](projects/test-suites/e2e-playwright/rebateportal-playwright-qa) | Auth boundary, session, input validation and API contract probing. |
 | Cross-browser / mobile | [`playwright-tests`](projects/test-suites/e2e-playwright/playwright-tests), [`shopify-mobile-tests`](projects/test-suites/e2e-playwright/shopify-mobile-tests) | Chromium/Firefox/WebKit and Android (Capacitor) runs. |
+| Web-app QA + API collections | [`support-x`](projects/test-suites/e2e-playwright/support-x), [`storefront-postman`](projects/test-suites/api-testing/storefront-postman) | Auth-setup Playwright project and a 37-group Postman collection for an e-commerce API. |
 | Public-demo practice | [`saucedemo-e2e-tests`](projects/test-suites/e2e-playwright/saucedemo-e2e-tests), [`cart-automation`](projects/test-suites/api-testing/cart-automation) | Clean examples anyone can run. |
 | Learning | [`qa-mastery`](projects/test-suites/e2e-playwright/qa-mastery), [`jmeter`](projects/test-suites/learning/jmeter), [`learn-playwright`](projects/test-suites/learning/learn-playwright) | Course exercises and JMeter load plans. |
 
@@ -42,6 +43,7 @@ QA automation engineer who writes test frameworks the way developers write produ
 | [`weight-plate-web`](projects/web-apps/weight-plate-web) | Macro / weight-plate tracker with Playwright E2E tests. |
 | [`fieldops`](projects/web-apps/fieldops) | Field-operations web prototype and data-generation scripts. |
 | [`stc`](projects/apps/stc) | Python application with tests. |
+| [`rajanstocks`](projects/trading-finance/rajanstocks) | Earlier variant of the stock scanner. |
 
 ---
 

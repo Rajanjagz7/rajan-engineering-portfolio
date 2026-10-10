@@ -1,6 +1,6 @@
-# CRM QA suite
+# CRM
 
-Automated API + UI tests for the CRM dashboard (`crm.example.com`), built from the manual deep-test session of 2026-10-01.
+Automated API + UI test suite and bug report for the CRM dashboard (`crm.example.com`), built from the manual deep-test session of 2026-10-01.
 
 | Part | Tech | Where |
 |---|---|---|
@@ -45,7 +45,7 @@ Every test name or marker says what kind of case it is, so you can filter (`-m` 
 
 **Known bugs:** a `known_bug` test asserts the *correct* behaviour and is marked expected-to-fail (`xfail` / `test.fail`).
 It does not break the build today; the day the bug is fixed the test starts "unexpectedly passing", which **fails** the
-build until you delete the marker. That keeps the bug list honest. The current list matches `crm-qa-findings.md`.
+build until you delete the marker. That keeps the bug list honest. The current list matches `docs/qa-findings.md`.
 
 To add a case: copy a neighbouring test, use the fixtures (`client`, `pipeline`, `deal_factory`, `cleanup`, `uid`),
 register everything you create with `cleanup.append(("resource", id))`, and add the marker.
@@ -86,3 +86,19 @@ The workflow serialises runs (one shared staging project), so never run two suit
 - Export file *download* is covered at the API (metadata); the browser download itself was checked manually.
 - Screen-reader behaviour is only approximated by structural a11y checks; run NVDA/VoiceOver for real coverage.
 - The login endpoint is CSRF-protected (same-origin); the API client presents the app's own origin header when logging in.
+
+## 8. API audit harness (`audit/`)
+A deterministic, evidence-recording audit of the whole API, built from the brief in `docs/`:
+
+| step | script | what it covers |
+|---|---|---|
+| field matrix | `audit/run_matrix.py` | every field of every write endpoint, one variable at a time: bisected length limits, type and representation cases, read-back after each 2xx, record-count checks |
+| read-only | `audit/steps_readonly.py` | authentication hypotheses on every route, cross-project reads, error-code stability, header and method hygiene (add `--with-logout` last) |
+| write steps | `audit/steps_writes.py` | negative-only requests, mass assignment, state machines, idempotency, races, partial failure, CSRF and cross-project writes |
+| integration | `audit/steps_integration.py` | referential integrity, line items, automation (polls the ~2 minute batch), messaging in test mode, reports against ground truth, merge, audit trail |
+| extras | `audit/steps_known.py`, `steps_extra.py`, `steps_filters.py` | re-verification of earlier findings with request ids |
+| report | `audit/render_report.py` | writes `docs/api-audit-report.md` and `docs/validation-messages.csv` from the evidence |
+
+Every request and response is logged to `reports/audit/evidence*.jsonl` (git-ignored) with an id (`REQ-...`); the report cites those ids. Guard rails: own tenant only, no load (single streams plus a 10-way parallel race step), deletes only for rows the run created, messages only in `test` environment mode. Results so far are in `docs/api-audit-report.md`; test data fixtures are in `fixtures/` (see `fixtures/README.md`).
+
+Seed a realistic demo dataset with `python scripts/seed_demo_data.py` (`--wipe --yes` removes everything in the target project).

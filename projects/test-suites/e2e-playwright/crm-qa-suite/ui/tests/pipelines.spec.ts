@@ -39,7 +39,7 @@ test.describe('New pipeline dialog', () => {
   test('[security] markup in a name is rendered as text, never executed', async ({ page }) => {
     let alerted = false;
     page.on('dialog', async (d) => { alerted = true; await d.dismiss(); });
-    const name = `${PREFIX}<img src=x onerror=alert(1)> "q" & 'a'`;
+    const name = `${PREFIX}<img src=x onerror=alert(1)> "q" & 'a' ${Date.now()}`;
     const dialog = await openNewPipelineDialog(page);
     await dialog.locator('#pipeline-name').fill(name);
     await dialog.getByRole('textbox', { name: 'Stage 1' }).fill('A');
@@ -78,6 +78,27 @@ test.describe('New pipeline dialog', () => {
   test('[boundary] name input enforces the 120 character limit', async ({ page }) => {
     const dialog = await openNewPipelineDialog(page);
     await expect(dialog.locator('#pipeline-name')).toHaveAttribute('maxlength', '120');
+  });
+});
+
+test.describe('regression: fixed behaviour', () => {
+  test('[negative] duplicate pipeline name is refused with a clear message', async ({ page }) => {
+    const dialog = await openNewPipelineDialog(page);
+    await dialog.locator('#pipeline-name').fill('Enterprise Sales');
+    await dialog.getByRole('textbox', { name: 'Stage 1' }).fill('Lead');
+    const create = dialog.getByRole('button', { name: 'Create pipeline' });
+    if (await create.isEnabled()) await create.click();
+    await expect(dialog.getByText(/already exists|Pipeline names are unique|rename that one first/i).first()).toBeVisible();
+    await expect(dialog).toBeVisible();
+  });
+
+  test('[edge] Escape on a dirty dialog asks before discarding', async ({ page }) => {
+    const dialog = await openNewPipelineDialog(page);
+    await dialog.locator('#pipeline-name').fill('Unsaved draft');
+    await page.keyboard.press('Escape');
+    await expect(page.getByRole('alertdialog')).toBeVisible();
+    await page.getByRole('alertdialog').getByRole('button', { name: /keep editing/i }).click();
+    await expect(dialog.locator('#pipeline-name')).toHaveValue('Unsaved draft');
   });
 });
 
@@ -126,19 +147,18 @@ test.describe('resilience', () => {
   });
 });
 
-test.describe('known UI bugs (expected to fail until fixed)', () => {
-  test('[known_bug] expired session on submit should send the user to sign in, not show a raw API error', async ({ page, context }) => {
-    test.fail(true, 'BUG: dialog shows "A secret API key or Dashboard session is required" and stays open');
+test.describe('page titles', () => {
+  test('[edge] expired session on submit tells the user to sign in again (no raw API message)', async ({ page, context }) => {
     const dialog = await openNewPipelineDialog(page);
-    await dialog.locator('#pipeline-name').fill(`${PREFIX}expired`);
+    await dialog.locator('#pipeline-name').fill(`${PREFIX}expired ${Date.now()}`);
     await dialog.getByRole('textbox', { name: 'Stage 1' }).fill('S1');
     await context.clearCookies();
     await dialog.getByRole('button', { name: 'Create pipeline' }).click();
-    await expect(page).toHaveURL(/\/login/, { timeout: 8000 });
+    await expect(dialog.getByText(/session has ended/i)).toBeVisible();
+    await expect(dialog.getByText(/Dashboard session is required/)).toHaveCount(0);
   });
 
-  test('[known_bug] every page should have a distinct <title>', async ({ page }) => {
-    test.fail(true, 'BUG: all pages are titled "CRM Dashboard"');
+  test('[a11y] every page has a distinct <title>', async ({ page }) => {
     const titles = new Set<string>();
     for (const p of [pipelinesUrl, pipelinesUrl.replace('/pipelines', '/contacts'), pipelinesUrl.replace('/pipelines', '/deals')]) {
       await page.goto(p);

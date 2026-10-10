@@ -52,6 +52,13 @@ const projects = [
 
   // ---- E2E automation ----
   {
+    title: 'Support X',
+    category: 'e2e',
+    description: 'Web-app QA project: Playwright specs with auth setup, shared test data and release-notes verification.',
+    tech: ['JavaScript', 'Playwright'],
+    path: 'projects/test-suites/e2e-playwright/support-x'
+  },
+  {
     title: 'Energy Rebate Tests',
     category: 'e2e',
     description: 'Main workflow suite for a rebate portal: job creation, field boundaries, soft delete, nomination flow.',
@@ -159,6 +166,13 @@ const projects = [
 
   // ---- API ----
   {
+    title: 'Storefront API Collection',
+    category: 'api',
+    description: 'Postman collection of 37 request groups covering auth, store, orders, reviews and dashboard endpoints of an e-commerce platform.',
+    tech: ['Postman', 'REST'],
+    path: 'projects/test-suites/api-testing/storefront-postman'
+  },
+  {
     title: 'Cart Automation',
     category: 'api',
     description: 'Scripted sign-up and add-to-cart flow for an e-commerce site.',
@@ -201,6 +215,13 @@ const projects = [
     description: 'Python application with a test scaffold.',
     tech: ['Python', 'pytest'],
     path: 'projects/apps/stc'
+  },
+  {
+    title: 'Stock Scanner (variant)',
+    category: 'trading',
+    description: 'Earlier branch of the scanner with a market API layer and bar-source abstraction.',
+    tech: ['Python', 'FastAPI'],
+    path: 'projects/trading-finance/rajanstocks'
   },
   {
     title: 'Block Deal Scanner',

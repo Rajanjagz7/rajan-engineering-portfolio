@@ -25,8 +25,7 @@ for (const s of sections) {
   });
 }
 
-test('[known_bug] heading levels should not skip (Reports)', async ({ page }) => {
-  test.fail(true, 'BUG: Reports skips from h1 to h3');
+test('[a11y] heading levels do not skip (Reports)', async ({ page }) => {
   await page.goto(`/projects/${PROJECT}/reports`);
   await expect(page.locator('h1').first()).toBeVisible();
   await page.waitForLoadState('networkidle');

@@ -1,6 +1,8 @@
 """Reusable API client for the CRM dashboard API (/api/crm/v1)."""
 from __future__ import annotations
 
+import time
+
 import requests
 
 from config import Config
@@ -12,6 +14,7 @@ class CrmClient:
         self.timeout = timeout
         self.session = requests.Session()
         self.project_id = cfg.project_id
+        self.retry_posts = False
 
     # -- auth -------------------------------------------------------------
     def login(self) -> None:
@@ -27,6 +30,9 @@ class CrmClient:
 
     def headers(self, project_id: str | None = None, **extra: str) -> dict[str, str]:
         h = {
+            # A browser always sends these on same-site requests; the API now rejects writes without a same-origin Origin.
+            "origin": self.cfg.base_url,
+            "referer": f"{self.cfg.base_url}/",
             "accept": "application/json",
             "crm-org-id": self.cfg.org_id,
             "crm-project-id": project_id or self.project_id,
@@ -44,8 +50,17 @@ class CrmClient:
         if headers:
             h.update(headers)
         sess = self.session if authenticated else requests.Session()
-        return sess.request(method, f"{self.cfg.api}{path}", json=json, data=data, headers=h,
-                            timeout=self.timeout, **kw)
+        # Transient connection resets happen on the staging proxy. Retry only when it is safe: reads and
+        # idempotent writes always, POST only when the caller opts in (a retried POST could double-create).
+        attempts = 3 if (method.upper() != "POST" or self.retry_posts) else 1
+        for attempt in range(attempts):
+            try:
+                return sess.request(method, f"{self.cfg.api}{path}", json=json, data=data, headers=h,
+                                    timeout=self.timeout, **kw)
+            except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
+                if attempt == attempts - 1:
+                    raise
+                time.sleep(1.5 * (attempt + 1))
 
     def get(self, path, **kw):
         return self.request("GET", path, **kw)
