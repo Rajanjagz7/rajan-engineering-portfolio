@@ -1,4 +1,4 @@
-name: Portfolio CI
+name: CI
 
 on:
   push:
@@ -7,30 +7,47 @@ on:
     branches: [main]
 
 jobs:
-  lint-and-test:
+  repo-checks:
+    name: Repo hygiene
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        project:
-          - path: projects/trading-finance/algo-trading-rajan
-            runner: python
-            command: pytest tests/ -v
-          - path: projects/web-apps/weight-plate-web
-            runner: node
-            command: npx playwright test
-          - path: projects/test-suites/e2e-playwright/saucedemo-advanced-e2e
-            runner: node
-            command: npm test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node scripts/validate.mjs
+
+  portfolio-site:
+    name: Portfolio site builds
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/web-apps/portfolio-site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: projects/web-apps/portfolio-site/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  ai-api-tests:
+    name: AI API tests (key-less run)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/test-suites/api-testing/ai-api-testing
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        if: matrix.project.runner == 'python'
         with:
           python-version: '3.11'
-      - uses: actions/setup-node@v4
-        if: matrix.project.runner == 'node'
-        with:
-          node-version: '20'
-      - run: cd ${{ matrix.project.path }} && ${{ matrix.project.command }}
+          cache: pip
+          cache-dependency-path: projects/test-suites/api-testing/ai-api-testing/requirements.txt
+      - run: pip install -r requirements.txt
+      # Without ANTHROPIC_API_KEY the suite skips cleanly; with the secret set it runs for real.
+      - run: pytest -q
         env:
-          CI: true
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

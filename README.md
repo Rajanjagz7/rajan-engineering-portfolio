@@ -1,6 +1,26 @@
-# Rajan — QA Automation Engineer & Builder
+<p align="center">
+  <img src="docs/img/banner.svg" alt="Rajan Jagwani - QA Automation Engineer" width="100%">
+</p>
 
-**Live portfolio:** [rajanjagwani.vercel.app](https://rajanjagwani.vercel.app) · [GitHub](https://github.com/Rajanjagz7) · [LinkedIn](https://linkedin.com/in/rajanj71) · [Email](mailto:rajanjagz7@gmail.com)
+<p align="center">
+  <a href="https://rajanjagwani.vercel.app"><img alt="Live portfolio" src="https://img.shields.io/badge/Live_portfolio-rajanjagwani.vercel.app-06b6d4?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  <a href="https://linkedin.com/in/rajanj71"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-rajanj71-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="mailto:rajanjagz7@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-rajanjagz7%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Rajanjagz7/rajan-engineering-portfolio/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Rajanjagz7/rajan-engineering-portfolio/actions/workflows/ci.yml/badge.svg"></a>
+  <img alt="Playwright" src="https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white">
+  <img alt="pytest" src="https://img.shields.io/badge/pytest-0A9EDC?logo=pytest&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white">
+</p>
+
+<p align="center">
+  <a href="https://rajanjagwani.vercel.app"><img src="docs/img/portfolio-preview.png" alt="Portfolio site preview" width="85%"></a>
+</p>
 
 QA automation engineer who writes test frameworks the way developers write products: layered, typed, data-driven and CI-ready. I also build my own tools — most notably a live NSE options scanner deployed on Vercel.
 

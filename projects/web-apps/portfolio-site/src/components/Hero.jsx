@@ -205,16 +205,16 @@ export default function Hero() {
                   $ python gen_bug_cards.py
                 </div>
                 <div style={{ color: '#86efac' }}>
-                  ✓ NSW-STG-53 · Critical · Stored XSS in Job Notes — reproduced & verified
+                  ✓ QA-53 · Critical · Stored XSS in Job Notes — reproduced & verified
                 </div>
                 <div style={{ color: '#86efac' }}>
-                  ✓ NSW-STG-63 · Critical · Save fires no request on any job-edit surface
+                  ✓ QA-63 · Critical · Save fires no request on any job-edit surface
                 </div>
                 <div style={{ color: '#86efac' }}>
-                  ✓ NSW-STG-40 · Medium · No throttling on admin login (12/12 attempts pass)
+                  ✓ QA-40 · Medium · No throttling on admin login (12/12 attempts pass)
                 </div>
                 <div style={{ color: '#86efac' }}>
-                  ✓ NSW-STG-58 · Medium · Postcode accepted with no format or NSW-range check
+                  ✓ QA-58 · Medium · Postcode accepted with no format or regional-range check
                 </div>
                 <div style={{ color: 'var(--text-muted)' }}>
                   … 56 more, severity &amp; priority ranked
@@ -237,7 +237,7 @@ export default function Hero() {
                     <span style={{ color: 'var(--text-muted)' }}> tracked &amp; severity-ranked</span>
                   </div>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>
-                    wrote NSW_BUGS.md / NSW_BUGS.csv
+                    wrote DEFECTS.md / DEFECTS.csv
                   </div>
                 </div>
               </div>
