@@ -41,6 +41,7 @@ QA automation engineer who writes test frameworks the way developers write produ
 | Project | Notes |
 |---|---|
 | [`weight-plate-web`](projects/web-apps/weight-plate-web) | Macro / weight-plate tracker with Playwright E2E tests. |
+| [`portfolio-site`](projects/web-apps/portfolio-site) | Source of my personal site: React + Vite with a serverless contact form, deployed on Vercel. |
 | [`fieldops`](projects/web-apps/fieldops) | Field-operations web prototype and data-generation scripts. |
 | [`stc`](projects/apps/stc) | Python application with tests. |
 | [`rajanstocks`](projects/trading-finance/rajanstocks) | Earlier variant of the stock scanner. |

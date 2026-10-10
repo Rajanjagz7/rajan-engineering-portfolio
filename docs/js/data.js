@@ -196,6 +196,13 @@ const projects = [
 
   // ---- Apps ----
   {
+    title: 'Personal Portfolio Site',
+    category: 'web',
+    description: 'React + Vite resume site with project case studies, a skills matrix and a serverless contact form, deployed on Vercel.',
+    tech: ['React', 'Vite', 'Vercel', 'Node.js'],
+    path: 'projects/web-apps/portfolio-site'
+  },
+  {
     title: 'Weight Plate Web',
     category: 'web',
     description: 'Macro and weight-plate tracker with Playwright E2E tests.',
