@@ -1,5 +1,7 @@
 # Rajan — QA Automation Engineer & Builder
 
+**Live portfolio:** [rajanjagwani.vercel.app](https://rajanjagwani.vercel.app) · [GitHub](https://github.com/Rajanjagz7) · [LinkedIn](https://linkedin.com/in/rajanj71) · [Email](mailto:rajanjagz7@gmail.com)
+
 QA automation engineer who writes test frameworks the way developers write products: layered, typed, data-driven and CI-ready. I also build my own tools — most notably a live NSE options scanner deployed on Vercel.
 
 **Core stack:** Playwright (TypeScript / Python) · pytest · Puppeteer · Postman · JMeter · GitHub Actions · Docker · FastAPI
@@ -74,7 +76,7 @@ pytest
 
 ## Portfolio site
 
-A static index of all projects lives in [`docs/`](docs) and is served with GitHub Pages.
+My main portfolio is at **[rajanjagwani.vercel.app](https://rajanjagwani.vercel.app)** (source: [`projects/web-apps/portfolio-site`](projects/web-apps/portfolio-site)). A lightweight static index of every project in this repo lives in [`docs/`](docs).
 
 ## License
 
