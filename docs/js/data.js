@@ -1,5 +1,5 @@
 // Single source of truth for the portfolio site. Paths are relative to the repo root.
-const REPO = 'Rajanjagz7/qa-automation-portfolio';
+const REPO = 'Rajanjagz7/rajan-engineering-portfolio';
 const BRANCH = 'main';
 
 const categoryLabels = {
