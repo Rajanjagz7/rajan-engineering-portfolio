@@ -15,8 +15,8 @@ QA automation engineer who writes test frameworks the way developers write produ
 | [**SauceDemo Advanced E2E**](projects/test-suites/e2e-playwright/saucedemo-advanced-e2e) | 8-layer framework: config, fixtures, page objects, API helpers, data generators, custom reporters, Docker. Runs against public demo apps. | Playwright, TypeScript, Docker |
 | [**AI API Testing**](projects/test-suites/api-testing/ai-api-testing) | Functional, prompt-injection/security, regression-eval and load tests against the Claude Messages API. Skips cleanly without a key. | pytest, Anthropic SDK |
 | [**CRM QA Suite**](projects/test-suites/e2e-playwright/crm-qa-suite) | API + UI suite with typed test cases (positive / negative / boundary / edge / security), strict expected-failures for known bugs, CI quality gates, and a no-code runner UI. | pytest, Playwright, GitHub Actions |
-| [**NSE Option Scanner**](projects/trading-finance/rajan) | Live F&O option-chain scanner with bhavcopy history, filter engine and a web dashboard, deployed on Vercel. Includes its own pytest + E2E tests. | Python, FastAPI, Node, Vercel |
-| [**Stock Scanner (rajan1)**](projects/trading-finance/rajan1) | Indicator engine (Donchian, Heikin Ashi, UT Bot, trend filters) with live NSE data and a single-page UI. | Python, FastAPI, pandas |
+| [**Algo Trading — NSE Option Scanner**](projects/trading-finance/algo-trading-rajan) | Live F&O option-chain scanner with bhavcopy history, filter engine and a web dashboard, deployed on Vercel. Includes its own pytest + E2E tests. | Python, FastAPI, Node, Vercel |
+| [**Stock Scanner Algo**](projects/trading-finance/stock-scanner-algo) | Indicator engine (Donchian, Heikin Ashi, UT Bot, trend filters) with live NSE data and a single-page UI. | Python, FastAPI, pandas |
 
 ---
 

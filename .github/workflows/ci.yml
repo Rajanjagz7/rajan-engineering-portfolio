@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         project:
-          - path: projects/trading-finance/rajan
+          - path: projects/trading-finance/algo-trading-rajan
             runner: python
             command: pytest tests/ -v
           - path: projects/web-apps/weight-plate-web

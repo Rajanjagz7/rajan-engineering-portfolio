@@ -36,18 +36,18 @@ const projects = [
     path: 'projects/test-suites/e2e-playwright/crm-qa-suite'
   },
   {
-    title: 'NSE Option Scanner',
+    title: 'Algo Trading — NSE Option Scanner',
     category: 'trading', featured: true,
     description: 'Live F&O option-chain scanner with bhavcopy history, a rule-based filter engine and a web dashboard, deployed on Vercel with its own tests.',
     tech: ['Python', 'FastAPI', 'Node.js', 'Vercel'],
-    path: 'projects/trading-finance/rajan'
+    path: 'projects/trading-finance/algo-trading-rajan'
   },
   {
-    title: 'Stock Scanner',
+    title: 'Stock Scanner Algo',
     category: 'trading', featured: true,
     description: 'Indicator engine (Donchian, Heikin Ashi, UT Bot, trend filters) over live NSE data, with a single-page UI.',
     tech: ['Python', 'FastAPI', 'pandas'],
-    path: 'projects/trading-finance/rajan1'
+    path: 'projects/trading-finance/stock-scanner-algo'
   },
 
   // ---- E2E automation ----

@@ -1,4 +1,4 @@
-# Stock Scanner (rajan1)
+# Stock Scanner Algo
 
 Live NSE derivatives scanner with a small indicator engine and a single-page web UI.
 
