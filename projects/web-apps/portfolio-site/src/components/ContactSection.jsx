@@ -172,7 +172,7 @@ export default function ContactSection() {
 
               {/* Instagram Card */}
               <a
-                href="https://www.instagram.com/rajanjagwani07"
+                href="https://www.instagram.com/rajanjagwani25"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -189,7 +189,7 @@ export default function ContactSection() {
                 }}
               >
                 <SiInstagram size={20} color="#E4405F" />
-                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>instagram.com/rajanjagwani07</span>
+                <span style={{ fontSize: '0.95rem', fontWeight: 600 }}>instagram.com/rajanjagwani25</span>
               </a>
 
               {/* Location Card */}

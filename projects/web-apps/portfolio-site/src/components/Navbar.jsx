@@ -229,7 +229,7 @@ export default function Navbar() {
               <span>GitHub</span>
             </a>
             <a
-              href="https://www.instagram.com/rajanjagwani07"
+              href="https://www.instagram.com/rajanjagwani25"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline btn-sm"
