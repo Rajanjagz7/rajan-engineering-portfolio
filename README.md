@@ -26,7 +26,7 @@ QA automation engineer who writes test frameworks the way developers write produ
 
 **Core stack:** Playwright (TypeScript / Python) · pytest · Puppeteer · Postman · JMeter · GitHub Actions · Docker · FastAPI
 
-> Client and employer projects in this repo are **sanitised**: names, hosts, accounts and findings are replaced with neutral placeholders (`example.com`, `FieldOps`, `ClinicApp`, `RebatePortal`). Only framework code and approach are shown.
+> Client and employer projects under `projects/` are **sanitised**: names, hosts, accounts and findings are replaced with neutral placeholders (`example.com`, `FieldOps`, `ClinicApp`, `RebatePortal`). The `suites/` folder keeps the original project names; every login in it is replaced by `<set-in-env>`, so set your own values in environment variables before running a suite. Only framework code and approach are shown.
 
 ---
 
@@ -69,6 +69,21 @@ QA automation engineer who writes test frameworks the way developers write produ
 | [`rajanstocks`](projects/trading-finance/rajanstocks) | Earlier variant of the stock scanner. |
 
 ---
+
+## QA suites by project — `suites/`
+
+The full suites, one folder per project, with their page objects, test data, bug lists and reports.
+
+| Suite | What is inside | Stack |
+|---|---|---|
+| [**rebatem8-nsw**](suites/rebatem8-nsw) | Energy-rebate workflow suite ported four ways: TypeScript Playwright, pytest, raw Playwright and Puppeteer, plus NSW job and security API tests | Playwright, pytest, Puppeteer |
+| [**fieldr**](suites/fieldr) | Field-operations platform: end-to-end page-object suite, release-notes traceability, a 107-test release suite, manual and API QA | Playwright, pytest |
+| [**healthcare**](suites/healthcare) | Clinic membership, time-zone and daylight-saving, billing, appointments and telehealth | Playwright, Selenium, pytest |
+| [**zerogap**](suites/zerogap) | Cross-browser and Android (Capacitor) runs, Shopify storefront tests with bug sheets and evidence, Appium | Playwright, Appium |
+| [**gus-money**](suites/gus-money) | Loan portal: UI and API tests, QA plans, versioned bug lists and retest reports | Playwright, pytest |
+| [**crm**](suites/crm) | CRM dashboard: API and UI suite, integration, security and injection testing, bug reports | pytest, Playwright |
+| [**support-x**](suites/support-x), [**stc**](suites/stc), [**weight-plate**](suites/weight-plate) | Auth-setup project with QA docs; a Python scaffold with security tests; macro tracker E2E tests and a bug report | Playwright, Python |
+| [**practice-and-learning**](suites/practice-and-learning) | Public-demo practice, JMeter plans and course exercises | Playwright, JMeter |
 
 ## How I approach testing
 
