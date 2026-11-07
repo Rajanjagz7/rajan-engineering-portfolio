@@ -1,0 +1,4716 @@
+{
+ "crawled": [
+  {
+   "path": "/",
+   "status": 200
+  },
+  {
+   "path": "/collections/all",
+   "status": 200
+  },
+  {
+   "path": "/search",
+   "status": 200
+  },
+  {
+   "path": "/collections/barbercon",
+   "status": 200
+  },
+  {
+   "path": "/collections/hair-2-beauty-imports",
+   "status": 200
+  },
+  {
+   "path": "/collections/muk-hair-care",
+   "status": 200
+  },
+  {
+   "path": "/collections/bundles-kits",
+   "status": 200
+  },
+  {
+   "path": "/pages/wishlist",
+   "status": 200
+  },
+  {
+   "path": "/collections",
+   "status": 200
+  },
+  {
+   "path": "/products/uppercut-matte-pomade",
+   "status": 200
+  },
+  {
+   "path": "/products/uppercut-deluxe-pomade",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-inca-01-styling-hair-wax-150ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-inca-05-styling-hair-wax-150ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-inca-04-styling-hair-wax-150ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-inca-06-styling-hair-wax-150ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml",
+   "status": 200
+  },
+  {
+   "path": "/collections/prorapid",
+   "status": 200
+  },
+  {
+   "path": "/collections/hair-products",
+   "status": 200
+  },
+  {
+   "path": "/pages/about-us",
+   "status": 200
+  },
+  {
+   "path": "/pages/faq",
+   "status": 200
+  },
+  {
+   "path": "/blogs/news/how-to-pick-your-perfect-pomade-1",
+   "status": 200
+  },
+  {
+   "path": "/blogs/news/beard-oil-vs-balm-what-you-need",
+   "status": 200
+  },
+  {
+   "path": "/blogs/news/how-to-pick-your-perfect-pomade",
+   "status": 200
+  },
+  {
+   "path": "/collections/gaming-controllers",
+   "status": 404
+  },
+  {
+   "path": "/collections/gaming-chair",
+   "status": 404
+  },
+  {
+   "path": "/collections/gaming-desk",
+   "status": 404
+  },
+  {
+   "path": "/collections/keyboards",
+   "status": 404
+  },
+  {
+   "path": "/collections/mousepads",
+   "status": 404
+  },
+  {
+   "path": "/collections/clippers-trimmers-shavers",
+   "status": 200
+  },
+  {
+   "path": "/collections/barber-essentials",
+   "status": 200
+  },
+  {
+   "path": "/pages/trade-portal",
+   "status": 200
+  },
+  {
+   "path": "/pages/contact",
+   "status": 200
+  },
+  {
+   "path": "/pages/shipping-policy",
+   "status": 200
+  },
+  {
+   "path": "/pages/returns-policy",
+   "status": 200
+  },
+  {
+   "path": "/pages/privacy-policy",
+   "status": 200
+  },
+  {
+   "path": "/pages/terms-conditions",
+   "status": 200
+  },
+  {
+   "path": "/pages/warranty",
+   "status": 200
+  },
+  {
+   "path": "/pages/compare",
+   "status": 404
+  },
+  {
+   "path": "/products/andis-clipper-oil-118ml",
+   "status": 200
+  },
+  {
+   "path": "/products/astra-blades-green-platinum",
+   "status": 200
+  },
+  {
+   "path": "/products/barbercon-acrylic-sterilizing-jar-1094ml",
+   "status": 200
+  },
+  {
+   "path": "/products/barbercon-neck-strips-white",
+   "status": 200
+  },
+  {
+   "path": "/products/barbercon-wax-pot-black",
+   "status": 200
+  },
+  {
+   "path": "/products/barbercon-wax-pot-white",
+   "status": 200
+  },
+  {
+   "path": "/products/carbon-comb-abs-70739",
+   "status": 200
+  },
+  {
+   "path": "/products/carbon-small-cutting-comb-cfc-08139",
+   "status": 200
+  },
+  {
+   "path": "/products/clippercide-spray-425g",
+   "status": 200
+  },
+  {
+   "path": "/products/coffee-stirrers-1000pcs",
+   "status": 200
+  },
+  {
+   "path": "/products/cosma-liquid-styptic-25ml",
+   "status": 200
+  },
+  {
+   "path": "/products/inca-02-styling-dust-wax-30g",
+   "status": 200
+  },
+  {
+   "path": "/collections/bundles",
+   "status": 200
+  },
+  {
+   "path": "/collections/frontpage",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml",
+   "status": 200
+  },
+  {
+   "path": "/products/prorapid-beard-oil-50ml",
+   "status": 200
+  },
+  {
+   "path": "/blogs/news",
+   "status": 200
+  },
+  {
+   "path": "/products/wooden-brush-wb880-8",
+   "status": 200
+  },
+  {
+   "path": "/products/joiken-barber-towels-black-10-pack",
+   "status": 200
+  },
+  {
+   "path": "/products/wooden-round-brush-wb880-10",
+   "status": 200
+  },
+  {
+   "path": "/products/wahl-styptic-60ml",
+   "status": 200
+  },
+  {
+   "path": "/products/sedef-turkish-razor",
+   "status": 200
+  },
+  {
+   "path": "/pages/trade-portal-account-form",
+   "status": 200
+  },
+  {
+   "path": "/account/login",
+   "status": 302
+  },
+  {
+   "path": "/pages/faqs",
+   "status": 404
+  }
+ ],
+ "links": [
+  {
+   "href": "#MainContent",
+   "text": "Skip to content",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "/collections/all",
+   "text": "Continue shopping",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/all"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgwMjk2LCJuYmYiOjE3OTE4NzU0OTZ9.RU6YmCRcY2B0s3hR4dktjQ98hFXoROvQEriQBGubi6I",
+   "text": "Log in",
+   "from": [
+    "/"
+   ],
+   "fromCount": 1,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgwMjk2LCJuYmYiOjE3OTE4NzU0OTZ9.RU6YmCRcY2B0s3hR4dktjQ98hFXoROvQEriQBGubi6I",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "/cart",
+   "text": "View Cart",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /cart"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/search?q=featured&product=product",
+   "text": "featured",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /search?q=featured&product=product"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/search?q=trendy&product=product",
+   "text": "trendy",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /search?q=trendy&product=product"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/search?q=sale&product=product",
+   "text": "sale",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /search?q=sale&product=product"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/search?q=new&product=product",
+   "text": "new",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /search?q=new&product=product"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barbercon",
+   "text": "CLIPPERS &amp; ELECTRICALS",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barbercon"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/hair-2-beauty-imports",
+   "text": "HAIR PRODUCTS",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/hair-2-beauty-imports"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/muk-hair-care",
+   "text": "BARBER ESSENTIALS",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/muk-hair-care"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/bundles-kits",
+   "text": "BUNDLES &amp; KITS",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/bundles-kits"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#",
+   "text": "--> TW",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "dead-hash",
+   "status": null,
+   "final": null,
+   "chain": [],
+   "note": "empty/# href"
+  },
+  {
+   "href": "/",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/wishlist",
+   "text": "Wishlist",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/wishlist"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/account",
+   "text": "Log in",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 302,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzE4LCJuYmYiOjE3OTE4Nzg5MTh9.71InCn1niNmbqO3ct9vJoXvZ8AgBNrqwxCI0cz9wXd4",
+   "chain": [
+    "302 /account",
+    "-> external https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOi"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgwMjk2LCJuYmYiOjE3OTE4NzU0OTZ9.RU6YmCRcY2B0s3hR4dktjQ98hFXoROvQEriQBGubi6I#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/"
+   ],
+   "fromCount": 1,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgwMjk2LCJuYmYiOjE3OTE4NzU0OTZ9.RU6YmCRcY2B0s3hR4dktjQ98hFXoROvQEriQBGubi6I#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "/collections",
+   "text": "Shop Styling",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/uppercut-matte-pomade",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/uppercut-matte-pomade",
+    "/collections/frontpage"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/uppercut-matte-pomade"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/uppercut-deluxe-pomade",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/uppercut-deluxe-pomade"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/uppercut-deluxe-pomade"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-inca-01-styling-hair-wax-150ml",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/prorapid-inca-01-styling-hair-wax-150ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-inca-01-styling-hair-wax-150ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-inca-05-styling-hair-wax-150ml",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/prorapid-inca-05-styling-hair-wax-150ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-inca-05-styling-hair-wax-150ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-inca-04-styling-hair-wax-150ml",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/prorapid-inca-04-styling-hair-wax-150ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-inca-04-styling-hair-wax-150ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-inca-06-styling-hair-wax-150ml",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/prorapid-inca-06-styling-hair-wax-150ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-inca-06-styling-hair-wax-150ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/products/prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid",
+   "text": "View all",
+   "from": [
+    "/",
+    "/collections/prorapid"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/hair-products",
+   "text": "Shop Now",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/hair-products"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/about-us",
+   "text": "About ZeroGap",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/about-us"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/faq",
+   "text": "View All FAQs",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/faq"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/blogs/news/how-to-pick-your-perfect-pomade-1",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/blogs/news/how-to-pick-your-perfect-pomade-1",
+    "/blogs/news/beard-oil-vs-balm-what-you-need",
+    "/blogs/news/how-to-pick-your-perfect-pomade"
+   ],
+   "fromCount": 5,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /blogs/news/how-to-pick-your-perfect-pomade-1"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/blogs/news/beard-oil-vs-balm-what-you-need",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/blogs/news/how-to-pick-your-perfect-pomade-1",
+    "/blogs/news/beard-oil-vs-balm-what-you-need",
+    "/blogs/news/how-to-pick-your-perfect-pomade"
+   ],
+   "fromCount": 5,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /blogs/news/beard-oil-vs-balm-what-you-need"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/blogs/news/how-to-pick-your-perfect-pomade",
+   "text": "(icon/image)",
+   "from": [
+    "/",
+    "/blogs/news/how-to-pick-your-perfect-pomade-1",
+    "/blogs/news/beard-oil-vs-balm-what-you-need",
+    "/blogs/news/how-to-pick-your-perfect-pomade"
+   ],
+   "fromCount": 5,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /blogs/news/how-to-pick-your-perfect-pomade"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/gaming-controllers",
+   "text": "(icon/image)",
+   "from": [
+    "/"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 404,
+   "final": 404,
+   "chain": [
+    "404 /collections/gaming-controllers"
+   ],
+   "note": "",
+   "finalStatus": 404,
+   "hops": 0
+  },
+  {
+   "href": "/collections/gaming-chair",
+   "text": "(icon/image)",
+   "from": [
+    "/"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 404,
+   "final": 404,
+   "chain": [
+    "404 /collections/gaming-chair"
+   ],
+   "note": "",
+   "finalStatus": 404,
+   "hops": 0
+  },
+  {
+   "href": "/collections/gaming-desk",
+   "text": "(icon/image)",
+   "from": [
+    "/"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 404,
+   "final": 404,
+   "chain": [
+    "404 /collections/gaming-desk"
+   ],
+   "note": "",
+   "finalStatus": 404,
+   "hops": 0
+  },
+  {
+   "href": "/collections/keyboards",
+   "text": "(icon/image)",
+   "from": [
+    "/"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 404,
+   "final": 404,
+   "chain": [
+    "404 /collections/keyboards"
+   ],
+   "note": "",
+   "finalStatus": 404,
+   "hops": 0
+  },
+  {
+   "href": "/collections/mousepads",
+   "text": "(icon/image)",
+   "from": [
+    "/"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 404,
+   "final": 404,
+   "chain": [
+    "404 /collections/mousepads"
+   ],
+   "note": "",
+   "finalStatus": 404,
+   "hops": 0
+  },
+  {
+   "href": "/collections/clippers-trimmers-shavers",
+   "text": "Clippers & Electricals",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/clippers-trimmers-shavers"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials",
+   "text": "Barber Essentials",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/trade-portal",
+   "text": "Trade Portal",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/trade-portal"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/contact",
+   "text": "Contact",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/contact"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/shipping-policy",
+   "text": "Shipping",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/shipping-policy"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/returns-policy",
+   "text": "Returns",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/returns-policy"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/privacy-policy",
+   "text": "Privacy",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/privacy-policy"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/terms-conditions",
+   "text": "Terms & Conditions",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/terms-conditions"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/pages/warranty",
+   "text": "Warranty",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/warranty"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#zerogap-supply-co",
+   "text": "To top",
+   "from": [
+    "/"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "/pages/compare",
+   "text": "View compare",
+   "from": [
+    "/",
+    "/collections/all",
+    "/search",
+    "/collections/barbercon"
+   ],
+   "fromCount": 67,
+   "kind": "internal",
+   "status": 404,
+   "final": 404,
+   "chain": [
+    "404 /pages/compare"
+   ],
+   "note": "",
+   "finalStatus": 404,
+   "hops": 0
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg2LCJuYmYiOjE3OTE4Nzg4ODZ9.rugvecKQ-gCHiu8aRJVFeBPSeUs9BlmcBcAB_QVeU-c",
+   "text": "Log in",
+   "from": [
+    "/collections/all",
+    "/search"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg2LCJuYmYiOjE3OTE4Nzg4ODZ9.rugvecKQ-gCHiu8aRJVFeBPSeUs9BlmcBcAB_QVeU-c",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg2LCJuYmYiOjE3OTE4Nzg4ODZ9.rugvecKQ-gCHiu8aRJVFeBPSeUs9BlmcBcAB_QVeU-c#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/collections/all",
+    "/search"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg2LCJuYmYiOjE3OTE4Nzg4ODZ9.rugvecKQ-gCHiu8aRJVFeBPSeUs9BlmcBcAB_QVeU-c#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "/products/andis-clipper-oil-118ml",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/products/andis-clipper-oil-118ml"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/andis-clipper-oil-118ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/andis-clipper-oil-118ml",
+   "text": "Andis Clipper Oil 118ml",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/andis-clipper-oil-118ml",
+    "200 /products/andis-clipper-oil-118ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/astra-blades-green-platinum",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/products/astra-blades-green-platinum"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/astra-blades-green-platinum"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/astra-blades-green-platinum",
+   "text": "Astra Blades Green Platinum",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/astra-blades-green-platinum",
+    "200 /products/astra-blades-green-platinum"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/barbercon-acrylic-sterilizing-jar-1094ml",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/products/barbercon-acrylic-sterilizing-jar-1094ml"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/barbercon-acrylic-sterilizing-jar-1094ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/barbercon-acrylic-sterilizing-jar-1094ml",
+   "text": "BarberCon Acrylic Sterilizing Jar 1094ml",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/barbercon-acrylic-sterilizing-jar-1094ml",
+    "200 /products/barbercon-acrylic-sterilizing-jar-1094ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/barbercon-neck-strips-white",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/collections/barbercon",
+    "/products/barbercon-neck-strips-white"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/barbercon-neck-strips-white"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/barbercon-neck-strips-white",
+   "text": "BarberCon Neck Strips - White",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/barbercon-neck-strips-white",
+    "200 /products/barbercon-neck-strips-white"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/barbercon-wax-pot-black",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/collections/barber-essentials",
+    "/products/barbercon-wax-pot-black"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/barbercon-wax-pot-black"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/barbercon-wax-pot-black",
+   "text": "BarberCon Wax Pot Black",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/barbercon-wax-pot-black",
+    "200 /products/barbercon-wax-pot-black"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/barbercon-wax-pot-white",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/collections/barber-essentials",
+    "/products/barbercon-wax-pot-white"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/barbercon-wax-pot-white"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/barbercon-wax-pot-white",
+   "text": "BarberCon Wax Pot White",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/barbercon-wax-pot-white",
+    "200 /products/barbercon-wax-pot-white"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/carbon-comb-abs-70739",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/collections/barber-essentials",
+    "/products/carbon-comb-abs-70739"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/carbon-comb-abs-70739"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/carbon-comb-abs-70739",
+   "text": "Carbon Comb ABS-70739",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/carbon-comb-abs-70739",
+    "200 /products/carbon-comb-abs-70739"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/carbon-small-cutting-comb-cfc-08139",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/collections/barber-essentials",
+    "/products/carbon-small-cutting-comb-cfc-08139"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/carbon-small-cutting-comb-cfc-08139"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/carbon-small-cutting-comb-cfc-08139",
+   "text": "Carbon Small Cutting Comb CFC-08139",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/carbon-small-cutting-comb-cfc-08139",
+    "200 /products/carbon-small-cutting-comb-cfc-08139"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/clippercide-spray-425g",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/products/clippercide-spray-425g"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/clippercide-spray-425g"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/clippercide-spray-425g",
+   "text": "Clippercide Spray 425g",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/clippercide-spray-425g",
+    "200 /products/clippercide-spray-425g"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/coffee-stirrers-1000pcs",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/collections/barber-essentials",
+    "/products/coffee-stirrers-1000pcs"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/coffee-stirrers-1000pcs"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/coffee-stirrers-1000pcs",
+   "text": "Coffee Stirrers 1000pcs",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/coffee-stirrers-1000pcs",
+    "200 /products/coffee-stirrers-1000pcs"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/cosma-liquid-styptic-25ml",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/collections/barber-essentials",
+    "/products/cosma-liquid-styptic-25ml"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/cosma-liquid-styptic-25ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/cosma-liquid-styptic-25ml",
+   "text": "Cosma Liquid Styptic 25ml",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/cosma-liquid-styptic-25ml",
+    "200 /products/cosma-liquid-styptic-25ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/products/inca-02-styling-dust-wax-30g",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/all",
+    "/products/inca-02-styling-dust-wax-30g"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/inca-02-styling-dust-wax-30g"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all/products/inca-02-styling-dust-wax-30g",
+   "text": "INCA 02 Styling Dust Wax 30g",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 301,
+   "final": 200,
+   "chain": [
+    "301 /collections/all/products/inca-02-styling-dust-wax-30g",
+    "200 /products/inca-02-styling-dust-wax-30g"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "/collections/all?page=2",
+   "text": "2",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/all?page=2"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all?page=3",
+   "text": "3",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/all?page=3"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/all?page=5",
+   "text": "5",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/all?page=5"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#products",
+   "text": "To top",
+   "from": [
+    "/collections/all"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#search",
+   "text": "To top",
+   "from": [
+    "/search"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg3LCJuYmYiOjE3OTE4Nzg4ODd9.btuwDv3GTXi5XUTUwtsGEedElRRRmCbjyjwIzB6Qtlg",
+   "text": "Log in",
+   "from": [
+    "/collections/barbercon",
+    "/collections/hair-2-beauty-imports",
+    "/collections/muk-hair-care"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg3LCJuYmYiOjE3OTE4Nzg4ODd9.btuwDv3GTXi5XUTUwtsGEedElRRRmCbjyjwIzB6Qtlg",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg3LCJuYmYiOjE3OTE4Nzg4ODd9.btuwDv3GTXi5XUTUwtsGEedElRRRmCbjyjwIzB6Qtlg#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/collections/barbercon",
+    "/collections/hair-2-beauty-imports",
+    "/collections/muk-hair-care"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg3LCJuYmYiOjE3OTE4Nzg4ODd9.btuwDv3GTXi5XUTUwtsGEedElRRRmCbjyjwIzB6Qtlg#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "/collections/barbercon/products/barbercon-neck-strips-white",
+   "text": "BarberCon Neck Strips - White",
+   "from": [
+    "/collections/barbercon"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barbercon/products/barbercon-neck-strips-white"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#barbercon",
+   "text": "To top",
+   "from": [
+    "/collections/barbercon"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#hair-2-beauty-imports",
+   "text": "To top",
+   "from": [
+    "/collections/hair-2-beauty-imports"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#muk-hair-care",
+   "text": "To top",
+   "from": [
+    "/collections/muk-hair-care"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg4LCJuYmYiOjE3OTE4Nzg4ODh9.zsIh3pZY5FDJ9uxuBKK2ou0oXv6nGHY1RPPL0i9EGIQ",
+   "text": "Log in",
+   "from": [
+    "/collections/bundles-kits",
+    "/pages/wishlist"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg4LCJuYmYiOjE3OTE4Nzg4ODh9.zsIh3pZY5FDJ9uxuBKK2ou0oXv6nGHY1RPPL0i9EGIQ",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg4LCJuYmYiOjE3OTE4Nzg4ODh9.zsIh3pZY5FDJ9uxuBKK2ou0oXv6nGHY1RPPL0i9EGIQ#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/collections/bundles-kits",
+    "/pages/wishlist"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg4LCJuYmYiOjE3OTE4Nzg4ODh9.zsIh3pZY5FDJ9uxuBKK2ou0oXv6nGHY1RPPL0i9EGIQ#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "#bundles-amp-kits",
+   "text": "To top",
+   "from": [
+    "/collections/bundles-kits"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#wishlist",
+   "text": "To top",
+   "from": [
+    "/pages/wishlist"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg5LCJuYmYiOjE3OTE4Nzg4ODl9.KDWnccWhvPlzdRGDCfbR59y8jA0qG45HX5TwiRSigPI",
+   "text": "Log in",
+   "from": [
+    "/collections",
+    "/products/uppercut-matte-pomade"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg5LCJuYmYiOjE3OTE4Nzg4ODl9.KDWnccWhvPlzdRGDCfbR59y8jA0qG45HX5TwiRSigPI",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg5LCJuYmYiOjE3OTE4Nzg4ODl9.KDWnccWhvPlzdRGDCfbR59y8jA0qG45HX5TwiRSigPI#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/collections",
+    "/products/uppercut-matte-pomade"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjg5LCJuYmYiOjE3OTE4Nzg4ODl9.KDWnccWhvPlzdRGDCfbR59y8jA0qG45HX5TwiRSigPI#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "/collections/bundles",
+   "text": "Bundles",
+   "from": [
+    "/collections",
+    "/collections/bundles"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/bundles"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/frontpage",
+   "text": "(icon/image)",
+   "from": [
+    "/collections",
+    "/collections/frontpage"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/frontpage"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections?page=2",
+   "text": "Loading More",
+   "from": [
+    "/collections"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections?page=2"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#collections",
+   "text": "To top",
+   "from": [
+    "/collections"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#ProductInfo-template--21254024659013__main",
+   "text": "Skip to product information",
+   "from": [
+    "/products/uppercut-matte-pomade",
+    "/products/uppercut-deluxe-pomade",
+    "/products/prorapid-inca-01-styling-hair-wax-150ml",
+    "/products/prorapid-inca-05-styling-hair-wax-150ml"
+   ],
+   "fromCount": 31,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/MP-F_1800x1800_2e1cd990-077b-4978-bf01-16b55443bdcf.webp?v=1781585794&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/uppercut-matte-pomade"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/MP-F_1800x1800_2e1cd990-077b-4978-bf01-"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#uppercut-deluxe-matte-pomade",
+   "text": "To top",
+   "from": [
+    "/products/uppercut-matte-pomade"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkwLCJuYmYiOjE3OTE4Nzg4OTB9.OA0ST8pz-4C3-BJ5hxN8eSEffsljPTZ-86qCeH40xfk",
+   "text": "Log in",
+   "from": [
+    "/products/uppercut-deluxe-pomade",
+    "/products/prorapid-inca-01-styling-hair-wax-150ml",
+    "/products/prorapid-inca-05-styling-hair-wax-150ml"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkwLCJuYmYiOjE3OTE4Nzg4OTB9.OA0ST8pz-4C3-BJ5hxN8eSEffsljPTZ-86qCeH40xfk",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkwLCJuYmYiOjE3OTE4Nzg4OTB9.OA0ST8pz-4C3-BJ5hxN8eSEffsljPTZ-86qCeH40xfk#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/uppercut-deluxe-pomade",
+    "/products/prorapid-inca-01-styling-hair-wax-150ml",
+    "/products/prorapid-inca-05-styling-hair-wax-150ml"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkwLCJuYmYiOjE3OTE4Nzg4OTB9.OA0ST8pz-4C3-BJ5hxN8eSEffsljPTZ-86qCeH40xfk#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/Deluxe-Maxi-topy.jpg?v=1781745813&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/uppercut-deluxe-pomade"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/Deluxe-Maxi-topy.jpg?v=1781745813&width"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#uppercut-deluxe-pomade",
+   "text": "To top",
+   "from": [
+    "/products/uppercut-deluxe-pomade"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Hair-Wax-150ML-MV-hair-and-beauty-26488399659126.webp?v=1782271461&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-inca-01-styling-hair-wax-150ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Hair-Wax-150ML-MV"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-inca-01-styling-hair-wax-150ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-inca-01-styling-hair-wax-150ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Hair-Wax-150ML-MV-hair-and-beauty-26488426856566.webp?v=1782271872&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-inca-05-styling-hair-wax-150ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Hair-Wax-150ML-MV"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-inca-05-styling-hair-wax-150ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-inca-05-styling-hair-wax-150ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkxLCJuYmYiOjE3OTE4Nzg4OTF9.jd8rHMDt24I-MERs6uLEpwe6DuSyYY0Dese7FIi9kQM",
+   "text": "Log in",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml",
+    "/products/prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkxLCJuYmYiOjE3OTE4Nzg4OTF9.jd8rHMDt24I-MERs6uLEpwe6DuSyYY0Dese7FIi9kQM",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkxLCJuYmYiOjE3OTE4Nzg4OTF9.jd8rHMDt24I-MERs6uLEpwe6DuSyYY0Dese7FIi9kQM#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml",
+    "/products/prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkxLCJuYmYiOjE3OTE4Nzg4OTF9.jd8rHMDt24I-MERs6uLEpwe6DuSyYY0Dese7FIi9kQM#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave-Perfumed-Cologne-400-ml-05.webp?v=1782272660&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/61pXCuN6TtL._AC_SX679.jpg?v=1782273129&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/61pXCuN6TtL._AC_SX679.jpg?v=1782273129&"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkyLCJuYmYiOjE3OTE4Nzg4OTJ9.pTIzmP5X3BErWthdv_0jYnK9Y2PhN_4p-7o-5QLApBk",
+   "text": "Log in",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml",
+    "/products/prorapid-inca-04-styling-hair-wax-150ml",
+    "/products/prorapid-inca-06-styling-hair-wax-150ml"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkyLCJuYmYiOjE3OTE4Nzg4OTJ9.pTIzmP5X3BErWthdv_0jYnK9Y2PhN_4p-7o-5QLApBk",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkyLCJuYmYiOjE3OTE4Nzg4OTJ9.pTIzmP5X3BErWthdv_0jYnK9Y2PhN_4p-7o-5QLApBk#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml",
+    "/products/prorapid-inca-04-styling-hair-wax-150ml",
+    "/products/prorapid-inca-06-styling-hair-wax-150ml"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkyLCJuYmYiOjE3OTE4Nzg4OTJ9.pTIzmP5X3BErWthdv_0jYnK9Y2PhN_4p-7o-5QLApBk#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/61HvXxl0ACL._AC_SX679.jpg?v=1782273194&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/61HvXxl0ACL._AC_SX679.jpg?v=1782273194&"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Hair-Wax-150ML-MV-hair-and-beauty-26488425578614.webp?v=1782271820&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-inca-04-styling-hair-wax-150ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Hair-Wax-150ML-MV"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-inca-04-red-styling-hair-wax-150ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-inca-04-styling-hair-wax-150ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Hair-Wax-150ML-MV-hair-and-beauty-26488428101750.webp?v=1782271926&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-inca-06-styling-hair-wax-150ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Hair-Wax-150ML-MV"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-inca-06-styling-hair-wax-150ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-inca-06-styling-hair-wax-150ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkzLCJuYmYiOjE3OTE4Nzg4OTN9.HIM710_eh9y6QCRByiE4ob16nIw6_4_ytNIx6HbLv-Y",
+   "text": "Log in",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkzLCJuYmYiOjE3OTE4Nzg4OTN9.HIM710_eh9y6QCRByiE4ob16nIw6_4_ytNIx6HbLv-Y",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkzLCJuYmYiOjE3OTE4Nzg4OTN9.HIM710_eh9y6QCRByiE4ob16nIw6_4_ytNIx6HbLv-Y#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml",
+    "/collections/prorapid"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjkzLCJuYmYiOjE3OTE4Nzg4OTN9.HIM710_eh9y6QCRByiE4ob16nIw6_4_ytNIx6HbLv-Y#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave-Perfumed-Cologne-400-ml-02.webp?v=1782272477&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-inca-01-styling-hair-wax-150ml",
+   "text": "ProRapid INCA 01 Styling Hair Wax 150ML",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-inca-01-styling-hair-wax-150ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-inca-05-styling-hair-wax-150ml",
+   "text": "ProRapid INCA 05 Styling Hair Wax 150ML",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-inca-05-styling-hair-wax-150ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-tattoo-series-inca-05-after-shave-perfumed-cologne-400-ml",
+   "text": "ProRapid Tattoo Series Inca 05 After Shave Perfumed Cologne ",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-tattoo-series-inca-05-after-shave-perfum"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-tattoo-series-inca-08-after-shave-perfumed-cologne-400-ml",
+   "text": "ProRapid Tattoo Series Inca 08 After Shave Perfumed Cologne ",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-tattoo-series-inca-08-after-shave-perfum"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-tattoo-series-inca-09-after-shave-perfumed-cologne-400-ml",
+   "text": "ProRapid Tattoo Series Inca 09 After Shave Perfumed Cologne ",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-tattoo-series-inca-09-after-shave-perfum"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-inca-04-styling-hair-wax-150ml",
+   "text": "ProRapid INCA 04 Red Styling Hair Wax 150ml",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-inca-04-styling-hair-wax-150ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-inca-06-styling-hair-wax-150ml",
+   "text": "ProRapid INCA 06 Styling Hair Wax 150ML",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-inca-06-styling-hair-wax-150ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-tattoo-series-inca-02-after-shave-perfumed-cologne-400-ml",
+   "text": "ProRapid Tattoo Series Inca 02 After Shave Perfumed Cologne ",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-tattoo-series-inca-02-after-shave-perfum"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/prorapid",
+    "/products/prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml",
+   "text": "ProRapid Tattoo Series Inca 03 After Shave Perfumed Cologne ",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-tattoo-series-inca-03-after-shave-perfum"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/prorapid",
+    "/products/prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml",
+   "text": "ProRapid Tattoo Series Inca 04 After Shave Perfumed Cologne ",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-tattoo-series-inca-04-after-shave-perfum"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/prorapid",
+    "/products/prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml",
+   "text": "ProRapid Tattoo Series Inca 06 After Shave Perfumed Cologne ",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-tattoo-series-inca-06-after-shave-perfum"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/prorapid-beard-oil-50ml",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/prorapid",
+    "/products/prorapid-beard-oil-50ml"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/prorapid-beard-oil-50ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid/products/prorapid-beard-oil-50ml",
+   "text": "ProRapid Beard Oil 50ml",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid/products/prorapid-beard-oil-50ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/prorapid?page=2",
+   "text": "2",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/prorapid?page=2"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-men",
+   "text": "To top",
+   "from": [
+    "/collections/prorapid"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk0LCJuYmYiOjE3OTE4Nzg4OTR9.crDnNITDTJvBx9ikv7x7yACIRFz-ogvWG3skMeOi1NQ",
+   "text": "Log in",
+   "from": [
+    "/collections/hair-products",
+    "/pages/about-us"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk0LCJuYmYiOjE3OTE4Nzg4OTR9.crDnNITDTJvBx9ikv7x7yACIRFz-ogvWG3skMeOi1NQ",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk0LCJuYmYiOjE3OTE4Nzg4OTR9.crDnNITDTJvBx9ikv7x7yACIRFz-ogvWG3skMeOi1NQ#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/collections/hair-products",
+    "/pages/about-us"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk0LCJuYmYiOjE3OTE4Nzg4OTR9.crDnNITDTJvBx9ikv7x7yACIRFz-ogvWG3skMeOi1NQ#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "#hair-products",
+   "text": "To top",
+   "from": [
+    "/collections/hair-products"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "",
+   "text": "Short description",
+   "from": [
+    "/pages/about-us"
+   ],
+   "fromCount": 1,
+   "kind": "dead-hash",
+   "status": null,
+   "final": null,
+   "chain": [],
+   "note": "empty/# href"
+  },
+  {
+   "href": "#about-us",
+   "text": "To top",
+   "from": [
+    "/pages/about-us"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk1LCJuYmYiOjE3OTE4Nzg4OTV9.hzaFBGb2hF5TQH-s1mPWTzP13vyzI1cU-_1pEjONtKk",
+   "text": "Log in",
+   "from": [
+    "/pages/faq",
+    "/blogs/news/how-to-pick-your-perfect-pomade-1"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk1LCJuYmYiOjE3OTE4Nzg4OTV9.hzaFBGb2hF5TQH-s1mPWTzP13vyzI1cU-_1pEjONtKk",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk1LCJuYmYiOjE3OTE4Nzg4OTV9.hzaFBGb2hF5TQH-s1mPWTzP13vyzI1cU-_1pEjONtKk#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/pages/faq",
+    "/blogs/news/how-to-pick-your-perfect-pomade-1"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk1LCJuYmYiOjE3OTE4Nzg4OTV9.hzaFBGb2hF5TQH-s1mPWTzP13vyzI1cU-_1pEjONtKk#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "#tab1",
+   "text": "Account",
+   "from": [
+    "/pages/faq"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#tab8",
+   "text": "Orders",
+   "from": [
+    "/pages/faq"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#tab16",
+   "text": "Product",
+   "from": [
+    "/pages/faq"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#tab23",
+   "text": "Shipping",
+   "from": [
+    "/pages/faq"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#faq",
+   "text": "To top",
+   "from": [
+    "/pages/faq"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "/blogs/news",
+   "text": "News",
+   "from": [
+    "/blogs/news/how-to-pick-your-perfect-pomade-1",
+    "/blogs/news/beard-oil-vs-balm-what-you-need",
+    "/blogs/news/how-to-pick-your-perfect-pomade"
+   ],
+   "fromCount": 3,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /blogs/news"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#how-to-pick-your-perfect-pomade",
+   "text": "To top",
+   "from": [
+    "/blogs/news/how-to-pick-your-perfect-pomade-1",
+    "/blogs/news/how-to-pick-your-perfect-pomade"
+   ],
+   "fromCount": 2,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk2LCJuYmYiOjE3OTE4Nzg4OTZ9.oWw1Cdq0mlIhTIPb3bFgDvLoNTkxAsfiev5DCE7ikJk",
+   "text": "Log in",
+   "from": [
+    "/blogs/news/beard-oil-vs-balm-what-you-need",
+    "/blogs/news/how-to-pick-your-perfect-pomade"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk2LCJuYmYiOjE3OTE4Nzg4OTZ9.oWw1Cdq0mlIhTIPb3bFgDvLoNTkxAsfiev5DCE7ikJk",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk2LCJuYmYiOjE3OTE4Nzg4OTZ9.oWw1Cdq0mlIhTIPb3bFgDvLoNTkxAsfiev5DCE7ikJk#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/blogs/news/beard-oil-vs-balm-what-you-need",
+    "/blogs/news/how-to-pick-your-perfect-pomade"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk2LCJuYmYiOjE3OTE4Nzg4OTZ9.oWw1Cdq0mlIhTIPb3bFgDvLoNTkxAsfiev5DCE7ikJk#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "#beard-oil-vs-balm-what-you-need",
+   "text": "To top",
+   "from": [
+    "/blogs/news/beard-oil-vs-balm-what-you-need"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgwMjcyLCJuYmYiOjE3OTE4NzU0NzJ9.ZZ9Cu8Lc8XY7d0nKmFsvDh-_zPCcrxAAZRqtstDHYQc",
+   "text": "Log in",
+   "from": [
+    "/collections/gaming-controllers",
+    "/collections/gaming-chair",
+    "/collections/gaming-desk",
+    "/collections/keyboards"
+   ],
+   "fromCount": 7,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgwMjcyLCJuYmYiOjE3OTE4NzU0NzJ9.ZZ9Cu8Lc8XY7d0nKmFsvDh-_zPCcrxAAZRqtstDHYQc",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgwMjcyLCJuYmYiOjE3OTE4NzU0NzJ9.ZZ9Cu8Lc8XY7d0nKmFsvDh-_zPCcrxAAZRqtstDHYQc#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/collections/gaming-controllers",
+    "/collections/gaming-chair",
+    "/collections/gaming-desk",
+    "/collections/keyboards"
+   ],
+   "fromCount": 7,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgwMjcyLCJuYmYiOjE3OTE4NzU0NzJ9.ZZ9Cu8Lc8XY7d0nKmFsvDh-_zPCcrxAAZRqtstDHYQc#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "#404-not-found",
+   "text": "To top",
+   "from": [
+    "/collections/gaming-controllers",
+    "/collections/gaming-chair",
+    "/collections/gaming-desk",
+    "/collections/keyboards"
+   ],
+   "fromCount": 7,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk4LCJuYmYiOjE3OTE4Nzg4OTh9.5QlPPCU08QD_tFaHvrGa2D9JrB4kivIMpHS4qlYDmaM",
+   "text": "Log in",
+   "from": [
+    "/collections/clippers-trimmers-shavers",
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk4LCJuYmYiOjE3OTE4Nzg4OTh9.5QlPPCU08QD_tFaHvrGa2D9JrB4kivIMpHS4qlYDmaM",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk4LCJuYmYiOjE3OTE4Nzg4OTh9.5QlPPCU08QD_tFaHvrGa2D9JrB4kivIMpHS4qlYDmaM#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/collections/clippers-trimmers-shavers",
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk4LCJuYmYiOjE3OTE4Nzg4OTh9.5QlPPCU08QD_tFaHvrGa2D9JrB4kivIMpHS4qlYDmaM#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "#clippers-trimmers-amp-shavers",
+   "text": "To top",
+   "from": [
+    "/collections/clippers-trimmers-shavers"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "/products/wooden-brush-wb880-8",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/barber-essentials",
+    "/products/wooden-brush-wb880-8"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/wooden-brush-wb880-8"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/wooden-brush-wb880-8",
+   "text": "Wooden Brush WB880-8",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/wooden-brush-wb880-8"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/coffee-stirrers-1000pcs",
+   "text": "Coffee Stirrers 1000pcs",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/coffee-stirrers-1000pcs"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/joiken-barber-towels-black-10-pack",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/barber-essentials",
+    "/products/joiken-barber-towels-black-10-pack"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/joiken-barber-towels-black-10-pack"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/joiken-barber-towels-black-10-pack",
+   "text": "Joiken Barber Towels Black 10 Pack",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/joiken-barber-towels-black-10-pack"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/barbercon-wax-pot-black",
+   "text": "BarberCon Wax Pot Black",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/barbercon-wax-pot-black"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/carbon-small-cutting-comb-cfc-08139",
+   "text": "Carbon Small Cutting Comb CFC-08139",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/carbon-small-cutting-comb-cfc-08139"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/wooden-round-brush-wb880-10",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/barber-essentials",
+    "/products/wooden-round-brush-wb880-10"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/wooden-round-brush-wb880-10"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/wooden-round-brush-wb880-10",
+   "text": "Wooden Round Brush WB880-10",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/wooden-round-brush-wb880-10"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/wahl-styptic-60ml",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/barber-essentials",
+    "/products/wahl-styptic-60ml"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/wahl-styptic-60ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/wahl-styptic-60ml",
+   "text": "Wahl Styptic 60ml",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/wahl-styptic-60ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/products/sedef-turkish-razor",
+   "text": "(icon/image)",
+   "from": [
+    "/collections/barber-essentials",
+    "/products/sedef-turkish-razor"
+   ],
+   "fromCount": 2,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /products/sedef-turkish-razor"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/sedef-turkish-razor",
+   "text": "Sedef Turkish Razor",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/sedef-turkish-razor"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/barbercon-wax-pot-white",
+   "text": "BarberCon Wax Pot White",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/barbercon-wax-pot-white"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/cosma-liquid-styptic-25ml",
+   "text": "Cosma Liquid Styptic 25ml",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/cosma-liquid-styptic-25ml"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/collections/barber-essentials/products/carbon-comb-abs-70739",
+   "text": "Carbon Comb ABS-70739",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/barber-essentials/products/carbon-comb-abs-70739"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#barber-essentials",
+   "text": "To top",
+   "from": [
+    "/collections/barber-essentials"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk5LCJuYmYiOjE3OTE4Nzg4OTl9.w7tt_sO6ZcXJ94Nlhf2Y6OOB8n77WAP6e2Ihy7hbOW0",
+   "text": "Log in",
+   "from": [
+    "/pages/trade-portal",
+    "/pages/contact"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk5LCJuYmYiOjE3OTE4Nzg4OTl9.w7tt_sO6ZcXJ94Nlhf2Y6OOB8n77WAP6e2Ihy7hbOW0",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk5LCJuYmYiOjE3OTE4Nzg4OTl9.w7tt_sO6ZcXJ94Nlhf2Y6OOB8n77WAP6e2Ihy7hbOW0#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/pages/trade-portal",
+    "/pages/contact"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNjk5LCJuYmYiOjE3OTE4Nzg4OTl9.w7tt_sO6ZcXJ94Nlhf2Y6OOB8n77WAP6e2Ihy7hbOW0#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "/pages/trade-portal-account-form",
+   "text": "ENTER TRADE PORTAL",
+   "from": [
+    "/pages/trade-portal"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /pages/trade-portal-account-form"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "/account/login",
+   "text": "LOG IN TO PORTAL",
+   "from": [
+    "/pages/trade-portal"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 302,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzYzLCJuYmYiOjE3OTE4Nzg5NjN9.1_i9C_NUpl8BK3ANoVHd3x_Q0Q8frTIcT_B7ebD87r4",
+   "chain": [
+    "302 /account/login",
+    "-> external https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOi"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 1
+  },
+  {
+   "href": "#trade-portal",
+   "text": "To top",
+   "from": [
+    "/pages/trade-portal"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "/pages/faqs",
+   "text": "Browse FAQs",
+   "from": [
+    "/pages/contact"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 404,
+   "final": 404,
+   "chain": [
+    "404 /pages/faqs"
+   ],
+   "note": "",
+   "finalStatus": 404,
+   "hops": 0
+  },
+  {
+   "href": "#contact",
+   "text": "To top",
+   "from": [
+    "/pages/contact"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAwLCJuYmYiOjE3OTE4Nzg5MDB9.sOIi19WFuEBdB6EOy715Hx7cj-aoafs5Oim59Lfmwvs",
+   "text": "Log in",
+   "from": [
+    "/pages/shipping-policy",
+    "/pages/returns-policy",
+    "/pages/privacy-policy"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAwLCJuYmYiOjE3OTE4Nzg5MDB9.sOIi19WFuEBdB6EOy715Hx7cj-aoafs5Oim59Lfmwvs",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAwLCJuYmYiOjE3OTE4Nzg5MDB9.sOIi19WFuEBdB6EOy715Hx7cj-aoafs5Oim59Lfmwvs#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/pages/shipping-policy",
+    "/pages/returns-policy",
+    "/pages/privacy-policy"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAwLCJuYmYiOjE3OTE4Nzg5MDB9.sOIi19WFuEBdB6EOy715Hx7cj-aoafs5Oim59Lfmwvs#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "#shipping-policy",
+   "text": "To top",
+   "from": [
+    "/pages/shipping-policy"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "mailto:sales@zerogapsupplyco.com.au",
+   "text": "sales@zerogapsupplyco.com.au",
+   "from": [
+    "/pages/returns-policy",
+    "/pages/privacy-policy",
+    "/pages/terms-conditions",
+    "/pages/warranty"
+   ],
+   "fromCount": 4,
+   "kind": "mailto",
+   "status": null,
+   "final": null,
+   "chain": [],
+   "note": "valid format"
+  },
+  {
+   "href": "#returns-policy",
+   "text": "To top",
+   "from": [
+    "/pages/returns-policy"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "tel:0413326884",
+   "text": "0413 326 884",
+   "from": [
+    "/pages/privacy-policy",
+    "/pages/terms-conditions"
+   ],
+   "fromCount": 2,
+   "kind": "tel",
+   "status": null,
+   "final": null,
+   "chain": [],
+   "note": "valid format"
+  },
+  {
+   "href": "#privacy-policy",
+   "text": "To top",
+   "from": [
+    "/pages/privacy-policy"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAxLCJuYmYiOjE3OTE4Nzg5MDF9.15gb53VMTADIBKL0nBBjaM47m5dRLdu9qBvVOIxHFnE",
+   "text": "Log in",
+   "from": [
+    "/pages/terms-conditions",
+    "/pages/warranty"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAxLCJuYmYiOjE3OTE4Nzg5MDF9.15gb53VMTADIBKL0nBBjaM47m5dRLdu9qBvVOIxHFnE",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAxLCJuYmYiOjE3OTE4Nzg5MDF9.15gb53VMTADIBKL0nBBjaM47m5dRLdu9qBvVOIxHFnE#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/pages/terms-conditions",
+    "/pages/warranty"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAxLCJuYmYiOjE3OTE4Nzg5MDF9.15gb53VMTADIBKL0nBBjaM47m5dRLdu9qBvVOIxHFnE#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "#terms-amp-conditions",
+   "text": "To top",
+   "from": [
+    "/pages/terms-conditions"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#warranty",
+   "text": "To top",
+   "from": [
+    "/pages/warranty"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAyLCJuYmYiOjE3OTE4Nzg5MDJ9.4SFFQsEcX8EsDt6Z8aEjPLr8doTGaxShY3mvJTVUjWk",
+   "text": "Log in",
+   "from": [
+    "/products/andis-clipper-oil-118ml"
+   ],
+   "fromCount": 1,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAyLCJuYmYiOjE3OTE4Nzg5MDJ9.4SFFQsEcX8EsDt6Z8aEjPLr8doTGaxShY3mvJTVUjWk",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAyLCJuYmYiOjE3OTE4Nzg5MDJ9.4SFFQsEcX8EsDt6Z8aEjPLr8doTGaxShY3mvJTVUjWk#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/andis-clipper-oil-118ml"
+   ],
+   "fromCount": 1,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAyLCJuYmYiOjE3OTE4Nzg5MDJ9.4SFFQsEcX8EsDt6Z8aEjPLr8doTGaxShY3mvJTVUjWk#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/12108-andis-4oz-oil-bottle-straight-1-web.webp?v=1782345444&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/andis-clipper-oil-118ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/12108-andis-4oz-oil-bottle-straight-1-w"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#andis-clipper-oil-118ml",
+   "text": "To top",
+   "from": [
+    "/products/andis-clipper-oil-118ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAzLCJuYmYiOjE3OTE4Nzg5MDN9.-CoAAVGwZbWwNVmdm14VSyaqaIruzdgHkoJKt5czu4M",
+   "text": "Log in",
+   "from": [
+    "/products/astra-blades-green-platinum",
+    "/products/barbercon-acrylic-sterilizing-jar-1094ml",
+    "/products/barbercon-neck-strips-white"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAzLCJuYmYiOjE3OTE4Nzg5MDN9.-CoAAVGwZbWwNVmdm14VSyaqaIruzdgHkoJKt5czu4M",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAzLCJuYmYiOjE3OTE4Nzg5MDN9.-CoAAVGwZbWwNVmdm14VSyaqaIruzdgHkoJKt5czu4M#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/astra-blades-green-platinum",
+    "/products/barbercon-acrylic-sterilizing-jar-1094ml",
+    "/products/barbercon-neck-strips-white"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzAzLCJuYmYiOjE3OTE4Nzg5MDN9.-CoAAVGwZbWwNVmdm14VSyaqaIruzdgHkoJKt5czu4M#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/zerogap-review-61-astra-green-platinum.jpg?v=1790306102&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/astra-blades-green-platinum"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/zerogap-review-61-astra-green-platinum."
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#astra-blades-green-platinum",
+   "text": "To top",
+   "from": [
+    "/products/astra-blades-green-platinum"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/cde2cde7-3f5a-4c1a-934a-c5bfbfac0dc0_8d7ec6e1-6e49-481c-b047-927d61884877.png?v=1790641565&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/barbercon-acrylic-sterilizing-jar-1094ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/cde2cde7-3f5a-4c1a-934a-c5bfbfac0dc0_8d"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/bf885ef1-245b-431e-8321-392896c538bc.png?v=1790641564&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/barbercon-acrylic-sterilizing-jar-1094ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/bf885ef1-245b-431e-8321-392896c538bc.pn"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#barbercon-acrylic-sterilizing-jar-1094ml",
+   "text": "To top",
+   "from": [
+    "/products/barbercon-acrylic-sterilizing-jar-1094ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/1cf38ee2-4dda-4502-b005-afc739f83bac.png?v=1790657828&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/barbercon-neck-strips-white"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/1cf38ee2-4dda-4502-b005-afc739f83bac.pn"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#barbercon-neck-strips-white",
+   "text": "To top",
+   "from": [
+    "/products/barbercon-neck-strips-white"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA0LCJuYmYiOjE3OTE4Nzg5MDR9.0VFZDlouyWYQchb48X-se_8G_ujNqZwqpynjCtWrKyY",
+   "text": "Log in",
+   "from": [
+    "/products/barbercon-wax-pot-black",
+    "/products/barbercon-wax-pot-white"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA0LCJuYmYiOjE3OTE4Nzg5MDR9.0VFZDlouyWYQchb48X-se_8G_ujNqZwqpynjCtWrKyY",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA0LCJuYmYiOjE3OTE4Nzg5MDR9.0VFZDlouyWYQchb48X-se_8G_ujNqZwqpynjCtWrKyY#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/barbercon-wax-pot-black",
+    "/products/barbercon-wax-pot-white"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA0LCJuYmYiOjE3OTE4Nzg5MDR9.0VFZDlouyWYQchb48X-se_8G_ujNqZwqpynjCtWrKyY#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/64655b35-26a3-4568-ad0f-9489e0ebc76f.jpg?v=1787132041&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/barbercon-wax-pot-black"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/64655b35-26a3-4568-ad0f-9489e0ebc76f.jp"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#barbercon-wax-pot-black",
+   "text": "To top",
+   "from": [
+    "/products/barbercon-wax-pot-black"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/0bd35ffc-79b7-4f53-b049-0f8348cbff26.jpg?v=1787132042&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/barbercon-wax-pot-white"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/0bd35ffc-79b7-4f53-b049-0f8348cbff26.jp"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#barbercon-wax-pot-white",
+   "text": "To top",
+   "from": [
+    "/products/barbercon-wax-pot-white"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA1LCJuYmYiOjE3OTE4Nzg5MDV9.koNSXSbLMGwlp0vgF2oukmoCkK0tzrF5K1peqNIg88g",
+   "text": "Log in",
+   "from": [
+    "/products/carbon-comb-abs-70739",
+    "/products/carbon-small-cutting-comb-cfc-08139",
+    "/products/clippercide-spray-425g"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA1LCJuYmYiOjE3OTE4Nzg5MDV9.koNSXSbLMGwlp0vgF2oukmoCkK0tzrF5K1peqNIg88g",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA1LCJuYmYiOjE3OTE4Nzg5MDV9.koNSXSbLMGwlp0vgF2oukmoCkK0tzrF5K1peqNIg88g#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/carbon-comb-abs-70739",
+    "/products/carbon-small-cutting-comb-cfc-08139",
+    "/products/clippercide-spray-425g"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA1LCJuYmYiOjE3OTE4Nzg5MDV9.koNSXSbLMGwlp0vgF2oukmoCkK0tzrF5K1peqNIg88g#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/99587a0f2cf1338bbeac6f9480f3623522c51873.png?v=1787126604&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/carbon-comb-abs-70739"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/99587a0f2cf1338bbeac6f9480f3623522c5187"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#carbon-comb-abs-70739",
+   "text": "To top",
+   "from": [
+    "/products/carbon-comb-abs-70739"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ad331d4d-440c-430c-a1cb-d607d63cf30e.jpg?v=1787126606&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/carbon-small-cutting-comb-cfc-08139"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ad331d4d-440c-430c-a1cb-d607d63cf30e.jp"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#carbon-small-cutting-comb-cfc-08139",
+   "text": "To top",
+   "from": [
+    "/products/carbon-small-cutting-comb-cfc-08139"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/Clippercide_Spray_17e2edf4-40c1-4c27-911a-18c8cbce769d__61131-600x600.jpg?v=1782274945&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/clippercide-spray-425g"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/Clippercide_Spray_17e2edf4-40c1-4c27-91"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#clippercide-spray-425g",
+   "text": "To top",
+   "from": [
+    "/products/clippercide-spray-425g"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA2LCJuYmYiOjE3OTE4Nzg5MDZ9.nqehPA4uXam2edqnHnb3WvFNz_togc5wXiudTX-9EzU",
+   "text": "Log in",
+   "from": [
+    "/products/coffee-stirrers-1000pcs",
+    "/products/cosma-liquid-styptic-25ml"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA2LCJuYmYiOjE3OTE4Nzg5MDZ9.nqehPA4uXam2edqnHnb3WvFNz_togc5wXiudTX-9EzU",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA2LCJuYmYiOjE3OTE4Nzg5MDZ9.nqehPA4uXam2edqnHnb3WvFNz_togc5wXiudTX-9EzU#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/coffee-stirrers-1000pcs",
+    "/products/cosma-liquid-styptic-25ml"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA2LCJuYmYiOjE3OTE4Nzg5MDZ9.nqehPA4uXam2edqnHnb3WvFNz_togc5wXiudTX-9EzU#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/b1a7e26e-7240-4a43-a53a-4c8c6be6def4.jpg?v=1787126601&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/coffee-stirrers-1000pcs"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/b1a7e26e-7240-4a43-a53a-4c8c6be6def4.jp"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#coffee-stirrers-1000pcs",
+   "text": "To top",
+   "from": [
+    "/products/coffee-stirrers-1000pcs"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/CLS25_1__45467.1663326638.386.513.jpg?v=1787126608&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/cosma-liquid-styptic-25ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/CLS25_1__45467.1663326638.386.513.jpg?v"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#cosma-liquid-styptic-25ml",
+   "text": "To top",
+   "from": [
+    "/products/cosma-liquid-styptic-25ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA3LCJuYmYiOjE3OTE4Nzg5MDd9.OfQvwYt3gISIhb5SEYLYY5fJGfiiVC_fQquhzQKaR5s",
+   "text": "Log in",
+   "from": [
+    "/products/inca-02-styling-dust-wax-30g",
+    "/collections/bundles"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA3LCJuYmYiOjE3OTE4Nzg5MDd9.OfQvwYt3gISIhb5SEYLYY5fJGfiiVC_fQquhzQKaR5s",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA3LCJuYmYiOjE3OTE4Nzg5MDd9.OfQvwYt3gISIhb5SEYLYY5fJGfiiVC_fQquhzQKaR5s#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/inca-02-styling-dust-wax-30g",
+    "/collections/bundles"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA3LCJuYmYiOjE3OTE4Nzg5MDd9.OfQvwYt3gISIhb5SEYLYY5fJGfiiVC_fQquhzQKaR5s#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Dust-Wax-30g-MV-hair-and-beauty-26488475648118.webp?v=1782271704&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/inca-02-styling-dust-wax-30g"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-INCA-Styling-Dust-Wax-30g-MV-h"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#inca-02-styling-dust-wax-30g",
+   "text": "To top",
+   "from": [
+    "/products/inca-02-styling-dust-wax-30g"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#bundles",
+   "text": "To top",
+   "from": [
+    "/collections/bundles"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA4LCJuYmYiOjE3OTE4Nzg5MDh9.BQhyn0X9ogkatcBA1xfKJIjL5-D3NKxOwaFoLrzs-tg",
+   "text": "Log in",
+   "from": [
+    "/collections/frontpage",
+    "/products/prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml",
+    "/products/prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA4LCJuYmYiOjE3OTE4Nzg5MDh9.BQhyn0X9ogkatcBA1xfKJIjL5-D3NKxOwaFoLrzs-tg",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA4LCJuYmYiOjE3OTE4Nzg5MDh9.BQhyn0X9ogkatcBA1xfKJIjL5-D3NKxOwaFoLrzs-tg#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/collections/frontpage",
+    "/products/prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml",
+    "/products/prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA4LCJuYmYiOjE3OTE4Nzg5MDh9.BQhyn0X9ogkatcBA1xfKJIjL5-D3NKxOwaFoLrzs-tg#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "/collections/frontpage/products/uppercut-matte-pomade",
+   "text": "Uppercut Deluxe Matte Pomade",
+   "from": [
+    "/collections/frontpage"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 /collections/frontpage/products/uppercut-matte-pomade"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#home-page",
+   "text": "To top",
+   "from": [
+    "/collections/frontpage"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave-Perfumed-Cologne-400-ml-03.webp?v=1782272539&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-03-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave-Perfumed-Cologne-400-ml-04.webp?v=1782272609&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-04-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA5LCJuYmYiOjE3OTE4Nzg5MDl9.TURMhHKxJGGmvVRy26QFxYKRAPrqh1-70scJosQZ4lo",
+   "text": "Log in",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml",
+    "/products/prorapid-beard-oil-50ml"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA5LCJuYmYiOjE3OTE4Nzg5MDl9.TURMhHKxJGGmvVRy26QFxYKRAPrqh1-70scJosQZ4lo",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA5LCJuYmYiOjE3OTE4Nzg5MDl9.TURMhHKxJGGmvVRy26QFxYKRAPrqh1-70scJosQZ4lo#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml",
+    "/products/prorapid-beard-oil-50ml"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzA5LCJuYmYiOjE3OTE4Nzg5MDl9.TURMhHKxJGGmvVRy26QFxYKRAPrqh1-70scJosQZ4lo#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave-Perfumed-Cologne-400-ml-06.webp?v=1782272708&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Tattoo-Series-Inca-After-Shave"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-tattoo-series-inca-06-after-shave-perfumed-cologne-400-ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Beard-Oil-50ml.webp?v=1782274362&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/prorapid-beard-oil-50ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/ProRapid-Beard-Oil-50ml.webp?v=17822743"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#prorapid-beard-oil-50ml",
+   "text": "To top",
+   "from": [
+    "/products/prorapid-beard-oil-50ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzEwLCJuYmYiOjE3OTE4Nzg5MTB9.C-YfC_KVkkCQlwnRycA2StmkrriCcFOCz2JRGryWQto",
+   "text": "Log in",
+   "from": [
+    "/blogs/news",
+    "/products/wooden-brush-wb880-8",
+    "/products/joiken-barber-towels-black-10-pack"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzEwLCJuYmYiOjE3OTE4Nzg5MTB9.C-YfC_KVkkCQlwnRycA2StmkrriCcFOCz2JRGryWQto",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzEwLCJuYmYiOjE3OTE4Nzg5MTB9.C-YfC_KVkkCQlwnRycA2StmkrriCcFOCz2JRGryWQto#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/blogs/news",
+    "/products/wooden-brush-wb880-8",
+    "/products/joiken-barber-towels-black-10-pack"
+   ],
+   "fromCount": 3,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzEwLCJuYmYiOjE3OTE4Nzg5MTB9.C-YfC_KVkkCQlwnRycA2StmkrriCcFOCz2JRGryWQto#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "#news",
+   "text": "To top",
+   "from": [
+    "/blogs/news"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/f04167d0-d034-40d0-b824-5376a6f14fdf.webp?v=1787126602&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/wooden-brush-wb880-8"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/f04167d0-d034-40d0-b824-5376a6f14fdf.we"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#wooden-brush-wb880-8",
+   "text": "To top",
+   "from": [
+    "/products/wooden-brush-wb880-8"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/afcf04b8-b717-4e7f-979c-cadfc005f51c.jpg?v=1787132043&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/joiken-barber-towels-black-10-pack"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/afcf04b8-b717-4e7f-979c-cadfc005f51c.jp"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#joiken-barber-towels-black-10-pack",
+   "text": "To top",
+   "from": [
+    "/products/joiken-barber-towels-black-10-pack"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzExLCJuYmYiOjE3OTE4Nzg5MTF9.7-aA7NpB8GXsMEdCMkZfHVg44Da6KNCy1xley3vd790",
+   "text": "Log in",
+   "from": [
+    "/products/wooden-round-brush-wb880-10",
+    "/products/wahl-styptic-60ml"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzExLCJuYmYiOjE3OTE4Nzg5MTF9.7-aA7NpB8GXsMEdCMkZfHVg44Da6KNCy1xley3vd790",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzExLCJuYmYiOjE3OTE4Nzg5MTF9.7-aA7NpB8GXsMEdCMkZfHVg44Da6KNCy1xley3vd790#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/wooden-round-brush-wb880-10",
+    "/products/wahl-styptic-60ml"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzExLCJuYmYiOjE3OTE4Nzg5MTF9.7-aA7NpB8GXsMEdCMkZfHVg44Da6KNCy1xley3vd790#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/cedfe908-4560-48fb-8ea7-dcd48aefe24e.webp?v=1787126603&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/wooden-round-brush-wb880-10"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/cedfe908-4560-48fb-8ea7-dcd48aefe24e.we"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#wooden-round-brush-wb880-10",
+   "text": "To top",
+   "from": [
+    "/products/wooden-round-brush-wb880-10"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/Wahl_Styptic_60ml_a2010bd1-51b6-4187-99c1-ff59f9d9b016__25965.1663326995.386.513.jpg?v=1787132045&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/wahl-styptic-60ml"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/Wahl_Styptic_60ml_a2010bd1-51b6-4187-99"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#wahl-styptic-60ml",
+   "text": "To top",
+   "from": [
+    "/products/wahl-styptic-60ml"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzEyLCJuYmYiOjE3OTE4Nzg5MTJ9.KYgKuRB9r4POVDsPMy341R2qfyB3K5E8sh0O6UU9Di0",
+   "text": "Log in",
+   "from": [
+    "/products/sedef-turkish-razor",
+    "/pages/trade-portal-account-form"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzEyLCJuYmYiOjE3OTE4Nzg5MTJ9.KYgKuRB9r4POVDsPMy341R2qfyB3K5E8sh0O6UU9Di0",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzEyLCJuYmYiOjE3OTE4Nzg5MTJ9.KYgKuRB9r4POVDsPMy341R2qfyB3K5E8sh0O6UU9Di0#recover",
+   "text": "Forgot your password?",
+   "from": [
+    "/products/sedef-turkish-razor",
+    "/pages/trade-portal-account-form"
+   ],
+   "fromCount": 2,
+   "kind": "external",
+   "status": 406,
+   "final": "https://shopify.com/74156900421/account?locale=en&region_country=AU&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiY3BwcWYtNG0ubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkyNDgzNzEyLCJuYmYiOjE3OTE4Nzg5MTJ9.KYgKuRB9r4POVDsPMy341R2qfyB3K5E8sh0O6UU9Di0#recover",
+   "chain": [],
+   "note": "",
+   "finalStatus": 406
+  },
+  {
+   "href": "//bcppqf-4m.myshopify.com/cdn/shop/files/2079941a-57d5-4f4a-a36a-983474cdb2b9.webp?v=1787132044&width=2489",
+   "text": "(icon/image)",
+   "from": [
+    "/products/sedef-turkish-razor"
+   ],
+   "fromCount": 1,
+   "kind": "internal",
+   "status": 200,
+   "final": 200,
+   "chain": [
+    "200 //bcppqf-4m.myshopify.com/cdn/shop/files/2079941a-57d5-4f4a-a36a-983474cdb2b9.we"
+   ],
+   "note": "",
+   "finalStatus": 200,
+   "hops": 0
+  },
+  {
+   "href": "#sedef-turkish-razor",
+   "text": "To top",
+   "from": [
+    "/products/sedef-turkish-razor"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  },
+  {
+   "href": "#trade-portal-account-form",
+   "text": "To top",
+   "from": [
+    "/pages/trade-portal-account-form"
+   ],
+   "fromCount": 1,
+   "kind": "anchor",
+   "status": "ok",
+   "final": null,
+   "chain": [],
+   "note": "target id exists"
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+﻿#,Area,Suggestion,Detail / Why,Related bug,Effort (S/M/L),Status
+1,Fix first (these hurt conversion or reporting),Prevent out-of-stock and runaway quantities reaching checkout,"Sold-out item can be added; 10,000 units accepted","ZG-001, ZG-016",M,Proposed
+2,Fix first (these hurt conversion or reporting),Show only field-level errors on failed submit,"A generic ""There was a problem with our checkout"" banner appears alongside field errors",ZG-008,S,Proposed
+3,Fix first (these hurt conversion or reporting),Repair the Meta Pixel ID,"Pixel rejects '1850451346134771' (stray quotes), so ad attribution is broken",ZG-021,S,Proposed
+4,Fix first (these hurt conversion or reporting),Remove dead and 404 links before launch,"5 gaming tiles, FAQ button, compare link","ZG-017, 018, 019",S,Proposed
+5,Cart to checkout flow,One cart pattern on every viewport,"Desktop opens a drawer, mobile navigates to /cart (ZG-010). Choose one",,M,Proposed
+6,Cart to checkout flow,Stop Enter in the quantity box jumping to checkout,"Add an explicit ""Update"" or debounce-update on change (ZG-020)",,M,Proposed
+7,Cart to checkout flow,Inline validation message on invalid quantity,"Today -1 / empty / ""e"" silently becomes 1 (ZG-011)",,M,Proposed
+8,Cart to checkout flow,Show shipping cost and delivery estimate before checkout,"Checkout shows ""Enter shipping address"" for shipping, which is a known drop-off point. Add a shipping calculator or free-shipping threshold bar to the cart",,M,Proposed
+9,Cart to checkout flow,"Low-stock and ""Only N left"" message",Pairs with stock cap fix (#1),,M,Proposed
+10,Checkout form,"Match error copy to field labels (Postcode, Suburb)","Errors say ""ZIP / postal code"" and ""city"" on an en-AU store (ZG-022). Edit in Checkout editor > Languages",,S,Proposed
+11,Checkout form,"Validate phone, or hide it","""abc"" is accepted (ZG-023)",,S,Proposed
+12,Checkout form,Reduce form friction,"Enable address autocomplete (the Address field is a combobox, so confirm it returns AU suggestions), keep email-only contact, and turn on ""Save this information"" by default",,S,Proposed
+13,Checkout form,Show errors in a summary at the top and move focus to the first invalid field,"On submit, errors are scattered down a long page. Focus stays on Email",,M,Proposed
+14,Checkout form,"Add a visible ""Return to cart"" link at the top on mobile",A cart link exists but is only an icon in the header,,S,Proposed
+15,Checkout form,"Clarify ""Cash on Delivery""","Add instructions (fee, who delivers, which areas). Confirm COD is intended for an AU store",,S,Proposed
+16,Trust and clarity,"Show payment and security badges, returns and contact link in the checkout footer",Reduces abandonment on first-time purchases,,S,Proposed
+17,Trust and clarity,Order confirmation and emails: verify names are escaped,Names accept HTML (ZG-024). Check the confirmation email and packing slip,,S,Proposed
+18,Trust and clarity,Remove console noise,"401 and ""Failed to execute action"" on load (ZG-025) can hide real errors during support",,M,Proposed
+19,Accessibility,Name every payment radio,"Two radios expose only ""on"" (ZG-026)",,M,Proposed
+20,Accessibility,"Fix the in-stock quick-add label that reads ""Sold out""",ZG-012,,S,Proposed
+21,Accessibility,Single H1 on product pages,ZG-006,,S,Proposed
+22,Accessibility,Add axe-core to the Playwright suite,Catches regressions like #19 and #21 automatically,,M,Proposed
+23,Test suite improvements,Automate ZG-021 to ZG-026,"Console-error assertion for the pixel, phone/name validation, radio names",,M,Proposed
+24,Test suite improvements,"Add a ""no console errors on checkout"" guard",Fails when new warnings appear,,S,Proposed
+25,Test suite improvements,Add a happy-path test in a test store,Full purchase with Shopify Bogus Gateway on a development store only. Never on this live store,,L,Proposed
+26,Test suite improvements,Postcode / state mismatch test,"Probe confirmed ""Enter a valid ZIP / postal code for Victoria"" works for 2000 + Victoria, so it can be asserted",,S,Proposed
+27,Test suite improvements,Shipping-method and discount-applied cases,Needs a valid address and a real discount code (ask the store owner for a test code),,M,Proposed
+28,Test suite improvements,Run the suite nightly against the live store with 1 worker,"The store returns HTTP 429 on bursts, so keep workers=1",,S,Proposed
+29,"Collections, filters and sorting",Fix filter data so counts are trustworthy,Brand shows ProRapid (2) on a 22-product collection,ZG-029,S,Proposed
+30,"Collections, filters and sorting",Disable or hide filter values with 0 results,"""Out of stock (0)"" is selectable and leads to an empty grid",ZG-031,S,Proposed
+31,"Collections, filters and sorting","Show active-filter chips with a one-click ""Clear all""",Users cannot see at a glance which filters narrowed the list,,M,Proposed
+32,"Collections, filters and sorting",Give price filter inputs validation and a message,Min greater than max returns 0 products silently; text values are ignored silently,,S,Proposed
+33,"Collections, filters and sorting",Handle out-of-range pages gracefully,page=99 shows an empty grid; page=0/-1/abc silently show page 1,ZG-031,S,Proposed
+34,"Collections, filters and sorting",Never show $0.00 for sold-out items; sort sold-out last,14 sold-out items show $0.00 and sort first on price low to high,ZG-028,S,Proposed
+35,"Collections, filters and sorting","Add a ""Notify me when back in stock"" on sold-out items",14 of 71 products are sold out with no way to ask for stock,,M,Proposed
+36,"Collections, filters and sorting",Remove empty collections from the menu or fill them,"Clippers, Bundles & Kits and muk all show NO PRODUCTS FOUND",ZG-032,S,Proposed
+37,Search,Add predictive search with product thumbnails and prices,Only a results page exists; users must submit to see matches,,M,Proposed
+38,Search,"Empty-state and ""did you mean"" for no-result searches","""xyzzy123"" returns 0 with no suggestions; empty query is a blank page",ZG-034,S,Proposed
+39,Search,Make search case-insensitive and add synonyms,"wax = 34 results, WAX = 36",ZG-033,S,Proposed
+40,Search,Add collection and page results alongside products,"Searching ""returns"" or ""warranty"" finds only products",,M,Proposed
+41,Wishlist and favourites,"Show saved state on the heart (filled icon, ""Remove from wishlist"")","Label stays ""Add to wishlist"" after saving",ZG-042,S,Proposed
+42,Wishlist and favourites,Sync the wishlist to the customer account,"List is only in browser localStorage, so it is lost on another device",ZG-042,L,Proposed
+43,Wishlist and favourites,"Add ""Add to cart"" and ""Remove"" on each wishlist item",Page lists name and price; users must go back to the product,,M,Proposed
+44,Wishlist and favourites,"Show a toast (""Saved to wishlist - View"") after saving","Only the header count changes, which is easy to miss",,S,Proposed
+45,Wishlist and favourites,Link the wishlist from the cart and from the header on mobile,Needed to move saved items into the cart without searching again,,S,Proposed
+46,Wishlist and favourites,"Remove the hidden ""View compare"" link or build the compare page",/pages/compare is 404,ZG-019,S,Proposed
+47,Product page,"Add related products and ""recently viewed""",Product page has no cross-sell block,,M,Proposed
+48,Product page,Lower the low-stock threshold and show real scarcity only,"""Only 155 left"" appears at 155 units",ZG-043,S,Proposed
+49,Product page,Show the warranty block only for machines,Warranty appears on wax and cologne,ZG-037,S,Proposed
+50,Product page,Replace placeholder descriptions,"""to be confirmed"" lines and wrong paste/fiber copy",ZG-035,M,Proposed
+51,Product page,Make the express checkout line real buttons or remove it,"Shows ""Express checkout with Shop Pay - Apple Pay - Google Pay"" as text; confirm wallet buttons render",,S,Proposed
+52,Product page,Add reviews or ratings,None present; important for consumables and trade buyers,,L,Proposed
+53,Product page,Show a size/volume unit price (per 100ml),"Many 150ml, 300ml, 400ml, 1500ml items to compare",,M,Proposed
+54,"Content, trust and consistency",One support email and phone across all pages,zerogap.com.au vs zerogapsupplyco.com.au,ZG-039,S,Proposed
+55,"Content, trust and consistency",Fix policy page copy and add an effective date,Returns page reuses shipping subtitle,ZG-038,S,Proposed
+56,"Content, trust and consistency","Show shipping thresholds early (free over $99, $9.95 standard)",Policy states them; product and cart pages do not,,S,Proposed
+57,"Content, trust and consistency","Clean the blog: remove duplicate post, brand byline",Same post listed twice,ZG-040,S,Proposed
+58,"Content, trust and consistency","Normalise vendor, type and title casing","""Mats_Organisers"", ""150ML"" vs ""150ml"", ""H2B / Generic""",ZG-041,S,Proposed
+59,Mobile,Enlarge breadcrumb and small links to 44 px tap targets,HOME and ALL COLLECTIONS under 24 px,ZG-044,S,Proposed
+60,Mobile,"Consider a sticky ""Filter and sort"" bar on mobile","Collections list 12 products per page; a sticky bar keeps filters reachable (suggestion, not a defect)",,S,Proposed
+61,Mobile,Show a live results count on the mobile filter button,"Lets users see what a filter returns before closing the drawer (suggestion, not a defect)",,M,Proposed
+62,Client feedback and feature requests,Support multiple named wishlists,"Current wishlist is one list of product handles in browser localStorage (key shopify-wishlist, script dt_wishlist.js), with no account or list names. Needs custom development: named lists, a ""Save to list"" picker, and storage per customer account (customer metafields or an app) so lists follow the user",,L,Proposed
+63,Client feedback and feature requests,Show brand options under each category in the menu,"The header menu has only 4 top-level items with no brand children. Add brand sub-items (Navigation menu children or a mega menu), and fix the Brand filter data (ZG-029) so brand pages are accurate. The B2B catalogue page already has a ""3 brands"" accordion per category",ZG-029,M,Proposed
+64,Client feedback and feature requests,Make the B2B catalogue reachable,Link /pages/b2b-catalog-product-list from the Trade portal page and trade account area and give it a proper title,ZG-049,S,Proposed
+65,Client feedback and feature requests,Use one letter case for all footer links,Useful links are all caps while other columns are title case,ZG-050,S,Proposed

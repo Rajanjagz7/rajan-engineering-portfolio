@@ -1,0 +1,86 @@
+[
+  {
+    "page": "/",
+    "href": "/collections/gaming-controllers",
+    "text": "",
+    "inside": "main",
+    "visible": true
+  },
+  {
+    "page": "/",
+    "href": "/collections/gaming-chair",
+    "text": "",
+    "inside": "main",
+    "visible": true
+  },
+  {
+    "page": "/",
+    "href": "/collections/gaming-desk",
+    "text": "",
+    "inside": "main",
+    "visible": true
+  },
+  {
+    "page": "/",
+    "href": "/collections/keyboards",
+    "text": "",
+    "inside": "main",
+    "visible": true
+  },
+  {
+    "page": "/",
+    "href": "/collections/mousepads",
+    "text": "",
+    "inside": "main",
+    "visible": true
+  },
+  {
+    "page": "/",
+    "href": "/pages/compare",
+    "text": "View compare",
+    "inside": "other",
+    "visible": false
+  },
+  {
+    "page": "/collections/all",
+    "href": "/pages/compare",
+    "text": "View compare",
+    "inside": "other",
+    "visible": false
+  },
+  {
+    "page": "/products/andis-clipper-oil-118ml",
+    "href": "/pages/compare",
+    "text": "View compare",
+    "inside": "other",
+    "visible": false
+  },
+  {
+    "page": "/cart",
+    "href": "/pages/compare",
+    "text": "View compare",
+    "inside": "other",
+    "visible": false
+  },
+  {
+    "page": "/pages/faq",
+    "href": "/pages/compare",
+    "text": "View compare",
+    "inside": "other",
+    "visible": false
+  },
+  {
+    "page": "/pages/contact",
+    "href": "/pages/faqs",
+    "text": "Browse FAQs",
+    "inside": "main",
+    "visible": true
+  },
+  {
+    "page": "/pages/contact",
+    "href": "/pages/compare",
+    "text": "View compare",
+    "inside": "other",
+    "visible": false
+  }
+]

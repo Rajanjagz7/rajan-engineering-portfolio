@@ -1,0 +1,92 @@
+{
+  "desktop": {
+    "title": "Checkout - ZeroGap Supply Co",
+    "lang": "en-AU",
+    "errors": [
+      "Show more options",
+      "Enter an email",
+      "Add a house number if you have one",
+      "Enter a valid ZIP / postal code for Victoria",
+      "Enter a card number",
+      "Enter a valid expiration date",
+      "Enter the CVV or security code on your card",
+      "Pay now",
+      "Apply",
+      "There was a problem with our checkoutRefresh this page or try again in a few minutesRefresh PageRequest ID: a4835686eae4c87d"
+    ],
+    "invalidAria": [
+      "email",
+      "postalCode"
+    ],
+    "postcodeStateMismatchError": [
+      "State/territory",
+      "Postcode",
+      "Enter a valid ZIP / postal code for Victoria"
+    ],
+    "url": "https://bcppqf-4m.myshopify.com/checkouts/cn/hWNHnYWJTK5JMXWed8SrB9nA/en-au?_r=AQABzp54F0nPEXBTTZ0JbeMoRWZ0e2k_UdR0y__1ME5Fcdl24INd",
+    "hasBackToCart": 1,
+    "hasCOD": 1,
+    "paymentRadiosLabel": [
+      "on",
+      "on",
+      "Credit card, UnionPay and JCB",
+      "PayPal",
+      "Cash on Delivery (COD)"
+    ],
+    "autofocus": "email",
+    "horizontalScroll": false,
+    "console": [
+      "Failed to load resource: the server responded with a status of 401 ()",
+      "[Meta Pixel] - Call to \"fbq('set', 'userData', Object);\" with parameter \"pixel_id\" has an invalid value of \"'1850451346134771'\"",
+      "[Meta Pixel] - Call to \"fbq('set', 'userData', Object);\" with parameter \"pixel_id\" has an invalid value of \"'1850451346134771'\"",
+      "Failed to execute action on attempt 1 of 2."
+    ]
+  },
+  "mobile": {
+    "title": "Checkout - ZeroGap Supply Co",
+    "lang": "en-AU",
+    "errors": [
+      "Show more options",
+      "Enter an email",
+      "Add a house number if you have one",
+      "Enter a valid ZIP / postal code for Victoria",
+      "Enter a card number",
+      "Enter a valid expiration date",
+      "Enter the CVV or security code on your card",
+      "Pay now",
+      "Apply",
+      "There was a problem with our checkoutRefresh this page or try again in a few minutesRefresh PageRequest ID: a48356dc4e74117e"
+    ],
+    "invalidAria": [
+      "email",
+      "postalCode"
+    ],
+    "postcodeStateMismatchError": [
+      "State/territory",
+      "Postcode",
+      "Enter a valid ZIP / postal code for Victoria"
+    ],
+    "url": "https://bcppqf-4m.myshopify.com/checkouts/cn/hWNHnYXjxnMMzY41aWsGifpc/en-au?_r=AQABbydlIkJfHgnIX7_uPPOjcakmknhL8mtgWze9PFJ7Oa__9jiY",
+    "hasBackToCart": 1,
+    "hasCOD": 1,
+    "paymentRadiosLabel": [
+      "on",
+      "on",
+      "Credit card, UnionPay and JCB",
+      "PayPal",
+      "Cash on Delivery (COD)"
+    ],
+    "autofocus": "email",
+    "horizontalScroll": false,
+    "console": [
+      "Failed to load resource: the server responded with a status of 401 ()",
+      "The resource https://bcppqf-4m.myshopify.com/cdn/shopifycloud/checkout-web/assets/c1/assets/DateField.CFFsBmUK.css was preloaded using link preload but not used within a few seconds from the window's ",
+      "The resource https://bcppqf-4m.myshopify.com/cdn/shopifycloud/checkout-web/assets/c1/assets/AnnouncementRuntimeExtensions.DbBB6lBJ.css was preloaded using link preload but not used within a few second",
+      "The resource https://bcppqf-4m.myshopify.com/cdn/shopifycloud/checkout-web/assets/c1/assets/QRCode.BZ_m5G5a.css was preloaded using link preload but not used within a few seconds from the window's loa",
+      "The resource https://bcppqf-4m.myshopify.com/cdn/shopifycloud/checkout-web/assets/c1/assets/NumberField.CRpcZnVJ.css was preloaded using link preload but not used within a few seconds from the window'",
+      "The resource https://bcppqf-4m.myshopify.com/cdn/shopifycloud/checkout-web/assets/c1/assets/RuntimeExtension.DWkDBM73.css was preloaded using link preload but not used within a few seconds from the wi",
+      "[Meta Pixel] - Call to \"fbq('set', 'userData', Object);\" with parameter \"pixel_id\" has an invalid value of \"'1850451346134771'\"",
+      "[Meta Pixel] - Call to \"fbq('set', 'userData', Object);\" with parameter \"pixel_id\" has an invalid value of \"'1850451346134771'\""
+    ]
+  }
+}

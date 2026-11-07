@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ZG-001",
+    "file": "ZG-001_cart-10000-units.png",
+    "what": "cart holds 10000 units"
+  },
+  {
+    "id": "ZG-003",
+    "file": "ZG-003_header-vs-footer-links.json",
+    "what": "{\"header\":[\"CLIPPERS & ELECTRICALS -> /collections/barbercon\",\"HAIR PRODUCTS -> /collections/hair-2-beauty-imports\",\"BARBER ESSENTIALS -> /collections/muk-hair-care\",\"CLIPPERS & ELECTRICALS -> /collections/barbercon\",\"HAIR PRODUCTS -> /collections/hair-2-beauty-imports\",\"BARBER ESSENTIALS -> /collections/muk-hair-care\"],\"footer\":[\"CLIPPERS & ELECTRICALS -> /collections/clippers-trimmers-shavers\",\"HAIR PRODUCTS -> /collections/hair-products\",\"BARBER ESSENTIALS -> /collections/barber-essentials\"]}"
+  },
+  {
+    "id": "ZG-005",
+    "file": "ZG-005_dead-links.json",
+    "what": "10 links with href=\"#\""
+  },
+  {
+    "id": "ZG-014",
+    "file": "ZG-014_img-without-alt.json",
+    "what": "1 img without alt"
+  },
+  {
+    "id": "ZG-012",
+    "file": "ZG-012_quick-add-accessible-name.json",
+    "what": "[\"QUICK ADD › Sold out\"]"
+  },
+  {
+    "id": "ZG-006",
+    "file": "ZG-006_h1-elements.json",
+    "what": "[\"\\n        Sign In\\n  \"]"
+  },
+  {
+    "id": "ZG-008",
+    "file": "ZG-008_checkout-empty-submit.png",
+    "what": "field errors plus generic banner"
+  },
+  {
+    "id": "ZG-015",
+    "file": "ZG-015_checkout-email-with-space.png",
+    "what": "no email error for value with a space"
+  },
+  {
+    "id": "ZG-010",
+    "file": "ZG-010_desktop-cart-drawer.png",
+    "what": "desktop opens drawer; mobile url https://bcppqf-4m.myshopify.com/"
+  },
+  {
+    "id": "ZG-011",
+    "file": "ZG-011_cart-after-minus-1.png",
+    "what": "typed -1, cart count 0"
+  },
+  {
+    "id": "ZG-016",
+    "file": "ZG-016_sold-out-add.json",
+    "what": "available=false, add status 429, cart count 0"
+  },
+  {
+    "id": "ZG-013",
+    "file": "ZG-013_wrong-case-password-result.png",
+    "what": "url after wrong-case password: /"
+  }
+]

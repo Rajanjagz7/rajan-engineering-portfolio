@@ -1,0 +1,7 @@
+{
+  "spec": ["test-apk/*.spec.mjs"],
+  "timeout": 300000,
+  "slow": 30000,
+  "reporter": "spec",
+  "retries": 0
+}

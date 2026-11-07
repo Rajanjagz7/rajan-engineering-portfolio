@@ -1,0 +1,19 @@
+{
+  "name": "zerogap-appium-tests",
+  "private": true,
+  "type": "module",
+  "description": "Appium (UiAutomator2) mobile web tests for the ZeroGap Supply Co Shopify storefront, run in Chrome on an Android emulator or device.",
+  "scripts": {
+    "appium": "appium --port 4723 --allow-insecure uiautomator2:chromedriver_autodownload",
+    "emulator": "node scripts/start-emulator.mjs",
+    "test": "mocha --config .mocharc.json",
+    "test:smoke": "mocha --config .mocharc.json test/smoke.spec.mjs",
+    "test:known": "SHOW_BUGS=1 mocha --config .mocharc.json test/known-issues.spec.mjs"
+  },
+  "dependencies": {
+    "webdriverio": "^9.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.7.0"
+  }
+}

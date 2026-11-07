@@ -1,0 +1,62 @@
+﻿Area,Suggestion,Detail / Why,Related bug,Effort,Status,
+1,Fix first (these hurt conversion or reporting),Prevent out-of-stock items and runaway quantities from reaching checkout,"A sold-out item can currently be added to the cart, and the quantity field accepts up to 10,000 units. Both cases can proceed to checkout and should be blocked.","ZG-001, ZG-016",M,Proposed
+2,Fix first (these hurt conversion or reporting),Show only field-level errors when a submit fails,"On a failed submit, a generic ""There was a problem with our checkout"" banner appears alongside the field-level errors. Removing the banner makes the feedback clearer.",ZG-008,S,Proposed
+3,Fix first (these hurt conversion or reporting),Repair the Meta Pixel ID,"The pixel rejects '1850451346134771' because of stray quote characters, which breaks ad attribution.",ZG-021,S,Proposed
+4,Fix first (these hurt conversion or reporting),Remove dead and 404 links before launch,"Five gaming tiles, the FAQ button and a compare link no longer resolve. Remove them before go-live.","ZG-017, ZG-018, ZG-019",S,Proposed
+5,Cart to checkout flow,Use one cart pattern across every viewport,"On desktop the cart opens in a drawer, while on mobile it navigates to a separate /cart page. Pick one behaviour and apply it everywhere.",ZG-010,M,Proposed
+6,Cart to checkout flow,Stop Enter in the quantity box from jumping straight to checkout,"Pressing Enter in the quantity field submits the form immediately. Add an explicit ""Update"" button, or debounce the update on change.",ZG-020,M,Proposed
+7,Cart to checkout flow,Show an inline validation message for an invalid quantity,"A value of -1, an empty box, or a stray ""e"" silently becomes 1. Tell the shopper what happened instead.",ZG-011,M,Proposed
+8,Cart to checkout flow,Show shipping cost and a delivery estimate before checkout,"Checkout only reveals shipping once the user reaches ""Enter shipping address"", which is a known drop-off point. Add a shipping calculator or a free-shipping threshold bar in the cart.",—,M,Proposed
+9,Cart to checkout flow,"Add low-stock messaging and an ""Only N left"" notice",This gives shoppers a real sense of urgency and pairs with the stock-cap fix in item 1.,—,M,Proposed
+10,Checkout form,"Match error copy to the on-page field labels (Postcode, Suburb)","Errors currently say ""ZIP / postal code"" and ""city"" on an en-AU store. Edit the wording under Checkout editor > Languages.",ZG-022,S,Proposed
+11,Checkout form,"Validate the phone field, or hide it","The phone field accepts ""abc"" as valid input.",ZG-023,S,Proposed
+12,Checkout form,Reduce form friction,"Enable address autocomplete (the Address field is a combobox, so confirm it returns AU suggestions), keep contact to email only, and turn on ""Save this information"" by default.",—,S,Proposed
+13,Checkout form,Show errors in a summary at the top and move focus to the first invalid field,"On submit, errors are scattered down a long page while focus stays on Email. A summary plus a focus jump helps shoppers find what to fix.",—,M,Proposed
+14,Checkout form,"Add a visible ""Return to cart"" link at the top on mobile","A cart link exists, but on mobile it is only an icon in the header.",—,S,Proposed
+15,Checkout form,"Clarify ""Cash on Delivery""","Add instructions covering the fee, who delivers, and which areas are covered. Also confirm COD is intended for an AU store.",—,S,Proposed
+16,Trust and clarity,"Show payment and security badges, plus returns and contact links, in the checkout footer",These reassurances reduce abandonment on first-time purchases.,—,S,Proposed
+17,Trust and clarity,Order confirmation and emails: verify names are escaped,Names accept HTML input. Check the confirmation email and the packing slip for unescaped output.,ZG-024,S,Proposed
+18,Trust and clarity,Remove console noise,"A 401 and a ""Failed to execute action"" error appear on load, which can hide real errors during support.",ZG-025,M,Proposed
+19,Accessibility,Give every payment radio an accessible name,"Two payment radios currently expose only ""on"" to screen readers.",ZG-026,M,Proposed
+20,Accessibility,"Fix the in-stock quick-add label that reads ""Sold out""",The label is wrong for items that are actually in stock.,ZG-012,S,Proposed
+21,Accessibility,Use a single H1 on product pages,Product pages currently contain more than one H1.,ZG-006,S,Proposed
+22,Accessibility,Add axe-core to the Playwright suite,This will catch regressions such as items 19 and 21 automatically.,—,M,Proposed
+23,Test suite improvements,Automate ZG-021 through ZG-026,"Cover the pixel console error, the phone and name validation, and the radio names.",—,M,Proposed
+24,Test suite improvements,"Add a ""no console errors on checkout"" guard",The test fails whenever a new warning appears.,—,S,Proposed
+25,Test suite improvements,Add a happy-path purchase test in a test store,Run a full purchase with the Shopify Bogus Gateway on a development store only. Never run this on the live store.,—,L,Proposed
+26,Test suite improvements,Add a postcode / state mismatch test,"A probe confirmed that ""Enter a valid ZIP / postal code for Victoria"" works for 2000 + Victoria, so it can be asserted.",—,S,Proposed
+27,Test suite improvements,Add shipping-method and discount-applied test cases,These need a valid address and a real discount code — ask the store owner for a test code.,—,M,Proposed
+28,Test suite improvements,Run the suite nightly against the live store with 1 worker,"The store returns HTTP 429 on bursts, so keep workers=1.",—,S,Proposed
+29,"Collections, filters and sorting",Fix the filter data so the counts are trustworthy,The Brand filter shows ProRapid (2) on a 22-product collection.,ZG-029,S,Proposed
+30,"Collections, filters and sorting",Disable or hide filter values that return 0 results,"""Out of stock (0)"" is selectable and leads to an empty grid.",ZG-031 (also on item 33 — possible duplicate),S,Proposed
+31,"Collections, filters and sorting","Show active-filter chips with a one-click ""Clear all""",Shoppers cannot see at a glance which filters narrowed the list.,—,M,Proposed
+32,"Collections, filters and sorting",Add validation and a message to the price filter inputs,"A minimum greater than the maximum silently returns 0 products, and text values are silently ignored.",—,S,Proposed
+33,"Collections, filters and sorting",Handle out-of-range pages gracefully,"A request for page=99 shows an empty grid, while page=0, -1 or abc silently show page 1.",ZG-031 (also on item 30 — possible duplicate),S,Proposed
+34,"Collections, filters and sorting","Never show $0.00 for sold-out items, and sort sold-out items last",14 sold-out items display $0.00 and sort first on price low-to-high.,ZG-028,S,Proposed
+35,"Collections, filters and sorting","Add a ""Notify me when back in stock"" option on sold-out items","14 of 71 products are sold out, and there is currently no way to ask for stock.",—,M,Proposed
+36,"Collections, filters and sorting","Remove empty collections from the menu, or fill them","Clippers, Bundles & Kits and muk all show ""NO PRODUCTS FOUND"".",ZG-032,S,Proposed
+37,Search,Add predictive search with product thumbnails and prices,"Only a results page exists, so users must submit to see any matches.",—,M,Proposed
+38,Search,"Add an empty state and ""did you mean"" suggestions for no-result searches","Searching ""xyzzy123"" returns 0 results with no suggestions, and an empty query shows a blank page.",ZG-034,S,Proposed
+39,Search,Make search case-insensitive and add synonyms,"The term ""wax"" returns 34 results while ""WAX"" returns 36.",ZG-033,S,Proposed
+40,Search,Add collection and page results alongside products,"Searching ""returns"" or ""warranty"" currently finds only products.",—,M,Proposed
+41,Wishlist and favourites,"Show the saved state on the heart (filled icon, ""Remove from wishlist"")","The label stays ""Add to wishlist"" even after the item is saved.",ZG-042,S,Proposed
+42,Wishlist and favourites,Sync the wishlist to the customer account,"The list lives only in browser localStorage, so it is lost on another device.",ZG-042,L,Proposed
+43,Wishlist and favourites,"Add ""Add to cart"" and ""Remove"" to each wishlist item","The page lists only name and price, so users must go back to the product page.",—,M,Proposed
+44,Wishlist and favourites,"Show a toast (""Saved to wishlist - View"") after saving","Currently only the header count changes, which is easy to miss.",—,S,Proposed
+45,Wishlist and favourites,Link the wishlist from the cart and from the header on mobile,This is needed to move saved items into the cart without searching again.,—,S,Proposed
+46,Wishlist and favourites,"Remove the hidden ""View compare"" link, or build the compare page",The /pages/compare path returns a 404.,ZG-019,S,Proposed
+47,Product page,"Add related products and a ""recently viewed"" block",The product page currently has no cross-sell block.,—,M,Proposed
+48,Product page,Lower the low-stock threshold and show scarcity only when it is real,"""Only 155 left"" appears at 155 units.",ZG-043,S,Proposed
+49,Product page,Show the warranty block only for machines,The warranty block also appears on wax and cologne.,ZG-037,S,Proposed
+50,Product page,Replace placeholder descriptions,"""to be confirmed"" lines and incorrect paste/fibre copy are still present.",ZG-035,M,Proposed
+51,Product page,"Make the express checkout line real buttons, or remove it","It currently shows ""Express checkout with Shop Pay - Apple Pay - Google Pay"" as plain text. Confirm the wallet buttons render.",—,S,Proposed
+52,Product page,Add reviews or ratings,"None are present, which matters for consumables and trade buyers.",—,L,Proposed
+53,Product page,Show a size/volume unit price (per 100ml),"There are many 150ml, 300ml, 400ml and 1500ml items to compare.",—,M,Proposed
+54,"Content, trust and consistency",Use one support email and phone number across all pages,The site mixes zerogap.com.au and zerogapsupplyco.com.au.,ZG-039,S,Proposed
+55,"Content, trust and consistency",Fix the policy page copy and add an effective date,The Returns page reuses the shipping subtitle.,ZG-038,S,Proposed
+56,"Content, trust and consistency","Show shipping thresholds early (free over $99, $9.95 standard)","The policy states these thresholds, but the product and cart pages do not.",—,S,Proposed
+57,"Content, trust and consistency",Clean up the blog: remove the duplicate post and fix the byline,"The same post is listed twice, and the byline should carry the brand.",ZG-040,S,Proposed
+58,"Content, trust and consistency","Normalise vendor, type and title casing","Examples include ""Mats_Organisers"", ""150ML"" vs ""150ml"", and ""H2B / Generic"".",ZG-041,S,Proposed
+59,Mobile,Enlarge the breadcrumb and small links to 44 px tap targets,HOME and ALL COLLECTIONS are under 24 px.,ZG-044,S,Proposed
+60,Mobile,"Consider a sticky ""Filter and sort"" bar on mobile","Collections list 12 products per page, so a sticky bar keeps filters reachable. This is a suggestion, not a defect.",—,S,Proposed
+61,Mobile,Show a live results count on the mobile filter button,"This lets users see what a filter returns before closing the drawer. This is a suggestion, not a defect.",—,M,Proposed

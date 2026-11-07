@@ -1,0 +1,25 @@
+Title,Assignee,Priority,Section,Sprint,Description,Video Link,Screenshot
+Login button does nothing on the sign-in screen,First Last,High,To Do,Issue,"Module: Sign in
+Platform: Web
+
+Steps to Reproduce:
+1. Open the sign-in page.
+2. Enter a valid email and password.
+3. Click Login.
+
+Actual Result:
+Nothing happens.
+
+Expected Result:
+The user is signed in and sent to the dashboard.",C:\Videos\login-bug.mp4,C:\Screenshots\login-1.png; C:\Screenshots\login-2.png
+Profile photo is stretched on the settings page,First Last,Low,To Do,Issue,"Module: Settings
+Platform: Web
+
+Steps to Reproduce:
+1. Open Settings > Profile.
+
+Actual Result:
+The photo is stretched.
+
+Expected Result:
+The photo keeps its aspect ratio.",,

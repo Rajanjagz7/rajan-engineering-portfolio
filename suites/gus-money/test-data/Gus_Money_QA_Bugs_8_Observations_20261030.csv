@@ -1,0 +1,30 @@
+﻿index,Bug ID,Module/Screen,Bug Title,Severity,Priority,Preconditions,Steps to Reproduce,Test Data,Expected Result,Actual Result,Evidence/Notes,Status
+38,LOAN-039,Manage Bank,Bank Account Removal Option Is Missing,Medium,P2,User is logged in and has at least one bank account connected.,"1. Open Manage Bank.
+2. Select or view a connected bank account.
+3. Check the available account management actions.",User account with one or more connected bank accounts.,"The user should have an appropriate option to disconnect or remove a connected bank account, subject to security and confirmation requirements.",No option to remove or disconnect a connected bank account is available.,Confirm the intended bank-disconnection flow and any restrictions.,Open
+39,LOAN-040,Manage Bank,Bank Account Management Requires a Clearer Account Selector,Low,P3,User is logged in and has connected bank account(s).,"1. Open Manage Bank.
+2. Review how connected bank accounts are displayed and selected.
+3. Attempt to manage an account.","User account with multiple connected bank accounts, if available.",Connected bank accounts should be presented in a clear dropdown or account-selector pattern that makes it easy to identify and manage each account.,The current account-management presentation is not clear or convenient for selecting and managing bank accounts.,UX improvement request; confirm the proposed interaction/design with Product before treating it as a functional defect.,Open – UX Review
+40,LOAN-041,Profile – Connect Account,Connect Account Screen Requires UI/UX Improvements,Low,P3,User is logged in and can access the Profile section.,"1. Open Profile.
+2. Navigate to Connect Account.
+3. Review the screen layout, content hierarchy, and available actions.",Profile → Connect Account.,"The screen should follow the application's design system, with clear instructions, readable content, consistent spacing, and intuitive actions.",The current Connect Account screen requires UI/UX improvement.,UX improvement request. Add specific visual observations when the screenshot/reference is available.,Open – UX Review
+41,LOAN-042,Security – Biometric Login,Biometric Login Displays an Unclear Error When Switching Users,Medium,P2,Biometric login is enabled for an existing user on the device.,"1. Enable biometric login for User A.
+2. Sign out or switch accounts.
+3. Attempt to log in as User B using the biometric login flow.
+4. Observe the displayed message.","User A with biometrics enabled; a different account, User B.","The app should handle the account mismatch safely and display a clear message explaining that biometric login is associated with another account, with guidance to use the correct credentials or reconfigure biometric login.",An inappropriate or unclear error is displayed when attempting to log in as another user.,Review biometric-to-account binding and ensure the message does not expose sensitive account information.,Open
+42,LOAN-043,Security – Sign Out of All Devices,Active Device Count Remains Unchanged After Signing Out All Devices,High,P1,User has multiple active device sessions and can access the trusted devices/session screen.,"1. Open the active devices or trusted devices screen.
+2. Note the active device count (reported as 2).
+3. Select Sign Out of All Devices and complete the confirmation.
+4. Log in again.
+5. Reopen the active devices screen and review the count.",Account showing 2 active devices before sign-out.,"All previous sessions should be revoked. After the next login, only the newly created/current session should be counted, unless the product intentionally counts another valid session.","The screen initially shows 2 active devices. After signing out of all devices and logging in again, it still shows 2 active devices.","Verify server-side session revocation, device registration, and active-session count refresh. Confirm whether the current login is included in the count.",Open
+43,LOAN-044,Household Information,Household Information Screen Layout Is Broken,Medium,P2,User is logged in and can access Household Information.,"1. Open the Household Information screen.
+2. Review the layout and alignment of the displayed fields and components.
+3. Scroll through the screen and check for clipping or overlap.",Household Information screen with the available user data.,"All fields and components should be aligned and displayed correctly, without overlapping, clipping, or broken spacing.",The Household Information screen layout is broken.,Screenshot was referenced in the discussion but was not available as a separate file in this session.,Open
+44,LOAN-045,Gus Chat,Gus Chat Screen Layout Is Broken,Medium,P2,User is logged in and can access Gus Chat.,"1. Open Gus Chat.
+2. Review the chat screen layout, message area, input field, and action controls.
+3. Check the screen at the affected viewport/device size.",Gus Chat screen.,"The chat interface should render correctly, with readable messages, properly aligned controls, and no clipping or overlapping elements.",The Gus Chat screen layout is broken.,Screenshot was referenced in the discussion but was not available as a separate file in this session.,Open
+45,LOAN-046,Suggestions – Chat History,Suggestion Chat History Is Not Displaying,Medium,P2,User is logged in and can access the Suggestions section. At least one suggestion conversation has been created.,"1. Open the Suggestions section.
+2. Generate or submit a suggestion.
+3. Navigate away from the screen.
+4. Return to the Suggestions section.
+5. Check whether the previous chat history is displayed.",Previously generated suggestion conversation.,Previously generated suggestion conversations should be saved and displayed in chat history so users can access and review them.,Previously generated suggestion chat history is not visible in the Suggestions section.,Verify that conversations are persisted successfully and that the chat-history API returns the saved records. Confirm whether the issue affects all users or only specific sessions.,Open

@@ -1,0 +1,22 @@
+{
+  "name": "pmx-bug-importer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bulk-add bugs (with assignee, priority, description, screenshots and videos) from a spreadsheet to a PMX board",
+  "scripts": {
+    "login": "node tests/login.mjs",
+    "import": "playwright test add-bugs --workers=1 --reporter=list",
+    "import:first": "cross-env-shell PMX_LIMIT=1 playwright test add-bugs --workers=1 --reporter=list",
+    "list": "playwright test add-bugs --list"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

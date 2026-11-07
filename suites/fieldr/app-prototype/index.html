@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fieldr — Intelligent Field Operations & Job Dispatch</title>
+  <meta name="description" content="Next-generation field operations, job dispatching, real-time crew tracking, and client management platform.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body class="dark-theme">
+  <div class="app-layout">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar" id="appSidebar">
+      <div class="sidebar-header">
+        <div class="brand-badge">
+          <div class="brand-icon">
+            <i data-lucide="zap"></i>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">fieldr<span class="brand-accent">.</span></span>
+            <span class="brand-sub">OPS CLOUD</span>
+          </div>
+        </div>
+        <button class="sidebar-toggle-btn" id="sidebarCollapseBtn" aria-label="Toggle Sidebar">
+          <i data-lucide="chevrons-left"></i>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">COMMAND CENTER</div>
+        <button class="nav-item active" data-view="dashboard" id="nav-dashboard">
+          <i data-lucide="layout-dashboard"></i>
+          <span>Dashboard</span>
+          <span class="badge badge-emerald">Live</span>
+        </button>
+        <button class="nav-item" data-view="jobs" id="nav-jobs">
+          <i data-lucide="briefcase"></i>
+          <span>Jobs & Orders</span>
+          <span class="badge" id="sidebarJobCount">8</span>
+        </button>
+        <button class="nav-item" data-view="dispatch" id="nav-dispatch">
+          <i data-lucide="map-pin"></i>
+          <span>Live Dispatch Map</span>
+          <span class="pulse-dot"></span>
+        </button>
+        <button class="nav-item" data-view="crew" id="nav-crew">
+          <i data-lucide="users"></i>
+          <span>Field Crew</span>
+        </button>
+        <button class="nav-item" data-view="clients" id="nav-clients">
+          <i data-lucide="building-2"></i>
+          <span>Clients & Sites</span>
+        </button>
+
+        <div class="nav-section-title">INSIGHTS & CONFIG</div>
+        <button class="nav-item" data-view="analytics" id="nav-analytics">
+          <i data-lucide="bar-chart-3"></i>
+          <span>Performance & SLA</span>
+        </button>
+        <button class="nav-item" data-view="settings" id="nav-settings">
+          <i data-lucide="sliders-horizontal"></i>
+          <span>System Settings</span>
+        </button>
+      </nav>
+
+      <!-- Dispatch Network Status Widget -->
+      <div class="sidebar-footer">
+        <div class="network-status-card">
+          <div class="status-header">
+            <span class="status-indicator online"></span>
+            <span class="status-title">Dispatch Grid 01</span>
+          </div>
+          <div class="status-meta">
+            <span>Latency: <strong>24ms</strong></span>
+            <span>Active GPS: <strong>100%</strong></span>
+          </div>
+        </div>
+        <div class="user-profile-mini">
+          <div class="avatar-ring">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Rajan Jagz" class="user-avatar">
+          </div>
+          <div class="user-details">
+            <div class="user-name">Rajan Jagz</div>
+            <div class="user-role">Operations Lead</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Stage -->
+    <div class="main-wrapper">
+      
+      <!-- Top Navigation / App Header -->
+      <header class="app-header">
+        <div class="header-left">
+          <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Open Navigation">
+            <i data-lucide="menu"></i>
+          </button>
+          
+          <div class="search-bar-container">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="globalSearchInput" placeholder="Search jobs, technicians, work orders, customers... (Ctrl + K)">
+            <kbd class="shortcut-key">⌘K</kbd>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <!-- Active Operations Ticker -->
+          <div class="ops-ticker">
+            <span class="ticker-pulse"></span>
+            <span class="ticker-label">Fleet on Route:</span>
+            <span class="ticker-value" id="activeFleetCount">5 Techs</span>
+          </div>
+
+          <button class="btn btn-secondary icon-only-btn" id="refreshBtn" title="Sync Data">
+            <i data-lucide="refresh-cw"></i>
+          </button>
+
+          <button class="btn btn-secondary icon-only-btn notification-btn" id="notificationBtn" title="Alerts">
+            <i data-lucide="bell"></i>
+            <span class="badge-dot"></span>
+          </button>
+
+          <!-- Primary Call to Action -->
+          <button class="btn btn-primary" id="openNewJobModalBtn">
+            <i data-lucide="plus-circle"></i>
+            <span>New Job Order</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Scrollable Main View Container -->
+      <main class="content-container">
+
+        <!-- ================= VIEW: DASHBOARD ================= -->
+        <section id="view-dashboard" class="app-view active">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">Field Operations Command Center</h1>
+              <p class="view-subtitle">Real-time status of dispatches, active work orders, and field crew telemetry.</p>
+            </div>
+            <div class="view-actions">
+              <div class="date-badge">
+                <i data-lucide="calendar"></i>
+                <span id="currentDateDisplay">Today</span>
+              </div>
+              <button class="btn btn-glass" id="quickDispatchBtn">
+                <i data-lucide="send"></i>
+                <span>Fast Dispatch</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- KPI Metric Cards Grid -->
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-icon-wrap indigo">
+                <i data-lucide="briefcase"></i>
+              </div>
+              <div class="metric-body">
+                <span class="metric-label">Active Work Orders</span>
+                <div class="metric-number" id="kpiActiveJobs">12</div>
+                <div class="metric-trend positive">
+                  <i data-lucide="trending-up"></i>
+                  <span>+4 from yesterday</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon-wrap emerald">
+                <i data-lucide="truck"></i>
+              </div>
+              <div class="metric-body">
+                <span class="metric-label">Crew in Field</span>
+                <div class="metric-number" id="kpiActiveCrew">6 / 8</div>
+                <div class="metric-trend neutral">
+                  <i data-lucide="activity"></i>
+                  <span>75% Capacity</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon-wrap violet">
+                <i data-lucide="check-circle-2"></i>
+              </div>
+              <div class="metric-body">
+                <span class="metric-label">First-Time Fix Rate</span>
+                <div class="metric-number">94.8%</div>
+                <div class="metric-trend positive">
+                  <i data-lucide="arrow-up-right"></i>
+                  <span>+2.3% benchmark</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-icon-wrap amber">
+                <i data-lucide="clock"></i>
+              </div>
+              <div class="metric-body">
+                <span class="metric-label">Avg. Response Time</span>
+                <div class="metric-number">38 min</div>
+                <div class="metric-trend positive">
+                  <i data-lucide="zap"></i>
+                  <span>-7m under SLA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dashboard Split Section: Radar Preview & High Priority Jobs -->
+          <div class="dashboard-split-grid">
+            
+            <!-- Live Radar Quick Card -->
+            <div class="card glass-card dispatch-preview-card">
+              <div class="card-header">
+                <div class="card-title-wrap">
+                  <h2 class="card-title">Live Dispatch Radar</h2>
+                  <span class="badge badge-emerald">Live Telemetry</span>
+                </div>
+                <button class="btn btn-sm btn-outline" id="jumpToMapBtn">Full Map View</button>
+              </div>
+              <div class="radar-interactive-canvas" id="dashboardRadarMini">
+                <!-- Radar grid rings and blips injected by JS -->
+                <div class="radar-rings">
+                  <div class="ring ring-1"></div>
+                  <div class="ring ring-2"></div>
+                  <div class="ring ring-3"></div>
+                  <div class="radar-sweep"></div>
+                </div>
+                <div class="radar-blips-layer" id="miniRadarBlips"></div>
+                <div class="radar-legend">
+                  <span class="legend-item"><span class="dot dot-emerald"></span> Tech On Site</span>
+                  <span class="legend-item"><span class="dot dot-amber"></span> In Transit</span>
+                  <span class="legend-item"><span class="dot dot-cyan"></span> Open Job</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Priority Jobs List -->
+            <div class="card glass-card">
+              <div class="card-header">
+                <div class="card-title-wrap">
+                  <h2 class="card-title">High Priority Work Orders</h2>
+                  <span class="badge badge-rose">Urgent Action</span>
+                </div>
+                <button class="btn btn-sm btn-outline" id="jumpToAllJobsBtn">View All</button>
+              </div>
+              <div class="card-body">
+                <div class="priority-jobs-list" id="priorityJobsList">
+                  <!-- Populated dynamically by JS -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Recent Operations Activity Stream -->
+          <div class="card glass-card mt-6">
+            <div class="card-header">
+              <h2 class="card-title">Operational Activity Stream</h2>
+              <span class="text-muted text-sm">Automated Event Log</span>
+            </div>
+            <div class="card-body">
+              <div class="activity-timeline" id="activityTimeline">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ================= VIEW: JOBS & WORK ORDERS ================= -->
+        <section id="view-jobs" class="app-view">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">Jobs & Work Orders</h1>
+              <p class="view-subtitle">Manage dispatch queues, track work orders, and assign field specialists.</p>
+            </div>
+            <div class="view-actions">
+              <!-- View Switcher (Kanban vs Table) -->
+              <div class="segmented-control">
+                <button class="segment-btn active" id="viewModeKanban" data-mode="kanban">
+                  <i data-lucide="kanban"></i>
+                  <span>Kanban</span>
+                </button>
+                <button class="segment-btn" id="viewModeList" data-mode="list">
+                  <i data-lucide="list"></i>
+                  <span>List View</span>
+                </button>
+              </div>
+
+              <button class="btn btn-primary" id="jobsCreateBtn">
+                <i data-lucide="plus"></i>
+                <span>Add Job</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Filters Bar -->
+          <div class="filters-toolbar">
+            <div class="filter-group">
+              <div class="input-with-icon">
+                <i data-lucide="filter"></i>
+                <select id="filterStatus">
+                  <option value="all">All Statuses</option>
+                  <option value="scheduled">Scheduled</option>
+                  <option value="dispatched">Dispatched</option>
+                  <option value="in-progress">In Progress</option>
+                  <option value="completed">Completed</option>
+                </select>
+              </div>
+
+              <div class="input-with-icon">
+                <i data-lucide="alert-triangle"></i>
+                <select id="filterPriority">
+                  <option value="all">All Priorities</option>
+                  <option value="Critical">Critical</option>
+                  <option value="High">High</option>
+                  <option value="Standard">Standard</option>
+                  <option value="Low">Low</option>
+                </select>
+              </div>
+
+              <div class="input-with-icon">
+                <i data-lucide="user-check"></i>
+                <select id="filterTechnician">
+                  <option value="all">All Technicians</option>
+                  <!-- Populated via JS -->
+                </select>
+              </div>
+            </div>
+
+            <div class="toolbar-stats">
+              <span>Showing: <strong id="visibleJobsCount">0</strong> jobs</span>
+            </div>
+          </div>
+
+          <!-- Kanban Board Container -->
+          <div class="kanban-board" id="kanbanBoard">
+            <!-- Column: Scheduled -->
+            <div class="kanban-column" data-status="scheduled">
+              <div class="column-header">
+                <div class="column-title">
+                  <span class="status-indicator status-scheduled"></span>
+                  <span>Scheduled</span>
+                </div>
+                <span class="column-count" id="count-scheduled">0</span>
+              </div>
+              <div class="kanban-cards-container" id="cards-scheduled"></div>
+            </div>
+
+            <!-- Column: Dispatched -->
+            <div class="kanban-column" data-status="dispatched">
+              <div class="column-header">
+                <div class="column-title">
+                  <span class="status-indicator status-dispatched"></span>
+                  <span>Dispatched</span>
+                </div>
+                <span class="column-count" id="count-dispatched">0</span>
+              </div>
+              <div class="kanban-cards-container" id="cards-dispatched"></div>
+            </div>
+
+            <!-- Column: In Progress -->
+            <div class="kanban-column" data-status="in-progress">
+              <div class="column-header">
+                <div class="column-title">
+                  <span class="status-indicator status-inprogress"></span>
+                  <span>In Progress</span>
+                </div>
+                <span class="column-count" id="count-in-progress">0</span>
+              </div>
+              <div class="kanban-cards-container" id="cards-in-progress"></div>
+            </div>
+
+            <!-- Column: Completed -->
+            <div class="kanban-column" data-status="completed">
+              <div class="column-header">
+                <div class="column-title">
+                  <span class="status-indicator status-completed"></span>
+                  <span>Completed</span>
+                </div>
+                <span class="column-count" id="count-completed">0</span>
+              </div>
+              <div class="kanban-cards-container" id="cards-completed"></div>
+            </div>
+          </div>
+
+          <!-- Table List View (Hidden by default) -->
+          <div class="jobs-table-container card glass-card" id="jobsTableView" style="display: none;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Job Title & ID</th>
+                  <th>Customer & Site</th>
+                  <th>Priority</th>
+                  <th>Assigned Tech</th>
+                  <th>Scheduled Window</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="jobsTableBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+        <!-- ================= VIEW: LIVE DISPATCH MAP ================= -->
+        <section id="view-dispatch" class="app-view">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">Live Field Dispatch & Map View</h1>
+              <p class="view-subtitle">Interactive geographical oversight, site geo-fencing, and live route telemetry.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn btn-secondary" id="mapCenterBtn">
+                <i data-lucide="crosshair"></i>
+                <span>Center Metro Area</span>
+              </button>
+              <button class="btn btn-primary" id="autoDispatchOptimizeBtn">
+                <i data-lucide="sparkles"></i>
+                <span>Auto-Route Optimizer</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="map-view-layout">
+            <!-- Left: Interactive Map Container -->
+            <div class="map-container card glass-card" id="mainMapCanvas">
+              <div class="map-hud-overlay">
+                <div class="hud-pill">
+                  <span class="live-blink"></span>
+                  <span>Active Satellite Link: San Francisco Metro Area</span>
+                </div>
+                <div class="map-hud-controls">
+                  <button class="hud-btn" id="zoomInBtn" title="Zoom In"><i data-lucide="plus"></i></button>
+                  <button class="hud-btn" id="zoomOutBtn" title="Zoom Out"><i data-lucide="minus"></i></button>
+                  <button class="hud-btn" id="mapLayersBtn" title="Toggle Layer"><i data-lucide="layers"></i></button>
+                </div>
+              </div>
+
+              <!-- Vector Map SVG Layer with Techs and Job Sites -->
+              <div class="simulated-map-surface" id="simulatedMapSurface">
+                <svg id="mapRoutesSvg" class="map-routes-svg" viewBox="0 0 1000 650"></svg>
+                <div id="mapMarkersLayer" class="map-markers-layer"></div>
+              </div>
+            </div>
+
+            <!-- Right: Field Dispatch Sidebar -->
+            <div class="dispatch-sidebar">
+              <div class="card glass-card mb-4">
+                <div class="card-header">
+                  <h3 class="card-title">Technicians In Field</h3>
+                  <span class="badge badge-emerald" id="dispatchTechOnlineBadge">6 Online</span>
+                </div>
+                <div class="dispatch-tech-list" id="dispatchTechList">
+                  <!-- Populated dynamically -->
+                </div>
+              </div>
+
+              <div class="card glass-card">
+                <div class="card-header">
+                  <h3 class="card-title">Pending Geo-Dispatches</h3>
+                </div>
+                <div class="unassigned-jobs-list" id="unassignedJobsList">
+                  <!-- Populated dynamically -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ================= VIEW: FIELD CREW ================= -->
+        <section id="view-crew" class="app-view">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">Field Crew & Specialists</h1>
+              <p class="view-subtitle">Manage certified technicians, view live statuses, certifications, and vehicle capacity.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn btn-primary" id="addTechnicianBtn">
+                <i data-lucide="user-plus"></i>
+                <span>Add Crew Member</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="crew-grid" id="crewGrid">
+            <!-- Dynamic crew cards -->
+          </div>
+        </section>
+
+
+        <!-- ================= VIEW: CLIENTS & SITES ================= -->
+        <section id="view-clients" class="app-view">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">Clients & Managed Sites</h1>
+              <p class="view-subtitle">Enterprise accounts, commercial properties, and service contracts.</p>
+            </div>
+            <div class="view-actions">
+              <button class="btn btn-primary" id="addClientBtn">
+                <i data-lucide="building"></i>
+                <span>Register Client</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="clients-grid" id="clientsGrid">
+            <!-- Dynamic client cards -->
+          </div>
+        </section>
+
+
+        <!-- ================= VIEW: ANALYTICS ================= -->
+        <section id="view-analytics" class="app-view">
+          <div class="view-header">
+            <div>
+              <h1 class="view-title">Performance & Operational SLAs</h1>
+              <p class="view-subtitle">Historical completion rates, technician velocity, and customer satisfaction metrics.</p>
+            </div>
+          </div>
+
+          <div class="analytics-metrics-deck">
+            <div class="card glass-card">
+              <h3 class="card-title">Weekly Dispatch Volume</h3>
+              <div class="mock-chart-bar-deck" id="weeklyChartDeck">
+                <div class="chart-col"><div class="bar" style="height: 65%;"></div><span>Mon</span></div>
+                <div class="chart-col"><div class="bar" style="height: 82%;"></div><span>Tue</span></div>
+                <div class="chart-col"><div class="bar" style="height: 74%;"></div><span>Wed</span></div>
+                <div class="chart-col"><div class="bar" style="height: 95%;"></div><span>Thu</span></div>
+                <div class="chart-col"><div class="bar highlight" style="height: 88%;"></div><span>Fri</span></div>
+                <div class="chart-col"><div class="bar" style="height: 40%;"></div><span>Sat</span></div>
+                <div class="chart-col"><div class="bar" style="height: 25%;"></div><span>Sun</span></div>
+              </div>
+            </div>
+
+            <div class="card glass-card">
+              <h3 class="card-title">SLA Compliance Ratio</h3>
+              <div class="sla-progress-wrap">
+                <div class="radial-progress-mock">
+                  <span class="radial-value">97.4%</span>
+                  <span class="radial-sub">Within Target</span>
+                </div>
+                <div class="sla-breakdown">
+                  <div class="sla-row"><span>Emergency Response (&lt; 45m):</span><strong>99.1%</strong></div>
+                  <div class="sla-row"><span>Standard Preventive:</span><strong>96.8%</strong></div>
+                  <div class="sla-row"><span>Customer NPS Score:</span><strong>+78</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+
+  <!-- ================= MODAL: 5-STEP JOB CREATION WIZARD ================= -->
+  <div class="modal-backdrop" id="jobWizardModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <div class="wizard-header-title">
+          <div class="modal-badge-icon">
+            <i data-lucide="plus-circle"></i>
+          </div>
+          <div>
+            <h2 class="modal-title">Create New Job Order</h2>
+            <p class="modal-subtitle">Step-by-step dispatch configuration</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="closeWizardModalBtn">&times;</button>
+      </div>
+
+      <!-- Wizard Step Indicator Progress Bar -->
+      <div class="wizard-stepper">
+        <div class="step-indicator active" data-step="1">
+          <div class="step-circle">1</div>
+          <span class="step-name">Details</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-indicator" data-step="2">
+          <div class="step-circle">2</div>
+          <span class="step-name">Client & Site</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-indicator" data-step="3">
+          <div class="step-circle">3</div>
+          <span class="step-name">Schedule</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-indicator" data-step="4">
+          <div class="step-circle">4</div>
+          <span class="step-name">Specialist</span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step-indicator" data-step="5">
+          <div class="step-circle">5</div>
+          <span class="step-name">Tasks</span>
+        </div>
+      </div>
+
+      <!-- Wizard Content Body -->
+      <form id="createJobForm" class="wizard-body">
+        
+        <!-- STEP 1: Job Title & Category -->
+        <div class="wizard-step-pane active" id="stepPane1">
+          <h3 class="pane-heading">Step 1: General Job Information</h3>
+          <p class="pane-description">Define the operational title, category, and urgency level.</p>
+
+          <div class="form-group">
+            <label for="jobTitleInput">Job Title <span class="required">*</span></label>
+            <input type="text" id="jobTitleInput" name="title" required placeholder="e.g. Commercial HVAC Compressor Replacement" class="form-input">
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="jobCategorySelect">Service Category</label>
+              <select id="jobCategorySelect" name="category" class="form-select">
+                <option value="HVAC Systems">HVAC & Climate Systems</option>
+                <option value="Electrical">Commercial Electrical & Power</option>
+                <option value="Plumbing & Fluid">Plumbing & Hydronics</option>
+                <option value="Network & Fiber">Network Cabling & Fiber</option>
+                <option value="Fire & Safety">Fire Alarm & Life Safety</option>
+                <option value="Preventive Maintenance">Routine Preventive Maintenance</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="jobPrioritySelect">Priority Level</label>
+              <select id="jobPrioritySelect" name="priority" class="form-select">
+                <option value="Standard">Standard (Within 24h)</option>
+                <option value="High">High Priority (Within 4h)</option>
+                <option value="Critical">Critical / Emergency (Immediate)</option>
+                <option value="Low">Low Priority / Routine</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="jobDescriptionInput">Scope & Description</label>
+            <textarea id="jobDescriptionInput" name="description" rows="3" class="form-textarea" placeholder="Provide background, failure symptoms, or special access instructions..."></textarea>
+          </div>
+        </div>
+
+        <!-- STEP 2: Client & Site Location -->
+        <div class="wizard-step-pane" id="stepPane2">
+          <h3 class="pane-heading">Step 2: Client & Site Details</h3>
+          <p class="pane-description">Select client account and specify the physical job site address.</p>
+
+          <div class="form-group">
+            <label for="jobClientSelect">Client Account <span class="required">*</span></label>
+            <select id="jobClientSelect" name="clientId" class="form-select">
+              <!-- Dynamically populated with clients -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="jobAddressInput">Site Address <span class="required">*</span></label>
+            <input type="text" id="jobAddressInput" name="address" required placeholder="e.g. 500 Howard St, Suite 400, San Francisco, CA" class="form-input">
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="jobContactPerson">Site Contact Person</label>
+              <input type="text" id="jobContactPerson" name="contactPerson" placeholder="e.g. Michael Chen (Building Mgr)" class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="jobContactPhone">Contact Phone</label>
+              <input type="tel" id="jobContactPhone" name="contactPhone" placeholder="e.g. +1 (415) 555-0192" class="form-input">
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3: Schedule & Timeline -->
+        <div class="wizard-step-pane" id="stepPane3">
+          <h3 class="pane-heading">Step 3: Schedule & Estimated Duration</h3>
+          <p class="pane-description">Set dispatch date, target arrival window, and expected labor time.</p>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="jobStartDateInput">Scheduled Date <span class="required">*</span></label>
+              <input type="date" id="jobStartDateInput" name="startDate" required class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="jobTimeWindowSelect">Arrival Time Window</label>
+              <select id="jobTimeWindowSelect" name="timeWindow" class="form-select">
+                <option value="08:00 AM - 10:00 AM">Morning (08:00 AM - 10:00 AM)</option>
+                <option value="10:00 AM - 12:00 PM">Late Morning (10:00 AM - 12:00 PM)</option>
+                <option value="01:00 PM - 03:00 PM">Afternoon (01:00 PM - 03:00 PM)</option>
+                <option value="03:00 PM - 05:00 PM">Late Afternoon (03:00 PM - 05:00 PM)</option>
+                <option value="Emergency Immediate">Emergency (Immediate Dispatch)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="jobEstHours">Estimated Hours</label>
+              <input type="number" id="jobEstHours" name="estimatedHours" min="0.5" step="0.5" value="2.0" class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="jobRadiusInput">Geo-Fence Radius (meters)</label>
+              <input type="number" id="jobRadiusInput" name="radius" value="150" class="form-input">
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 4: Technician Assignment -->
+        <div class="wizard-step-pane" id="stepPane4">
+          <h3 class="pane-heading">Step 4: Field Technician Assignment</h3>
+          <p class="pane-description">Choose a specialist based on real-time availability and certifications.</p>
+
+          <div class="form-group">
+            <label>Select Field Technician</label>
+            <div class="tech-selection-list" id="wizardTechSelectionList">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 5: Task Checklist & Confirmation -->
+        <div class="wizard-step-pane" id="stepPane5">
+          <h3 class="pane-heading">Step 5: Operational Checklist</h3>
+          <p class="pane-description">Define required steps for technician sign-off on site.</p>
+
+          <div class="checklist-builder">
+            <div class="checklist-items-wrap" id="wizardChecklistContainer">
+              <div class="checklist-item">
+                <input type="checkbox" checked disabled>
+                <span>Initial site hazard and safety risk assessment</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" checked disabled>
+                <span>Equipment diagnostics and fault verification</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" checked disabled>
+                <span>Replacement or repair execution per OEM specs</span>
+              </div>
+              <div class="checklist-item">
+                <input type="checkbox" checked disabled>
+                <span>Post-repair operational test and customer sign-off</span>
+              </div>
+            </div>
+
+            <div class="add-task-row">
+              <input type="text" id="customTaskInput" placeholder="Add custom item (e.g. Photograph serial plate)..." class="form-input">
+              <button type="button" class="btn btn-secondary" id="addCustomTaskBtn">Add Task</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- Wizard Navigation Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-ghost" id="wizardPrevBtn" style="visibility: hidden;">
+          <i data-lucide="arrow-left"></i>
+          <span>Previous</span>
+        </button>
+
+        <div class="footer-actions-right">
+          <button type="button" class="btn btn-secondary" id="wizardCancelBtn">Cancel</button>
+          <button type="button" class="btn btn-primary" id="wizardNextBtn">
+            <span>Next Step</span>
+            <i data-lucide="arrow-right"></i>
+          </button>
+          <button type="button" class="btn btn-primary" id="wizardSubmitBtn" style="display: none;">
+            <i data-lucide="check"></i>
+            <span>Create & Dispatch Job</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= MODAL: JOB DETAILS DRAWER ================= -->
+  <div class="drawer-backdrop" id="jobDetailDrawer">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div>
+          <span class="drawer-job-id" id="drawerJobId">#J-1082</span>
+          <h2 class="drawer-title" id="drawerJobTitle">Main Facility HVAC Overhaul</h2>
+        </div>
+        <button class="drawer-close-btn" id="closeDrawerBtn">&times;</button>
+      </div>
+
+      <div class="drawer-content" id="drawerContent">
+        <!-- Dynamically rendered details -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Application Scripts -->
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>
